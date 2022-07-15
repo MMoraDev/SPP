@@ -1,0 +1,2165 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F45K50 ]
+[d frameptr 4065 ]
+"34 C:\Users\migue\MPLABXProjects\MickeyAirlines.X\mcc_generated_files/drivers/i2c_simple_master.c
+[e E360 . `uc
+I2C1_STOP 1
+I2C1_RESTART_READ 2
+I2C1_RESTART_WRITE 3
+I2C1_CONTINUE 4
+I2C1_RESET_LINK 5
+]
+"53
+[e E355 . `uc
+I2C1_NOERR 0
+I2C1_BUSY 1
+I2C1_FAIL 2
+]
+"66 C:\Users\migue\MPLABXProjects\MickeyAirlines.X\mcc_generated_files/examples/i2c1_master_example.c
+[e E355 . `uc
+I2C1_NOERR 0
+I2C1_BUSY 1
+I2C1_FAIL 2
+]
+"67
+[e E360 . `uc
+I2C1_STOP 1
+I2C1_RESTART_READ 2
+I2C1_RESTART_WRITE 3
+I2C1_CONTINUE 4
+I2C1_RESET_LINK 5
+]
+"49 C:\Users\migue\MPLABXProjects\MickeyAirlines.X\mcc_generated_files/usb/usb_device_events.c
+[e E46 . `ui
+EVENT_NONE 0
+EVENT_DEVICE_STACK_BASE 1
+EVENT_HOST_STACK_BASE 100
+EVENT_HUB_ATTACH 101
+EVENT_STALL 102
+EVENT_VBUS_SES_REQUEST 103
+EVENT_VBUS_OVERCURRENT 104
+EVENT_VBUS_REQUEST_POWER 105
+EVENT_VBUS_RELEASE_POWER 106
+EVENT_VBUS_POWER_AVAILABLE 107
+EVENT_UNSUPPORTED_DEVICE 108
+EVENT_CANNOT_ENUMERATE 109
+EVENT_CLIENT_INIT_ERROR 110
+EVENT_OUT_OF_MEMORY 111
+EVENT_UNSPECIFIED_ERROR 112
+EVENT_DETACH 113
+EVENT_TRANSFER 114
+EVENT_SOF 115
+EVENT_RESUME 116
+EVENT_SUSPEND 117
+EVENT_RESET 118
+EVENT_DATA_ISOC_READ 119
+EVENT_DATA_ISOC_WRITE 120
+EVENT_OVERRIDE_CLIENT_DRIVER_SELECTION 121
+EVENT_1MS 122
+EVENT_ALT_INTERFACE 123
+EVENT_HOLD_BEFORE_CONFIGURATION 124
+EVENT_GENERIC_BASE 400
+EVENT_MSD_BASE 500
+EVENT_HID_BASE 600
+EVENT_PRINTER_BASE 700
+EVENT_CDC_BASE 800
+EVENT_CHARGER_BASE 900
+EVENT_AUDIO_BASE 1000
+EVENT_USER_BASE 10000
+EVENT_BUS_ERROR 32767
+]
+"96
+[e E114 . `uc
+EVENT_CONFIGURED 1
+EVENT_SET_DESCRIPTOR 2
+EVENT_EP0_REQUEST 3
+EVENT_ATTACH 4
+EVENT_TRANSFER_TERMINATED 5
+]
+"39 C:\Users\migue\MPLABXProjects\MickeyAirlines.X\mcc_generated_files/usb/example_mcc_usb_cdc.c
+[e E297 . `uc
+DETACHED_STATE 0
+ATTACHED_STATE 1
+POWERED_STATE 2
+DEFAULT_STATE 4
+ADR_PENDING_STATE 8
+ADDRESS_STATE 16
+CONFIGURED_STATE 32
+]
+"424 C:\Users\migue\MPLABXProjects\MickeyAirlines.X\mcc_generated_files/usb/usb_device_cdc.c
+[e E46 . `ui
+EVENT_NONE 0
+EVENT_DEVICE_STACK_BASE 1
+EVENT_HOST_STACK_BASE 100
+EVENT_HUB_ATTACH 101
+EVENT_STALL 102
+EVENT_VBUS_SES_REQUEST 103
+EVENT_VBUS_OVERCURRENT 104
+EVENT_VBUS_REQUEST_POWER 105
+EVENT_VBUS_RELEASE_POWER 106
+EVENT_VBUS_POWER_AVAILABLE 107
+EVENT_UNSUPPORTED_DEVICE 108
+EVENT_CANNOT_ENUMERATE 109
+EVENT_CLIENT_INIT_ERROR 110
+EVENT_OUT_OF_MEMORY 111
+EVENT_UNSPECIFIED_ERROR 112
+EVENT_DETACH 113
+EVENT_TRANSFER 114
+EVENT_SOF 115
+EVENT_RESUME 116
+EVENT_SUSPEND 117
+EVENT_RESET 118
+EVENT_DATA_ISOC_READ 119
+EVENT_DATA_ISOC_WRITE 120
+EVENT_OVERRIDE_CLIENT_DRIVER_SELECTION 121
+EVENT_1MS 122
+EVENT_ALT_INTERFACE 123
+EVENT_HOLD_BEFORE_CONFIGURATION 124
+EVENT_GENERIC_BASE 400
+EVENT_MSD_BASE 500
+EVENT_HID_BASE 600
+EVENT_PRINTER_BASE 700
+EVENT_CDC_BASE 800
+EVENT_CHARGER_BASE 900
+EVENT_AUDIO_BASE 1000
+EVENT_USER_BASE 10000
+EVENT_BUS_ERROR 32767
+]
+"442
+[e E306 . `uc
+EVENT_CONFIGURED 1
+EVENT_SET_DESCRIPTOR 2
+EVENT_EP0_REQUEST 3
+EVENT_ATTACH 4
+EVENT_TRANSFER_TERMINATED 5
+]
+"141 C:\Users\migue\MPLABXProjects\MickeyAirlines.X\mcc_generated_files/usb/usb_device.c
+[e E5274 . `uc
+DETACHED_STATE 0
+ATTACHED_STATE 1
+POWERED_STATE 2
+DEFAULT_STATE 4
+ADR_PENDING_STATE 8
+ADDRESS_STATE 16
+CONFIGURED_STATE 32
+]
+"717
+[e E5023 . `ui
+EVENT_NONE 0
+EVENT_DEVICE_STACK_BASE 1
+EVENT_HOST_STACK_BASE 100
+EVENT_HUB_ATTACH 101
+EVENT_STALL 102
+EVENT_VBUS_SES_REQUEST 103
+EVENT_VBUS_OVERCURRENT 104
+EVENT_VBUS_REQUEST_POWER 105
+EVENT_VBUS_RELEASE_POWER 106
+EVENT_VBUS_POWER_AVAILABLE 107
+EVENT_UNSUPPORTED_DEVICE 108
+EVENT_CANNOT_ENUMERATE 109
+EVENT_CLIENT_INIT_ERROR 110
+EVENT_OUT_OF_MEMORY 111
+EVENT_UNSPECIFIED_ERROR 112
+EVENT_DETACH 113
+EVENT_TRANSFER 114
+EVENT_SOF 115
+EVENT_RESUME 116
+EVENT_SUSPEND 117
+EVENT_RESET 118
+EVENT_DATA_ISOC_READ 119
+EVENT_DATA_ISOC_WRITE 120
+EVENT_OVERRIDE_CLIENT_DRIVER_SELECTION 121
+EVENT_1MS 122
+EVENT_ALT_INTERFACE 123
+EVENT_HOLD_BEFORE_CONFIGURATION 124
+EVENT_GENERIC_BASE 400
+EVENT_MSD_BASE 500
+EVENT_HID_BASE 600
+EVENT_PRINTER_BASE 700
+EVENT_CDC_BASE 800
+EVENT_CHARGER_BASE 900
+EVENT_AUDIO_BASE 1000
+EVENT_USER_BASE 10000
+EVENT_BUS_ERROR 32767
+]
+"2021
+[e E5283 . `uc
+EVENT_CONFIGURED 1
+EVENT_SET_DESCRIPTOR 2
+EVENT_EP0_REQUEST 3
+EVENT_ATTACH 4
+EVENT_TRANSFER_TERMINATED 5
+]
+"146 C:\Users\migue\MPLABXProjects\MickeyAirlines.X\mcc_generated_files/i2c1_master.c
+[e E5241 . `uc
+I2C1_IDLE 0
+I2C1_SEND_ADR_READ 1
+I2C1_SEND_ADR_WRITE 2
+I2C1_TX 3
+I2C1_RX 4
+I2C1_RCEN 5
+I2C1_TX_EMPTY 6
+I2C1_SEND_RESTART_READ 7
+I2C1_SEND_RESTART_WRITE 8
+I2C1_SEND_RESTART 9
+I2C1_SEND_STOP 10
+I2C1_RX_ACK 11
+I2C1_RX_NACK_STOP 12
+I2C1_RX_NACK_RESTART 13
+I2C1_RESET 14
+I2C1_ADDRESS_NACK 15
+]
+"165
+[e E360 . `uc
+I2C1_STOP 1
+I2C1_RESTART_READ 2
+I2C1_RESTART_WRITE 3
+I2C1_CONTINUE 4
+I2C1_RESET_LINK 5
+]
+[e E355 . `uc
+I2C1_NOERR 0
+I2C1_BUSY 1
+I2C1_FAIL 2
+]
+"191
+[e E5259 . `uc
+I2C1_DATA_COMPLETE 0
+I2C1_WRITE_COLLISION 1
+I2C1_ADDR_NACK 2
+I2C1_DATA_NACK 3
+I2C1_TIMEOUT 4
+I2C1_NULL 5
+]
+"7 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"43 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+"86 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\memcpy.c
+[v _memcpy memcpy `(*.39v  1 e 2 0 ]
+[v i2_memcpy memcpy `(*.39v  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\memset.c
+[v _memset memset `(*.39v  1 e 2 0 ]
+[v i2_memset memset `(*.39v  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+"27 C:\Users\migue\MPLABXProjects\MickeyAirlines.X\main.c
+[v _init init `(v  1 e 1 0 ]
+"48
+[v _main main `(v  1 e 1 0 ]
+"34 C:\Users\migue\MPLABXProjects\MickeyAirlines.X\mcc_generated_files/drivers/i2c_simple_master.c
+[v _wr1RegCompleteHandler wr1RegCompleteHandler `(E360  1 s 1 wr1RegCompleteHandler ]
+"51
+[v _i2c_write1ByteRegister i2c_write1ByteRegister `(v  1 e 1 0 ]
+"81
+[v _rd1RegCompleteHandler rd1RegCompleteHandler `(E360  1 s 1 rd1RegCompleteHandler ]
+"119
+[v _rd2RegCompleteHandler rd2RegCompleteHandler `(E360  1 s 1 rd2RegCompleteHandler ]
+"135
+[v _i2c_read2ByteRegister i2c_read2ByteRegister `(us  1 e 2 0 ]
+"151
+[v _wr2RegCompleteHandler wr2RegCompleteHandler `(E360  1 s 1 wr2RegCompleteHandler ]
+"185
+[v _rdBlkRegCompleteHandler rdBlkRegCompleteHandler `(E360  1 s 1 rdBlkRegCompleteHandler ]
+"203
+[v _i2c_readDataBlock i2c_readDataBlock `(v  1 e 1 0 ]
+"141 C:\Users\migue\MPLABXProjects\MickeyAirlines.X\mcc_generated_files/examples/i2c1_master_example.c
+[v _rd1RegCompleteHandler@i2c1_master_example$F148 rd1RegCompleteHandler `(E360  1 s 1 rd1RegCompleteHandler ]
+"148
+[v _rd2RegCompleteHandler@i2c1_master_example$F159 rd2RegCompleteHandler `(E360  1 s 1 rd2RegCompleteHandler ]
+"155
+[v _wr1RegCompleteHandler@i2c1_master_example$F165 wr1RegCompleteHandler `(E360  1 s 1 wr1RegCompleteHandler ]
+"162
+[v _wr2RegCompleteHandler@i2c1_master_example$F171 wr2RegCompleteHandler `(E360  1 s 1 wr2RegCompleteHandler ]
+"169
+[v _rdBlkRegCompleteHandler@i2c1_master_example$F182 rdBlkRegCompleteHandler `(E360  1 s 1 rdBlkRegCompleteHandler ]
+"167 C:\Users\migue\MPLABXProjects\MickeyAirlines.X\mcc_generated_files/i2c1_master.c
+[v _I2C1_Initialize I2C1_Initialize `(v  1 e 1 0 ]
+"176
+[v _I2C1_Open I2C1_Open `(E355  1 e 1 0 ]
+"211
+[v _I2C1_Close I2C1_Close `(E355  1 e 1 0 ]
+"226
+[v _I2C1_MasterOperation I2C1_MasterOperation `(E355  1 e 1 0 ]
+"247
+[v _I2C1_MasterRead I2C1_MasterRead `(E355  1 e 1 0 ]
+"252
+[v _I2C1_MasterWrite I2C1_MasterWrite `(E355  1 e 1 0 ]
+"264
+[v _I2C1_SetBuffer I2C1_SetBuffer `(v  1 e 1 0 ]
+[v i2_I2C1_SetBuffer I2C1_SetBuffer `(v  1 e 1 0 ]
+"274
+[v _I2C1_SetDataCompleteCallback I2C1_SetDataCompleteCallback `(v  1 e 1 0 ]
+[v i2_I2C1_SetDataCompleteCallback I2C1_SetDataCompleteCallback `(v  1 e 1 0 ]
+"284
+[v _I2C1_SetAddressNackCallback I2C1_SetAddressNackCallback `(v  1 e 1 0 ]
+"299
+[v _I2C1_SetInterruptHandler I2C1_SetInterruptHandler `(v  1 e 1 0 ]
+"304
+[v _I2C1_SetCallback I2C1_SetCallback `(v  1 s 1 I2C1_SetCallback ]
+[v i2_I2C1_SetCallback I2C1_SetCallback `(v  1 s 1 i2_I2C1_SetCallback ]
+"318
+[v _I2C1_MasterIsr I2C1_MasterIsr `(v  1 s 1 I2C1_MasterIsr ]
+"323
+[v _I2C1_MasterFsm I2C1_MasterFsm `T(v  1 s 1 I2C1_MasterFsm ]
+"335
+[v _I2C1_DO_IDLE I2C1_DO_IDLE `(E5241  1 s 1 I2C1_DO_IDLE ]
+"342
+[v _I2C1_DO_SEND_ADR_READ I2C1_DO_SEND_ADR_READ `(E5241  1 s 1 I2C1_DO_SEND_ADR_READ ]
+"349
+[v _I2C1_DO_SEND_ADR_WRITE I2C1_DO_SEND_ADR_WRITE `(E5241  1 s 1 I2C1_DO_SEND_ADR_WRITE ]
+"356
+[v _I2C1_DO_TX I2C1_DO_TX `(E5241  1 s 1 I2C1_DO_TX ]
+"380
+[v _I2C1_DO_RX I2C1_DO_RX `(E5241  1 s 1 I2C1_DO_RX ]
+"404
+[v _I2C1_DO_RCEN I2C1_DO_RCEN `(E5241  1 s 1 I2C1_DO_RCEN ]
+"411
+[v _I2C1_DO_TX_EMPTY I2C1_DO_TX_EMPTY `(E5241  1 s 1 I2C1_DO_TX_EMPTY ]
+"451
+[v _I2C1_DO_SEND_RESTART_READ I2C1_DO_SEND_RESTART_READ `(E5241  1 s 1 I2C1_DO_SEND_RESTART_READ ]
+"457
+[v _I2C1_DO_SEND_RESTART_WRITE I2C1_DO_SEND_RESTART_WRITE `(E5241  1 s 1 I2C1_DO_SEND_RESTART_WRITE ]
+"464
+[v _I2C1_DO_SEND_RESTART I2C1_DO_SEND_RESTART `(E5241  1 s 1 I2C1_DO_SEND_RESTART ]
+"470
+[v _I2C1_DO_SEND_STOP I2C1_DO_SEND_STOP `(E5241  1 s 1 I2C1_DO_SEND_STOP ]
+"476
+[v _I2C1_DO_RX_ACK I2C1_DO_RX_ACK `(E5241  1 s 1 I2C1_DO_RX_ACK ]
+"483
+[v _I2C1_DO_RX_NACK_STOP I2C1_DO_RX_NACK_STOP `(E5241  1 s 1 I2C1_DO_RX_NACK_STOP ]
+"489
+[v _I2C1_DO_RX_NACK_RESTART I2C1_DO_RX_NACK_RESTART `(E5241  1 s 1 I2C1_DO_RX_NACK_RESTART ]
+"495
+[v _I2C1_DO_RESET I2C1_DO_RESET `(E5241  1 s 1 I2C1_DO_RESET ]
+"501
+[v _I2C1_DO_ADDRESS_NACK I2C1_DO_ADDRESS_NACK `(E5241  1 s 1 I2C1_DO_ADDRESS_NACK ]
+"521
+[v _I2C1_CallbackReturnStop I2C1_CallbackReturnStop `(E360  1 e 1 0 ]
+"526
+[v _I2C1_CallbackReturnReset I2C1_CallbackReturnReset `(E360  1 e 1 0 ]
+"544
+[v _I2C1_MasterOpen I2C1_MasterOpen `T(a  1 s 1 I2C1_MasterOpen ]
+"558
+[v _I2C1_MasterClose I2C1_MasterClose `T(v  1 s 1 I2C1_MasterClose ]
+"564
+[v _I2C1_MasterGetRxData I2C1_MasterGetRxData `T(uc  1 s 1 I2C1_MasterGetRxData ]
+"569
+[v _I2C1_MasterSendTxData I2C1_MasterSendTxData `T(v  1 s 1 I2C1_MasterSendTxData ]
+"574
+[v _I2C1_MasterEnableRestart I2C1_MasterEnableRestart `T(v  1 s 1 I2C1_MasterEnableRestart ]
+"579
+[v _I2C1_MasterDisableRestart I2C1_MasterDisableRestart `T(v  1 s 1 I2C1_MasterDisableRestart ]
+"584
+[v _I2C1_MasterStartRx I2C1_MasterStartRx `T(v  1 s 1 I2C1_MasterStartRx ]
+"589
+[v _I2C1_MasterStart I2C1_MasterStart `T(v  1 s 1 I2C1_MasterStart ]
+"594
+[v _I2C1_MasterStop I2C1_MasterStop `T(v  1 s 1 I2C1_MasterStop ]
+"599
+[v _I2C1_MasterIsNack I2C1_MasterIsNack `T(a  1 s 1 I2C1_MasterIsNack ]
+"604
+[v _I2C1_MasterSendAck I2C1_MasterSendAck `T(v  1 s 1 I2C1_MasterSendAck ]
+"610
+[v _I2C1_MasterSendNack I2C1_MasterSendNack `T(v  1 s 1 I2C1_MasterSendNack ]
+"616
+[v _I2C1_MasterClearBusCollision I2C1_MasterClearBusCollision `T(v  1 s 1 I2C1_MasterClearBusCollision ]
+"627
+[v _I2C1_MasterEnableIrq I2C1_MasterEnableIrq `T(v  1 s 1 I2C1_MasterEnableIrq ]
+"637
+[v _I2C1_MasterDisableIrq I2C1_MasterDisableIrq `T(v  1 s 1 I2C1_MasterDisableIrq ]
+"642
+[v _I2C1_MasterClearIrq I2C1_MasterClearIrq `T(v  1 s 1 I2C1_MasterClearIrq ]
+[v i2_I2C1_MasterClearIrq I2C1_MasterClearIrq `T(v  1 s 1 i2_I2C1_MasterClearIrq ]
+"647
+[v _I2C1_MasterSetIrq I2C1_MasterSetIrq `T(v  1 s 1 I2C1_MasterSetIrq ]
+"52 C:\Users\migue\MPLABXProjects\MickeyAirlines.X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
+"58
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `IIH(v  1 e 1 0 ]
+"50 C:\Users\migue\MPLABXProjects\MickeyAirlines.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"61
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"55 C:\Users\migue\MPLABXProjects\MickeyAirlines.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"281 C:\Users\migue\MPLABXProjects\MickeyAirlines.X\mcc_generated_files/usb/usb_device.c
+[v _USBDeviceInit USBDeviceInit `(v  1 e 1 0 ]
+[v i2_USBDeviceInit USBDeviceInit `(v  1 e 1 0 ]
+"481
+[v _USBDeviceTasks USBDeviceTasks `(v  1 e 1 0 ]
+"882
+[v _USBEnableEndpoint USBEnableEndpoint `(v  1 e 1 0 ]
+"999
+[v _USBTransferOnePacket USBTransferOnePacket `(*.39v  1 e 2 0 ]
+[v i2_USBTransferOnePacket USBTransferOnePacket `(*.39v  1 e 2 0 ]
+"1356
+[v _USBDeviceAttach USBDeviceAttach `(v  1 e 1 0 ]
+"1420
+[v _USBCtrlEPAllowStatusStage USBCtrlEPAllowStatusStage `(v  1 e 1 0 ]
+"1492
+[v _USBCtrlEPAllowDataStage USBCtrlEPAllowDataStage `(v  1 e 1 0 ]
+"1547
+[v _USBConfigureEndpoint USBConfigureEndpoint `(v  1 s 1 USBConfigureEndpoint ]
+"1620
+[v _USBCtrlEPServiceComplete USBCtrlEPServiceComplete `(v  1 s 1 USBCtrlEPServiceComplete ]
+"1775
+[v _USBCtrlTrfTxService USBCtrlTrfTxService `(v  1 s 1 USBCtrlTrfTxService ]
+"1856
+[v _USBCtrlTrfRxService USBCtrlTrfRxService `(v  1 s 1 USBCtrlTrfRxService ]
+"1972
+[v _USBStdSetCfgHandler USBStdSetCfgHandler `(v  1 s 1 USBStdSetCfgHandler ]
+"2047
+[v _USBStdGetDscHandler USBStdGetDscHandler `(v  1 s 1 USBStdGetDscHandler ]
+"2133
+[v _USBStdGetStatusHandler USBStdGetStatusHandler `(v  1 s 1 USBStdGetStatusHandler ]
+"2206
+[v _USBStallHandler USBStallHandler `(v  1 s 1 USBStallHandler ]
+"2249
+[v _USBSuspend USBSuspend `(v  1 s 1 USBSuspend ]
+"2307
+[v _USBWakeFromSuspend USBWakeFromSuspend `(v  1 s 1 USBWakeFromSuspend ]
+"2376
+[v _USBCtrlEPService USBCtrlEPService `(v  1 s 1 USBCtrlEPService ]
+"2469
+[v _USBCtrlTrfSetupHandler USBCtrlTrfSetupHandler `(v  1 s 1 USBCtrlTrfSetupHandler ]
+"2542
+[v _USBCtrlTrfOutHandler USBCtrlTrfOutHandler `(v  1 s 1 USBCtrlTrfOutHandler ]
+"2596
+[v _USBCtrlTrfInHandler USBCtrlTrfInHandler `(v  1 s 1 USBCtrlTrfInHandler ]
+"2690
+[v _USBCheckStdRequest USBCheckStdRequest `(v  1 s 1 USBCheckStdRequest ]
+"2758
+[v _USBStdFeatureReqHandler USBStdFeatureReqHandler `(v  1 s 1 USBStdFeatureReqHandler ]
+"3029
+[v _USBIncrement1msInternalTimers USBIncrement1msInternalTimers `(v  1 e 1 0 ]
+"147 C:\Users\migue\MPLABXProjects\MickeyAirlines.X\mcc_generated_files/usb/usb_device_cdc.c
+[v _USBCheckCDCRequest USBCheckCDCRequest `(v  1 e 1 0 ]
+"294
+[v _CDCInitEP CDCInitEP `(v  1 e 1 0 ]
+"503
+[v _getsUSBUSART getsUSBUSART `(uc  1 e 1 0 ]
+"574
+[v _putUSBUSART putUSBUSART `(v  1 e 1 0 ]
+"854
+[v _CDCTxService CDCTxService `(v  1 e 1 0 ]
+"49 C:\Users\migue\MPLABXProjects\MickeyAirlines.X\mcc_generated_files/usb/usb_device_events.c
+[v _USER_USB_CALLBACK_EVENT_HANDLER USER_USB_CALLBACK_EVENT_HANDLER `(a  1 e 1 0 ]
+"20 C:\Users\migue\MPLABXProjects\MickeyAirlines.X\mpu6050.c
+[v _MPU6050_Initialize MPU6050_Initialize `(v  1 e 1 0 ]
+"55 C:\Users\migue\MPLABXProjects\MickeyAirlines.X/mpu6050.h
+"50
+"44
+[u S3753 MPU6050_Byteable 4 `f 1 value 4 0 `[4]uc 1 bytes 4 0 ]
+"36 C:\Users\migue\MPLABXProjects\MickeyAirlines.X\mpu6050.c
+[s S3756 . 12 `S3753 1 x 4 0 `S3753 1 y 4 4 `S3753 1 z 4 8 ]
+[s S3760 . 28 `S3756 1 accelerometer 12 0 `S3756 1 gyroscope 12 12 `S3753 1 temperature 4 24 ]
+[v _MPU6050_ReadSensor MPU6050_ReadSensor `(S3760  1 e 28 0 ]
+"89
+[v _MPU6050_Data_2_Uint8 MPU6050_Data_2_Uint8 `(*.39uc  1 e 2 0 ]
+"213 C:\Users\migue\MPLABXProjects\MickeyAirlines.X/mcc_generated_files/i2c1_master.h
+[v _MSSP1_InterruptHandler MSSP1_InterruptHandler `*.37(v  1 e 2 0 ]
+"232 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h
+[v _ANSELA ANSELA `VEuc  1 e 1 @3931 ]
+"277
+[v _ANSELB ANSELB `VEuc  1 e 1 @3932 ]
+"327
+[v _ANSELC ANSELC `VEuc  1 e 1 @3933 ]
+"361
+[v _ANSELD ANSELD `VEuc  1 e 1 @3934 ]
+"423
+[v _ANSELE ANSELE `VEuc  1 e 1 @3935 ]
+"455
+[v _UCON UCON `VEuc  1 e 1 @3936 ]
+[s S302 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 SUSPND 1 0 :1:1 
+`uc 1 RESUME 1 0 :1:2 
+`uc 1 USBEN 1 0 :1:3 
+`uc 1 PKTDIS 1 0 :1:4 
+`uc 1 SE0 1 0 :1:5 
+`uc 1 PPBRST 1 0 :1:6 
+]
+"471
+[u S310 . 1 `S302 1 . 1 0 ]
+[v _UCONbits UCONbits `VES310  1 e 1 @3936 ]
+"506
+[v _USTAT USTAT `VEuc  1 e 1 @3937 ]
+"566
+[v _UCFG UCFG `VEuc  1 e 1 @3938 ]
+"645
+[v _UADDR UADDR `VEuc  1 e 1 @3939 ]
+"709
+[v _UIE UIE `VEuc  1 e 1 @3940 ]
+[s S1318 . 1 `uc 1 URSTIE 1 0 :1:0 
+`uc 1 UERRIE 1 0 :1:1 
+`uc 1 ACTVIE 1 0 :1:2 
+`uc 1 TRNIE 1 0 :1:3 
+`uc 1 IDLEIE 1 0 :1:4 
+`uc 1 STALLIE 1 0 :1:5 
+`uc 1 SOFIE 1 0 :1:6 
+]
+"725
+[u S1326 . 1 `S1318 1 . 1 0 ]
+[v _UIEbits UIEbits `VES1326  1 e 1 @3940 ]
+"765
+[v _UIR UIR `VEuc  1 e 1 @3941 ]
+[s S1299 . 1 `uc 1 URSTIF 1 0 :1:0 
+`uc 1 UERRIF 1 0 :1:1 
+`uc 1 ACTVIF 1 0 :1:2 
+`uc 1 TRNIF 1 0 :1:3 
+`uc 1 IDLEIF 1 0 :1:4 
+`uc 1 STALLIF 1 0 :1:5 
+`uc 1 SOFIF 1 0 :1:6 
+]
+"781
+[u S1307 . 1 `S1299 1 . 1 0 ]
+[v _UIRbits UIRbits `VES1307  1 e 1 @3941 ]
+"821
+[v _UEIE UEIE `VEuc  1 e 1 @3942 ]
+"872
+[v _UEIR UEIR `VEuc  1 e 1 @3943 ]
+"1048
+[v _UEP0 UEP0 `VEuc  1 e 1 @3946 ]
+[s S1478 . 1 `uc 1 EPSTALL 1 0 :1:0 
+`uc 1 EPINEN 1 0 :1:1 
+`uc 1 EPOUTEN 1 0 :1:2 
+`uc 1 EPCONDIS 1 0 :1:3 
+`uc 1 EPHSHK 1 0 :1:4 
+]
+"1076
+[s S1484 . 1 `uc 1 EP0STALL 1 0 :1:0 
+`uc 1 EP0INEN 1 0 :1:1 
+`uc 1 EP0OUTEN 1 0 :1:2 
+`uc 1 EP0CONDIS 1 0 :1:3 
+`uc 1 EP0HSHK 1 0 :1:4 
+]
+[s S1490 . 1 `uc 1 EPSTALL0 1 0 :1:0 
+`uc 1 EPINEN0 1 0 :1:1 
+`uc 1 EPOUTEN0 1 0 :1:2 
+`uc 1 EPCONDIS0 1 0 :1:3 
+`uc 1 EPHSHK0 1 0 :1:4 
+]
+[u S1496 . 1 `S1478 1 . 1 0 `S1484 1 . 1 0 `S1490 1 . 1 0 ]
+[v _UEP0bits UEP0bits `VES1496  1 e 1 @3946 ]
+"1156
+[v _UEP1 UEP1 `VEuc  1 e 1 @3947 ]
+"3545
+[v _WPUB WPUB `VEuc  1 e 1 @3973 ]
+"3779
+[v _LATA LATA `VEuc  1 e 1 @3977 ]
+"3891
+[v _LATB LATB `VEuc  1 e 1 @3978 ]
+"4003
+[v _LATC LATC `VEuc  1 e 1 @3979 ]
+"4105
+[v _LATD LATD `VEuc  1 e 1 @3980 ]
+"4217
+[v _LATE LATE `VEuc  1 e 1 @3981 ]
+"4626
+[v _TRISA TRISA `VEuc  1 e 1 @3986 ]
+"4848
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+"5070
+[v _TRISC TRISC `VEuc  1 e 1 @3988 ]
+"5248
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+"5470
+[v _TRISE TRISE `VEuc  1 e 1 @3990 ]
+"6050
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @3995 ]
+[s S2696 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSPIE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+`uc 1 ACTIE 1 0 :1:7 
+]
+"6219
+[s S2705 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 SSP1IE 1 0 :1:3 
+`uc 1 TX1IE 1 0 :1:4 
+`uc 1 RC1IE 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 STIE 1 0 :1:7 
+]
+[s S2712 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 PSPIE 1 0 :1:7 
+]
+[u S2715 . 1 `S2696 1 . 1 0 `S2705 1 . 1 0 `S2712 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES2715  1 e 1 @3997 ]
+[s S2739 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 ACTIF 1 0 :1:7 
+]
+"6318
+[s S2748 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 SSP1IF 1 0 :1:3 
+`uc 1 TX1IF 1 0 :1:4 
+`uc 1 RC1IF 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 STIF 1 0 :1:7 
+]
+[s S2755 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 PSPIF 1 0 :1:7 
+]
+[u S2758 . 1 `S2739 1 . 1 0 `S2748 1 . 1 0 `S2755 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES2758  1 e 1 @3998 ]
+[s S2610 . 1 `uc 1 CCP2IE 1 0 :1:0 
+`uc 1 TMR3IE 1 0 :1:1 
+`uc 1 HLVDIE 1 0 :1:2 
+`uc 1 BCLIE 1 0 :1:3 
+`uc 1 EEIE 1 0 :1:4 
+`uc 1 C2IE 1 0 :1:5 
+`uc 1 C1IE 1 0 :1:6 
+`uc 1 OSCFIE 1 0 :1:7 
+]
+"6516
+[s S2619 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 LVDIE 1 0 :1:2 
+`uc 1 BCL1IE 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 CM2IE 1 0 :1:5 
+`uc 1 CM1IE 1 0 :1:6 
+]
+[s S2626 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 CMIE 1 0 :1:6 
+]
+[u S2629 . 1 `S2610 1 . 1 0 `S2619 1 . 1 0 `S2626 1 . 1 0 ]
+[v _PIE2bits PIE2bits `VES2629  1 e 1 @4000 ]
+[s S2653 . 1 `uc 1 CCP2IF 1 0 :1:0 
+`uc 1 TMR3IF 1 0 :1:1 
+`uc 1 HLVDIF 1 0 :1:2 
+`uc 1 BCLIF 1 0 :1:3 
+`uc 1 EEIF 1 0 :1:4 
+`uc 1 C2IF 1 0 :1:5 
+`uc 1 C1IF 1 0 :1:6 
+`uc 1 OSCFIF 1 0 :1:7 
+]
+"6615
+[s S2662 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 LVDIF 1 0 :1:2 
+`uc 1 BCL1IF 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 CM2IF 1 0 :1:5 
+`uc 1 CM1IF 1 0 :1:6 
+]
+[s S2669 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 CMIF 1 0 :1:6 
+]
+[u S2672 . 1 `S2653 1 . 1 0 `S2662 1 . 1 0 `S2669 1 . 1 0 ]
+[v _PIR2bits PIR2bits `VES2672  1 e 1 @4001 ]
+[s S819 . 1 `uc 1 TMR1GIE 1 0 :1:0 
+`uc 1 TMR3GIE 1 0 :1:1 
+`uc 1 USBIE 1 0 :1:2 
+`uc 1 CTMUIE 1 0 :1:3 
+]
+"6807
+[s S824 . 1 `uc 1 RXB0IE 1 0 :1:0 
+`uc 1 RXB1IE 1 0 :1:1 
+`uc 1 TXB0IE 1 0 :1:2 
+`uc 1 TXB1IE 1 0 :1:3 
+]
+[s S829 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RXBNIE 1 0 :1:1 
+]
+[u S832 . 1 `S819 1 . 1 0 `S824 1 . 1 0 `S829 1 . 1 0 ]
+[v _PIE3bits PIE3bits `VES832  1 e 1 @4003 ]
+[s S1341 . 1 `uc 1 TMR1GIF 1 0 :1:0 
+`uc 1 TMR3GIF 1 0 :1:1 
+`uc 1 USBIF 1 0 :1:2 
+`uc 1 CTMUIF 1 0 :1:3 
+]
+"6874
+[s S1346 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RXBNIF 1 0 :1:1 
+]
+[u S1349 . 1 `S1341 1 . 1 0 `S1346 1 . 1 0 ]
+[v _PIR3bits PIR3bits `VES1349  1 e 1 @4004 ]
+[s S1427 . 1 `uc 1 TMR1GIP 1 0 :1:0 
+`uc 1 TMR3GIP 1 0 :1:1 
+`uc 1 USBIP 1 0 :1:2 
+`uc 1 CTMUIP 1 0 :1:3 
+]
+"6921
+[s S1432 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RXBNIP 1 0 :1:1 
+]
+[u S1435 . 1 `S1427 1 . 1 0 `S1432 1 . 1 0 ]
+[v _IPR3bits IPR3bits `VES1435  1 e 1 @4005 ]
+"8210
+[v _ACTCON ACTCON `VEuc  1 e 1 @4021 ]
+"9884
+[v _SSP1CON2 SSP1CON2 `VEuc  1 e 1 @4037 ]
+[s S3238 . 1 `uc 1 SEN 1 0 :1:0 
+`uc 1 RSEN 1 0 :1:1 
+`uc 1 PEN 1 0 :1:2 
+`uc 1 RCEN 1 0 :1:3 
+`uc 1 ACKEN 1 0 :1:4 
+`uc 1 ACKDT 1 0 :1:5 
+`uc 1 ACKSTAT 1 0 :1:6 
+`uc 1 GCEN 1 0 :1:7 
+]
+"9932
+[s S3247 . 1 `uc 1 SEN1 1 0 :1:0 
+`uc 1 ADMSK1 1 0 :1:1 
+`uc 1 ADMSK2 1 0 :1:2 
+`uc 1 ADMSK3 1 0 :1:3 
+`uc 1 ACKEN1 1 0 :1:4 
+`uc 1 ACKDT1 1 0 :1:5 
+`uc 1 ACKSTAT1 1 0 :1:6 
+`uc 1 GCEN1 1 0 :1:7 
+]
+[s S3256 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 ADMSK11 1 0 :1:1 
+`uc 1 ADMSK21 1 0 :1:2 
+`uc 1 ADMSK31 1 0 :1:3 
+`uc 1 ADMSK4 1 0 :1:4 
+`uc 1 ADMSK5 1 0 :1:5 
+]
+[s S3263 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RSEN1 1 0 :1:1 
+`uc 1 PEN1 1 0 :1:2 
+`uc 1 RCEN1 1 0 :1:3 
+`uc 1 ADMSK41 1 0 :1:4 
+`uc 1 ADMSK51 1 0 :1:5 
+]
+[u S3270 . 1 `S3238 1 . 1 0 `S3247 1 . 1 0 `S3256 1 . 1 0 `S3263 1 . 1 0 ]
+[v _SSP1CON2bits SSP1CON2bits `VES3270  1 e 1 @4037 ]
+"10238
+[v _SSP1CON1 SSP1CON1 `VEuc  1 e 1 @4038 ]
+[s S3051 . 1 `uc 1 SSPM 1 0 :4:0 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+"10277
+[s S3057 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+]
+[s S3062 . 1 `uc 1 SSPM01 1 0 :1:0 
+`uc 1 SSPM11 1 0 :1:1 
+`uc 1 SSPM21 1 0 :1:2 
+`uc 1 SSPM31 1 0 :1:3 
+`uc 1 CKP1 1 0 :1:4 
+`uc 1 SSPEN1 1 0 :1:5 
+`uc 1 SSPOV1 1 0 :1:6 
+`uc 1 WCOL1 1 0 :1:7 
+]
+[u S3071 . 1 `S3051 1 . 1 0 `S3057 1 . 1 0 `S3062 1 . 1 0 ]
+[v _SSP1CON1bits SSP1CON1bits `VES3071  1 e 1 @4038 ]
+"10592
+[v _SSP1STAT SSP1STAT `VEuc  1 e 1 @4039 ]
+[s S3332 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_NOT_W 1 0 :1:2 
+]
+"10692
+[s S3335 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 D_NOT_A 1 0 :1:5 
+]
+[s S3338 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+[s S3347 . 1 `uc 1 BF1 1 0 :1:0 
+`uc 1 UA1 1 0 :1:1 
+`uc 1 I2C_READ 1 0 :1:2 
+`uc 1 I2C_START 1 0 :1:3 
+`uc 1 I2C_STOP 1 0 :1:4 
+`uc 1 D 1 0 :1:5 
+`uc 1 CKE1 1 0 :1:6 
+`uc 1 SMP1 1 0 :1:7 
+]
+[s S3356 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R 1 0 :1:2 
+`uc 1 START 1 0 :1:3 
+`uc 1 STOP 1 0 :1:4 
+`uc 1 DA 1 0 :1:5 
+]
+[s S3362 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 READ_WRITE 1 0 :1:2 
+`uc 1 START1 1 0 :1:3 
+`uc 1 STOP1 1 0 :1:4 
+`uc 1 DA1 1 0 :1:5 
+]
+[s S3368 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 RW 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 DATA_ADDRESS 1 0 :1:5 
+]
+[s S3373 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 RW1 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_A 1 0 :1:5 
+]
+[s S3378 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 I2C_DAT 1 0 :1:5 
+]
+[s S3383 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA 1 0 :1:5 
+]
+[s S3388 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_WRITE 1 0 :1:2 
+]
+[s S3391 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_ADDRESS 1 0 :1:5 
+]
+[s S3394 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS 1 0 :1:5 
+]
+[s S3399 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_W 1 0 :1:2 
+]
+[s S3402 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_A 1 0 :1:5 
+]
+[u S3405 . 1 `S3332 1 . 1 0 `S3335 1 . 1 0 `S3338 1 . 1 0 `S3347 1 . 1 0 `S3356 1 . 1 0 `S3362 1 . 1 0 `S3368 1 . 1 0 `S3373 1 . 1 0 `S3378 1 . 1 0 `S3383 1 . 1 0 `S3388 1 . 1 0 `S3391 1 . 1 0 `S3394 1 . 1 0 `S3399 1 . 1 0 `S3402 1 . 1 0 ]
+[v _SSP1STATbits SSP1STATbits `VES3405  1 e 1 @4039 ]
+"11190
+[v _SSP1ADD SSP1ADD `VEuc  1 e 1 @4040 ]
+"11528
+[v _SSP1BUF SSP1BUF `VEuc  1 e 1 @4041 ]
+[s S2463 . 1 `uc 1 NOT_BOR 1 0 :1:0 
+]
+"12176
+[s S2465 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 NOT_POR 1 0 :1:1 
+]
+[s S2468 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_PD 1 0 :1:2 
+]
+[s S2471 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 NOT_TO 1 0 :1:3 
+]
+[s S2474 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 NOT_RI 1 0 :1:4 
+]
+[s S2477 . 1 `uc 1 nBOR 1 0 :1:0 
+`uc 1 nPOR 1 0 :1:1 
+`uc 1 nPD 1 0 :1:2 
+`uc 1 nTO 1 0 :1:3 
+`uc 1 nRI 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 SBOREN 1 0 :1:6 
+`uc 1 IPEN 1 0 :1:7 
+]
+[s S2486 . 1 `uc 1 BOR 1 0 :1:0 
+`uc 1 POR 1 0 :1:1 
+`uc 1 PD 1 0 :1:2 
+`uc 1 TO 1 0 :1:3 
+`uc 1 RI 1 0 :1:4 
+]
+[u S2492 . 1 `S2463 1 . 1 0 `S2465 1 . 1 0 `S2468 1 . 1 0 `S2471 1 . 1 0 `S2474 1 . 1 0 `S2477 1 . 1 0 `S2486 1 . 1 0 ]
+[v _RCONbits RCONbits `VES2492  1 e 1 @4048 ]
+"12294
+[v _OSCCON2 OSCCON2 `VEuc  1 e 1 @4050 ]
+"12356
+[v _OSCCON OSCCON `VEuc  1 e 1 @4051 ]
+[s S2847 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 NOT_RBPU 1 0 :1:7 
+]
+"13175
+[s S2850 . 1 `uc 1 IOCIP 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 TMR0IP 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INTEDG2 1 0 :1:4 
+`uc 1 INTEDG1 1 0 :1:5 
+`uc 1 INTEDG0 1 0 :1:6 
+`uc 1 nRBPU 1 0 :1:7 
+]
+[s S2859 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IP 1 0 :1:2 
+`uc 1 . 1 0 :4:3 
+`uc 1 RBPU 1 0 :1:7 
+]
+[u S2864 . 1 `S2847 1 . 1 0 `S2850 1 . 1 0 `S2859 1 . 1 0 ]
+[v _INTCON2bits INTCON2bits `VES2864  1 e 1 @4081 ]
+[s S2530 . 1 `uc 1 IOCIF 1 0 :1:0 
+`uc 1 INT0IF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 IOCIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE_GIEL 1 0 :1:6 
+`uc 1 GIE_GIEH 1 0 :1:7 
+]
+"13257
+[s S2539 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 INT0F 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INT0E 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+[s S2548 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+[u S2552 . 1 `S2530 1 . 1 0 `S2539 1 . 1 0 `S2548 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES2552  1 e 1 @4082 ]
+"15585
+[v _PLLRDY PLLRDY `VEb  1 e 0 @32407 ]
+"146 C:\Users\migue\MPLABXProjects\MickeyAirlines.X\mcc_generated_files/i2c1_master.c
+[v _i2c1_fsmStateTable i2c1_fsmStateTable `C[16]*.37(E5241  1 e 32 0 ]
+[s S3025 . 36 `[6]*.37(E360 1 callbackTable 12 0 `[6]*.39v 1 callbackPayload 12 12 `us 1 time_out 2 24 `us 1 time_out_value 2 26 `uc 1 address 1 28 `*.39uc 1 data_ptr 2 29 `ui 1 data_length 2 31 `E5241 1 state 1 33 `E355 1 error 1 34 `uc 1 addressNackCheck 1 35 :1:0 
+`uc 1 busy 1 35 :1:1 
+`uc 1 inUse 1 35 :1:2 
+`uc 1 bufferFree 1 35 :1:3 
+]
+"165
+[v _I2C1_Status I2C1_Status `S3025  1 e 36 0 ]
+"34 C:\Users\migue\MPLABXProjects\MickeyAirlines.X\mcc_generated_files/usb/example_mcc_usb_cdc.c
+[v _readBuffer readBuffer `[64]uc  1 s 64 readBuffer ]
+"35
+[v _writeBuffer writeBuffer `[64]uc  1 s 64 writeBuffer ]
+[s S350 _USB_DEVICE_DESCRIPTOR 18 `uc 1 bLength 1 0 `uc 1 bDescriptorType 1 1 `us 1 bcdUSB 2 2 `uc 1 bDeviceClass 1 4 `uc 1 bDeviceSubClass 1 5 `uc 1 bDeviceProtocol 1 6 `uc 1 bMaxPacketSize0 1 7 `us 1 idVendor 2 8 `us 1 idProduct 2 10 `us 1 bcdDevice 2 12 `uc 1 iManufacturer 1 14 `uc 1 iProduct 1 15 `uc 1 iSerialNumber 1 16 `uc 1 bNumConfigurations 1 17 ]
+"155 C:\Users\migue\MPLABXProjects\MickeyAirlines.X\mcc_generated_files/usb/usb_descriptors.c
+[v _device_dsc device_dsc `CS350  1 e 18 0 ]
+"174
+[v _configDescriptor1 configDescriptor1 `C[67]uc  1 e 67 0 ]
+[s S387 . 4 `uc 1 bLength 1 0 `uc 1 bDscType 1 1 `[1]us 1 string 2 2 ]
+"259
+[v _sd000 sd000 `CS387  1 e 4 0 ]
+[s S391 . 52 `uc 1 bLength 1 0 `uc 1 bDscType 1 1 `[25]us 1 string 50 2 ]
+"263
+[v _sd001 sd001 `CS391  1 e 52 0 ]
+[s S395 . 26 `uc 1 bLength 1 0 `uc 1 bDscType 1 1 `[12]us 1 string 24 2 ]
+"269
+[v _sd002 sd002 `CS395  1 e 26 0 ]
+"275
+[v _USB_CD_Ptr USB_CD_Ptr `C[1]*.25Cuc  1 e 2 0 ]
+"281
+[v _USB_SD_Ptr USB_SD_Ptr `C[3]*.25Cuc  1 e 6 0 ]
+"141 C:\Users\migue\MPLABXProjects\MickeyAirlines.X\mcc_generated_files/usb/usb_device.c
+[v _USBDeviceState USBDeviceState `VEE297  1 e 1 0 ]
+"142
+[v _USBActiveConfiguration USBActiveConfiguration `VEuc  1 e 1 0 ]
+"143
+[v _USBAlternateInterface USBAlternateInterface `VE[2]uc  1 e 2 0 ]
+[s S780 . 1 `uc 1 BC8 1 0 :1:0 
+`uc 1 BC9 1 0 :1:1 
+`uc 1 BSTALL 1 0 :1:2 
+`uc 1 DTSEN 1 0 :1:3 
+`uc 1 INCDIS 1 0 :1:4 
+`uc 1 KEN 1 0 :1:5 
+`uc 1 DTS 1 0 :1:6 
+`uc 1 UOWN 1 0 :1:7 
+]
+"144
+[s S789 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID0 1 0 :1:2 
+`uc 1 PID1 1 0 :1:3 
+`uc 1 PID2 1 0 :1:4 
+`uc 1 PID3 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+]
+[s S796 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[u S800 _BD_STAT 1 `uc 1 Val 1 0 `S780 1 . 1 0 `S789 1 . 1 0 `S796 1 . 1 0 ]
+[s S805 . 4 `S800 1 STAT 1 0 `uc 1 CNT 1 1 `uc 1 ADRL 1 2 `uc 1 ADRH 1 3 ]
+[s S810 . 4 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`us 1 ADR 2 2 ]
+[u S814 __BDT 4 `S805 1 . 4 0 `S810 1 . 4 0 `ul 1 Val 4 0 `[4]uc 1 v 4 0 ]
+[v _pBDTEntryEP0OutCurrent pBDTEntryEP0OutCurrent `*.39VES814  1 e 2 0 ]
+"145
+[v _pBDTEntryEP0OutNext pBDTEntryEP0OutNext `*.39VES814  1 e 2 0 ]
+"146
+[v _pBDTEntryOut pBDTEntryOut `[3]*.39VES814  1 e 6 0 ]
+"147
+[v _pBDTEntryIn pBDTEntryIn `[3]*.39VES814  1 e 6 0 ]
+"148
+[v _shortPacketStatus shortPacketStatus `VEuc  1 e 1 0 ]
+"149
+[v _controlTransferState controlTransferState `VEuc  1 e 1 0 ]
+[u S681 . 3 `*.2uc 1 bRam 3 0 `*.2Cuc 1 bRom 3 0 `*.2us 1 wRam 3 0 `*.2Cus 1 wRom 3 0 ]
+"150
+[s S686 . 1 `uc 1 ctrl_trf_mem 1 0 :1:0 
+`uc 1 reserved 1 0 :5:1 
+`uc 1 includeZero 1 0 :1:6 
+`uc 1 busy 1 0 :1:7 
+]
+[u S691 . 1 `S686 1 bits 1 0 `uc 1 Val 1 0 ]
+[s S467 . 2 `uc 1 LB 1 0 `uc 1 HB 1 1 ]
+[u S470 . 2 `us 1 Val 2 0 `[2]uc 1 v 2 0 `S467 1 byte 2 0 ]
+[s S701 . 6 `S681 1 pSrc 3 0 `S691 1 info 1 3 `S470 1 wCount 2 4 ]
+[v _inPipes inPipes `VE[1]S701  1 e 6 0 ]
+[u S706 . 3 `*.2uc 1 bRam 3 0 `*.2us 1 wRam 3 0 ]
+"151
+[s S709 . 1 `uc 1 reserved 1 0 :7:0 
+`uc 1 busy 1 0 :1:7 
+]
+[u S712 . 1 `S709 1 bits 1 0 `uc 1 Val 1 0 ]
+[s S716 . 8 `S706 1 pDst 3 0 `S712 1 info 1 3 `S470 1 wCount 2 4 `*.37(v 1 pFunc 2 6 ]
+[v _outPipes outPipes `VE[1]S716  1 e 8 0 ]
+"152
+[v _pDst pDst `*.39VEuc  1 e 2 0 ]
+"153
+[v _RemoteWakeup RemoteWakeup `VEa  1 e 1 0 ]
+"154
+[v _USBBusIsSuspended USBBusIsSuspended `VEa  1 e 1 0 ]
+[s S1122 . 1 `uc 1 filler1 1 0 :1:0 
+`uc 1 ping_pong 1 0 :1:1 
+`uc 1 direction 1 0 :1:2 
+`uc 1 endpoint_number 1 0 :4:3 
+]
+"155
+[u S1127 __USTAT 1 `S1122 1 . 1 0 `uc 1 Val 1 0 ]
+[v _USTATcopy USTATcopy `VES1127  1 e 1 0 ]
+"156
+[v _endpoint_number endpoint_number `VEuc  1 e 1 0 ]
+"157
+[v _BothEP0OutUOWNsSet BothEP0OutUOWNsSet `VEa  1 e 1 0 ]
+[s S1130 . 1 `uc 1 ping_pong_state 1 0 :1:0 
+`uc 1 transfer_terminated 1 0 :1:1 
+]
+"158
+[u S1133 . 1 `S1130 1 bits 1 0 `uc 1 Val 1 0 ]
+[v _ep_data_in ep_data_in `VE[3]S1133  1 e 3 0 ]
+"159
+[v _ep_data_out ep_data_out `VE[3]S1133  1 e 3 0 ]
+"160
+[v _USBStatusStageTimeoutCounter USBStatusStageTimeoutCounter `VEuc  1 e 1 0 ]
+"161
+[v _USBDeferStatusStagePacket USBDeferStatusStagePacket `VEa  1 e 1 0 ]
+"162
+[v _USBStatusStageEnabledFlag1 USBStatusStageEnabledFlag1 `VEa  1 e 1 0 ]
+"163
+[v _USBStatusStageEnabledFlag2 USBStatusStageEnabledFlag2 `VEa  1 e 1 0 ]
+"164
+[v _USBDeferINDataStagePackets USBDeferINDataStagePackets `VEa  1 e 1 0 ]
+"165
+[v _USBDeferOUTDataStagePackets USBDeferOUTDataStagePackets `VEa  1 e 1 0 ]
+"166
+[v _USB1msTickCount USB1msTickCount `VEul  1 e 4 0 ]
+"167
+[v _USBTicksSinceSuspendEnd USBTicksSinceSuspendEnd `VEuc  1 e 1 0 ]
+"174
+[v _BDT BDT `VE[12]S814  1 e 48 @1024 ]
+[s S461 . 8 `uc 1 bmRequestType 1 0 `uc 1 bRequest 1 1 `us 1 wValue 2 2 `us 1 wIndex 2 4 `us 1 wLength 2 6 ]
+"179
+[s S488 . 8 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`S470 1 W_Value 2 2 `S470 1 W_Index 2 4 `S470 1 W_Length 2 6 ]
+[s S494 . 8 `uc 1 Recipient 1 0 :5:0 
+`uc 1 RequestType 1 0 :2:5 
+`uc 1 DataDir 1 0 :1:7 
+`uc 1 . 1 1 :8:0 
+`uc 1 bFeature 1 2 `uc 1 . 1 3 :8:0 
+`uc 1 . 1 4 :8:0 
+`uc 1 . 1 5 :8:0 
+`uc 1 . 1 6 :8:0 
+`uc 1 . 1 7 :8:0 
+]
+[s S505 . 1 `uc 1 recipient 1 0 :5:0 
+`uc 1 type 1 0 :2:5 
+`uc 1 direction 1 0 :1:7 
+]
+[u S509 . 1 `uc 1 bmRequestType 1 0 `S505 1 . 1 0 ]
+[s S512 . 1 `S509 1 requestInfo 1 0 ]
+[s S514 . 8 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`uc 1 bDscIndex 1 2 `uc 1 bDescriptorType 1 3 `us 1 wLangID 2 4 `uc 1 . 1 6 :8:0 
+`uc 1 . 1 7 :8:0 
+]
+[s S522 . 8 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`uc 1 bDevADR 1 2 `uc 1 bDevADRH 1 3 `uc 1 . 1 4 :8:0 
+`uc 1 . 1 5 :8:0 
+`uc 1 . 1 6 :8:0 
+`uc 1 . 1 7 :8:0 
+]
+[s S531 . 8 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`uc 1 bConfigurationValue 1 2 `uc 1 bCfgRSD 1 3 `uc 1 . 1 4 :8:0 
+`uc 1 . 1 5 :8:0 
+`uc 1 . 1 6 :8:0 
+`uc 1 . 1 7 :8:0 
+]
+[s S540 . 8 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`uc 1 bAltID 1 2 `uc 1 bAltID_H 1 3 `uc 1 bIntfID 1 4 `uc 1 bIntfID_H 1 5 `uc 1 . 1 6 :8:0 
+`uc 1 . 1 7 :8:0 
+]
+[s S549 . 8 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`uc 1 . 1 2 :8:0 
+`uc 1 . 1 3 :8:0 
+`uc 1 bEPID 1 4 `uc 1 bEPID_H 1 5 `uc 1 . 1 6 :8:0 
+`uc 1 . 1 7 :8:0 
+]
+[s S558 . 8 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`uc 1 . 1 2 :8:0 
+`uc 1 . 1 3 :8:0 
+`uc 1 EPNum 1 4 :4:0 
+`uc 1 . 1 4 :3:4 
+`uc 1 EPDir 1 4 :1:7 
+`uc 1 . 1 5 :8:0 
+`uc 1 . 1 6 :8:0 
+`uc 1 . 1 7 :8:0 
+]
+[u S569 . 8 `S461 1 . 8 0 `S488 1 . 8 0 `S494 1 . 8 0 `S512 1 . 1 0 `S514 1 . 8 0 `S522 1 . 8 0 `S531 1 . 8 0 `S540 1 . 8 0 `S549 1 . 8 0 `S558 1 . 8 0 ]
+[v _SetupPkt SetupPkt `VES569  1 e 8 @1072 ]
+"180
+[v _CtrlTrfData CtrlTrfData `VE[8]uc  1 e 8 @1080 ]
+"65 C:\Users\migue\MPLABXProjects\MickeyAirlines.X\mcc_generated_files/usb/usb_device_cdc.c
+[v _cdc_data_tx cdc_data_tx `VE[64]uc  1 e 64 @1280 ]
+"66
+[v _cdc_data_rx cdc_data_rx `VE[64]uc  1 e 64 @1344 ]
+[s S431 . 7 `[7]uc 1 _byte 7 0 ]
+"76
+[s S433 . 7 `ul 1 dwDTERate 4 0 `uc 1 bCharFormat 1 4 `uc 1 bParityType 1 5 `uc 1 bDataBits 1 6 ]
+[u S438 _LINE_CODING 7 `S431 1 . 7 0 `S433 1 . 7 0 ]
+[v _line_coding line_coding `S438  1 e 7 0 ]
+"83
+[v _cdc_rx_len cdc_rx_len `uc  1 e 1 0 ]
+"84
+[v _cdc_trf_state cdc_trf_state `uc  1 e 1 0 ]
+[s S445 . 2 `uc 1 bLow 1 0 `uc 1 bHigh 1 1 ]
+"85
+[u S448 _POINTER 3 `S445 1 . 2 0 `us 1 _word 2 0 `*.2uc 1 bRam 3 0 `*.2us 1 wRam 3 0 `*.2Cuc 1 bRom 3 0 `*.2Cus 1 wRom 3 0 ]
+[v _pCDCSrc pCDCSrc `S448  1 e 3 0 ]
+"86
+[v _pCDCDst pCDCDst `S448  1 e 3 0 ]
+"87
+[v _cdc_tx_len cdc_tx_len `uc  1 e 1 0 ]
+"88
+[v _cdc_mem_type cdc_mem_type `uc  1 e 1 0 ]
+"90
+[v _CDCDataOutHandle CDCDataOutHandle `*.39v  1 e 2 0 ]
+"91
+[v _CDCDataInHandle CDCDataInHandle `*.39v  1 e 2 0 ]
+[s S455 . 1 `uc 1 DTE_PRESENT 1 0 :1:0 
+`uc 1 CARRIER_CONTROL 1 0 :1:1 
+]
+"94
+[u S458 _CONTROL_SIGNAL_BITMAP 1 `uc 1 _byte 1 0 `S455 1 . 1 0 ]
+[v _control_signal_bitmap control_signal_bitmap `S458  1 e 1 0 ]
+"110
+[v _dummy_encapsulated_cmd_response dummy_encapsulated_cmd_response `[8]uc  1 e 8 0 ]
+"48 C:\Users\migue\MPLABXProjects\MickeyAirlines.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"58
+[v main@bytes bytes `*.39uc  1 a 2 122 ]
+[u S3753 MPU6050_Byteable 4 `f 1 value 4 0 `[4]uc 1 bytes 4 0 ]
+"52
+[s S3756 . 12 `S3753 1 x 4 0 `S3753 1 y 4 4 `S3753 1 z 4 8 ]
+[s S3760 . 28 `S3756 1 accelerometer 12 0 `S3756 1 gyroscope 12 12 `S3753 1 temperature 4 24 ]
+[v main@data data `S3760  1 a 28 94 ]
+"69
+} 0
+"574 C:\Users\migue\MPLABXProjects\MickeyAirlines.X\mcc_generated_files/usb/usb_device_cdc.c
+[v _putUSBUSART putUSBUSART `(v  1 e 1 0 ]
+{
+[v putUSBUSART@data data `*.39uc  1 p 2 10 ]
+[v putUSBUSART@length length `uc  1 p 1 12 ]
+"605
+} 0
+"27 C:\Users\migue\MPLABXProjects\MickeyAirlines.X\main.c
+[v _init init `(v  1 e 1 0 ]
+{
+"46
+} 0
+"50 C:\Users\migue\MPLABXProjects\MickeyAirlines.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"59
+} 0
+"281 C:\Users\migue\MPLABXProjects\MickeyAirlines.X\mcc_generated_files/usb/usb_device.c
+[v _USBDeviceInit USBDeviceInit `(v  1 e 1 0 ]
+{
+"283
+[v USBDeviceInit@i i `uc  1 a 1 12 ]
+"375
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\memset.c
+[v _memset memset `(*.39v  1 e 2 0 ]
+{
+"6
+[v memset@s s `*.39uc  1 a 2 10 ]
+"7
+[v memset@k k `ui  1 a 2 8 ]
+"4
+[v memset@dest dest `*.39v  1 p 2 0 ]
+[v memset@c c `i  1 p 2 2 ]
+[v memset@n n `ui  1 p 2 4 ]
+"90
+} 0
+"1356 C:\Users\migue\MPLABXProjects\MickeyAirlines.X\mcc_generated_files/usb/usb_device.c
+[v _USBDeviceAttach USBDeviceAttach `(v  1 e 1 0 ]
+{
+"1386
+} 0
+"55 C:\Users\migue\MPLABXProjects\MickeyAirlines.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"97
+} 0
+"61 C:\Users\migue\MPLABXProjects\MickeyAirlines.X\mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"75
+} 0
+"52 C:\Users\migue\MPLABXProjects\MickeyAirlines.X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
+{
+"56
+} 0
+"167 C:\Users\migue\MPLABXProjects\MickeyAirlines.X\mcc_generated_files/i2c1_master.c
+[v _I2C1_Initialize I2C1_Initialize `(v  1 e 1 0 ]
+{
+"174
+} 0
+"20 C:\Users\migue\MPLABXProjects\MickeyAirlines.X\mpu6050.c
+[v _MPU6050_Initialize MPU6050_Initialize `(v  1 e 1 0 ]
+{
+"34
+} 0
+"43 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+{
+"45
+[v ___fltol@exp1 exp1 `uc  1 a 1 9 ]
+[v ___fltol@sign1 sign1 `uc  1 a 1 8 ]
+"43
+[v ___fltol@f1 f1 `d  1 p 4 0 ]
+"70
+} 0
+"55 C:\Users\migue\MPLABXProjects\MickeyAirlines.X/mpu6050.h
+"50
+"44
+[u S3753 MPU6050_Byteable 4 `f 1 value 4 0 `[4]uc 1 bytes 4 0 ]
+"36 C:\Users\migue\MPLABXProjects\MickeyAirlines.X\mpu6050.c
+[s S3756 . 12 `S3753 1 x 4 0 `S3753 1 y 4 4 `S3753 1 z 4 8 ]
+[s S3760 . 28 `S3756 1 accelerometer 12 0 `S3756 1 gyroscope 12 12 `S3753 1 temperature 4 24 ]
+[v _MPU6050_ReadSensor MPU6050_ReadSensor `(S3760  1 e 28 0 ]
+{
+"52
+[v MPU6050_ReadSensor@i i `uc  1 a 1 22 ]
+"38
+[v MPU6050_ReadSensor@data data `S3760  1 a 28 24 ]
+"42
+[v MPU6050_ReadSensor@fifoData fifoData `[14]uc  1 a 14 6 ]
+"39
+[v MPU6050_ReadSensor@fifoCounter fifoCounter `us  1 a 2 20 ]
+"41
+[v MPU6050_ReadSensor@t t `[2]uc  1 a 2 0 ]
+"43
+[v MPU6050_ReadSensor@sizePacket sizePacket `uc  1 a 1 23 ]
+"74
+} 0
+"51 C:\Users\migue\MPLABXProjects\MickeyAirlines.X\mcc_generated_files/drivers/i2c_simple_master.c
+[v _i2c_write1ByteRegister i2c_write1ByteRegister `(v  1 e 1 0 ]
+{
+[v i2c_write1ByteRegister@address address `uc  1 a 1 wreg ]
+[v i2c_write1ByteRegister@address address `uc  1 a 1 wreg ]
+[v i2c_write1ByteRegister@reg reg `uc  1 p 1 9 ]
+[v i2c_write1ByteRegister@data data `uc  1 p 1 10 ]
+[v i2c_write1ByteRegister@address address `uc  1 a 1 11 ]
+"59
+} 0
+"203
+[v _i2c_readDataBlock i2c_readDataBlock `(v  1 e 1 0 ]
+{
+[v i2c_readDataBlock@address address `uc  1 a 1 wreg ]
+[s S77 . 4 `ui 1 len 2 0 `*.39uc 1 data 2 2 ]
+"206
+[v i2c_readDataBlock@d d `S77  1 a 4 15 ]
+"203
+[v i2c_readDataBlock@address address `uc  1 a 1 wreg ]
+[v i2c_readDataBlock@reg reg `uc  1 p 1 9 ]
+[v i2c_readDataBlock@data data `*.39v  1 p 2 10 ]
+[v i2c_readDataBlock@len len `ui  1 p 2 12 ]
+"207
+[v i2c_readDataBlock@address address `uc  1 a 1 14 ]
+"216
+} 0
+"135
+[v _i2c_read2ByteRegister i2c_read2ByteRegister `(us  1 e 2 0 ]
+{
+[v i2c_read2ByteRegister@address address `uc  1 a 1 wreg ]
+"138
+[v i2c_read2ByteRegister@result result `us  1 a 2 15 ]
+"135
+[v i2c_read2ByteRegister@address address `uc  1 a 1 wreg ]
+[v i2c_read2ByteRegister@reg reg `uc  1 p 1 9 ]
+[v i2c_read2ByteRegister@address address `uc  1 a 1 14 ]
+"148
+} 0
+"274 C:\Users\migue\MPLABXProjects\MickeyAirlines.X\mcc_generated_files/i2c1_master.c
+[v _I2C1_SetDataCompleteCallback I2C1_SetDataCompleteCallback `(v  1 e 1 0 ]
+{
+[v I2C1_SetDataCompleteCallback@cb cb `*.37(E360  1 p 2 5 ]
+[v I2C1_SetDataCompleteCallback@ptr ptr `*.39v  1 p 2 7 ]
+"277
+} 0
+"264
+[v _I2C1_SetBuffer I2C1_SetBuffer `(v  1 e 1 0 ]
+{
+[v I2C1_SetBuffer@buffer buffer `*.39v  1 p 2 0 ]
+[v I2C1_SetBuffer@bufferSize bufferSize `ui  1 p 2 2 ]
+"272
+} 0
+"284
+[v _I2C1_SetAddressNackCallback I2C1_SetAddressNackCallback `(v  1 e 1 0 ]
+{
+[v I2C1_SetAddressNackCallback@cb cb `*.37(E360  1 p 2 5 ]
+[v I2C1_SetAddressNackCallback@ptr ptr `*.2v  1 p 2 7 ]
+"287
+} 0
+"304
+[v _I2C1_SetCallback I2C1_SetCallback `(v  1 s 1 I2C1_SetCallback ]
+{
+[v I2C1_SetCallback@idx idx `E5259  1 a 1 wreg ]
+[v I2C1_SetCallback@idx idx `E5259  1 a 1 wreg ]
+[v I2C1_SetCallback@cb cb `*.37(E360  1 p 2 0 ]
+[v I2C1_SetCallback@ptr ptr `*.39v  1 p 2 2 ]
+"306
+[v I2C1_SetCallback@idx idx `E5259  1 a 1 4 ]
+"316
+} 0
+"176
+[v _I2C1_Open I2C1_Open `(E355  1 e 1 0 ]
+{
+[v I2C1_Open@address address `uc  1 a 1 wreg ]
+"178
+[v I2C1_Open@returnValue returnValue `E355  1 a 1 3 ]
+"176
+[v I2C1_Open@address address `uc  1 a 1 wreg ]
+"178
+[v I2C1_Open@address address `uc  1 a 1 2 ]
+"209
+} 0
+"299
+[v _I2C1_SetInterruptHandler I2C1_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v I2C1_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
+"302
+} 0
+"544
+[v _I2C1_MasterOpen I2C1_MasterOpen `T(a  1 s 1 I2C1_MasterOpen ]
+{
+"556
+} 0
+"627
+[v _I2C1_MasterEnableIrq I2C1_MasterEnableIrq `T(v  1 s 1 I2C1_MasterEnableIrq ]
+{
+"630
+} 0
+"252
+[v _I2C1_MasterWrite I2C1_MasterWrite `(E355  1 e 1 0 ]
+{
+"255
+} 0
+"226
+[v _I2C1_MasterOperation I2C1_MasterOperation `(E355  1 e 1 0 ]
+{
+[v I2C1_MasterOperation@read read `a  1 a 1 wreg ]
+"228
+[v I2C1_MasterOperation@returnValue returnValue `E355  1 a 1 1 ]
+"226
+[v I2C1_MasterOperation@read read `a  1 a 1 wreg ]
+"228
+[v I2C1_MasterOperation@read read `a  1 a 1 0 ]
+"245
+} 0
+"589
+[v _I2C1_MasterStart I2C1_MasterStart `T(v  1 s 1 I2C1_MasterStart ]
+{
+"592
+} 0
+"211
+[v _I2C1_Close I2C1_Close `(E355  1 e 1 0 ]
+{
+"213
+[v I2C1_Close@returnValue returnValue `E355  1 a 1 0 ]
+"224
+} 0
+"637
+[v _I2C1_MasterDisableIrq I2C1_MasterDisableIrq `T(v  1 s 1 I2C1_MasterDisableIrq ]
+{
+"640
+} 0
+"558
+[v _I2C1_MasterClose I2C1_MasterClose `T(v  1 s 1 I2C1_MasterClose ]
+{
+"562
+} 0
+"642
+[v _I2C1_MasterClearIrq I2C1_MasterClearIrq `T(v  1 s 1 I2C1_MasterClearIrq ]
+{
+"645
+} 0
+"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+{
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+"13
+[v ___xxtofl@arg arg `ul  1 a 4 18 ]
+"12
+[v ___xxtofl@exp exp `uc  1 a 1 17 ]
+"10
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+[v ___xxtofl@val val `l  1 p 4 8 ]
+"15
+[v ___xxtofl@sign sign `uc  1 a 1 16 ]
+"44
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 5 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 4 ]
+"7
+[v ___lwdiv@dividend dividend `ui  1 p 2 0 ]
+[v ___lwdiv@divisor divisor `ui  1 p 2 2 ]
+"30
+} 0
+"11 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+{
+"21
+[v ___fldiv@grs grs `ul  1 a 4 41 ]
+"22
+[v ___fldiv@rem rem `ul  1 a 4 34 ]
+"20
+[v ___fldiv@new_exp new_exp `s  1 a 2 39 ]
+"19
+[v ___fldiv@aexp aexp `uc  1 a 1 46 ]
+"18
+[v ___fldiv@bexp bexp `uc  1 a 1 45 ]
+"16
+[v ___fldiv@sign sign `uc  1 a 1 38 ]
+"11
+[v ___fldiv@b b `d  1 p 4 22 ]
+[v ___fldiv@a a `d  1 p 4 26 ]
+"185
+} 0
+"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+{
+"17
+[v ___fladd@grs grs `uc  1 a 1 62 ]
+"15
+[v ___fladd@bexp bexp `uc  1 a 1 61 ]
+"16
+[v ___fladd@aexp aexp `uc  1 a 1 60 ]
+"13
+[v ___fladd@signs signs `uc  1 a 1 59 ]
+"10
+[v ___fladd@b b `d  1 p 4 47 ]
+[v ___fladd@a a `d  1 p 4 51 ]
+"237
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"10
+[v ___awdiv@quotient quotient `i  1 a 2 6 ]
+"11
+[v ___awdiv@sign sign `uc  1 a 1 5 ]
+[v ___awdiv@counter counter `uc  1 a 1 4 ]
+"7
+[v ___awdiv@dividend dividend `i  1 p 2 0 ]
+[v ___awdiv@divisor divisor `i  1 p 2 2 ]
+"41
+} 0
+"89 C:\Users\migue\MPLABXProjects\MickeyAirlines.X\mpu6050.c
+[v _MPU6050_Data_2_Uint8 MPU6050_Data_2_Uint8 `(*.39uc  1 e 2 0 ]
+{
+"104
+[v MPU6050_Data_2_Uint8@response response `[40]uc  1 a 40 39 ]
+[u S3753 MPU6050_Byteable 4 `f 1 value 4 0 `[4]uc 1 bytes 4 0 ]
+"105
+[v MPU6050_Data_2_Uint8@delimiter delimiter `S3753  1 a 4 83 ]
+[v MPU6050_Data_2_Uint8@msgSize msgSize `S3753  1 a 4 79 ]
+"89
+[s S3756 . 12 `S3753 1 x 4 0 `S3753 1 y 4 4 `S3753 1 z 4 8 ]
+[s S3760 . 28 `S3756 1 accelerometer 12 0 `S3756 1 gyroscope 12 12 `S3753 1 temperature 4 24 ]
+[v MPU6050_Data_2_Uint8@data data `S3760  1 p 28 11 ]
+"133
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\memcpy.c
+[v _memcpy memcpy `(*.39v  1 e 2 0 ]
+{
+"8
+[v memcpy@s s `*.39Cuc  1 a 2 9 ]
+"7
+[v memcpy@d d `*.39uc  1 a 2 7 ]
+"9
+[v memcpy@tmp tmp `uc  1 a 1 6 ]
+"4
+[v memcpy@d1 d1 `*.39v  1 p 2 0 ]
+[v memcpy@s1 s1 `*.39Cv  1 p 2 2 ]
+[v memcpy@n n `ui  1 p 2 4 ]
+"18
+} 0
+"854 C:\Users\migue\MPLABXProjects\MickeyAirlines.X\mcc_generated_files/usb/usb_device_cdc.c
+[v _CDCTxService CDCTxService `(v  1 e 1 0 ]
+{
+"856
+[v CDCTxService@byte_to_send byte_to_send `uc  1 a 1 12 ]
+"857
+[v CDCTxService@i i `uc  1 a 1 11 ]
+"950
+} 0
+"999 C:\Users\migue\MPLABXProjects\MickeyAirlines.X\mcc_generated_files/usb/usb_device.c
+[v _USBTransferOnePacket USBTransferOnePacket `(*.39v  1 e 2 0 ]
+{
+[v USBTransferOnePacket@ep ep `uc  1 a 1 wreg ]
+[s S780 . 1 `uc 1 BC8 1 0 :1:0 
+`uc 1 BC9 1 0 :1:1 
+`uc 1 BSTALL 1 0 :1:2 
+`uc 1 DTSEN 1 0 :1:3 
+`uc 1 INCDIS 1 0 :1:4 
+`uc 1 KEN 1 0 :1:5 
+`uc 1 DTS 1 0 :1:6 
+`uc 1 UOWN 1 0 :1:7 
+]
+"1001
+[s S789 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID0 1 0 :1:2 
+`uc 1 PID1 1 0 :1:3 
+`uc 1 PID2 1 0 :1:4 
+`uc 1 PID3 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+]
+[s S796 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[u S800 _BD_STAT 1 `uc 1 Val 1 0 `S780 1 . 1 0 `S789 1 . 1 0 `S796 1 . 1 0 ]
+[s S805 . 4 `S800 1 STAT 1 0 `uc 1 CNT 1 1 `uc 1 ADRL 1 2 `uc 1 ADRH 1 3 ]
+[s S810 . 4 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`us 1 ADR 2 2 ]
+[u S814 __BDT 4 `S805 1 . 4 0 `S810 1 . 4 0 `ul 1 Val 4 0 `[4]uc 1 v 4 0 ]
+[v USBTransferOnePacket@handle handle `*.39VES814  1 a 2 9 ]
+"999
+[v USBTransferOnePacket@ep ep `uc  1 a 1 wreg ]
+[v USBTransferOnePacket@dir dir `uc  1 p 1 0 ]
+[v USBTransferOnePacket@data data `*.39uc  1 p 2 1 ]
+[v USBTransferOnePacket@len len `uc  1 p 1 3 ]
+"1004
+[v USBTransferOnePacket@ep ep `uc  1 a 1 8 ]
+"1051
+} 0
+"58 C:\Users\migue\MPLABXProjects\MickeyAirlines.X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `IIH(v  1 e 1 0 ]
+{
+"84
+} 0
+"481 C:\Users\migue\MPLABXProjects\MickeyAirlines.X\mcc_generated_files/usb/usb_device.c
+[v _USBDeviceTasks USBDeviceTasks `(v  1 e 1 0 ]
+{
+"483
+[v USBDeviceTasks@i i `uc  1 a 1 30 ]
+"831
+} 0
+"281
+[v i2_USBDeviceInit USBDeviceInit `(v  1 e 1 0 ]
+{
+"283
+[v i2USBDeviceInit@i i `uc  1 a 1 12 ]
+"375
+} 0
+"2307
+[v _USBWakeFromSuspend USBWakeFromSuspend `(v  1 s 1 USBWakeFromSuspend ]
+{
+"2353
+} 0
+"2249
+[v _USBSuspend USBSuspend `(v  1 s 1 USBSuspend ]
+{
+"2290
+} 0
+"2206
+[v _USBStallHandler USBStallHandler `(v  1 s 1 USBStallHandler ]
+{
+"2231
+} 0
+"3029
+[v _USBIncrement1msInternalTimers USBIncrement1msInternalTimers `(v  1 e 1 0 ]
+{
+"3047
+} 0
+"2376
+[v _USBCtrlEPService USBCtrlEPService `(v  1 s 1 USBCtrlEPService ]
+{
+"2427
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\memcpy.c
+[v i2_memcpy memcpy `(*.39v  1 e 2 0 ]
+{
+"8
+[v i2memcpy@s s `*.39Cuc  1 a 2 8 ]
+"7
+[v i2memcpy@d d `*.39uc  1 a 2 6 ]
+"9
+[v i2memcpy@tmp tmp `uc  1 a 1 10 ]
+"4
+[v i2memcpy@d1 d1 `*.39v  1 p 2 0 ]
+[v i2memcpy@s1 s1 `*.39Cv  1 p 2 2 ]
+[v i2memcpy@n n `ui  1 p 2 4 ]
+"18
+} 0
+"2469 C:\Users\migue\MPLABXProjects\MickeyAirlines.X\mcc_generated_files/usb/usb_device.c
+[v _USBCtrlTrfSetupHandler USBCtrlTrfSetupHandler `(v  1 s 1 USBCtrlTrfSetupHandler ]
+{
+"2519
+} 0
+"1620
+[v _USBCtrlEPServiceComplete USBCtrlEPServiceComplete `(v  1 s 1 USBCtrlEPServiceComplete ]
+{
+"1752
+} 0
+"1492
+[v _USBCtrlEPAllowDataStage USBCtrlEPAllowDataStage `(v  1 e 1 0 ]
+{
+"1522
+} 0
+"2690
+[v _USBCheckStdRequest USBCheckStdRequest `(v  1 s 1 USBCheckStdRequest ]
+{
+"2737
+} 0
+"1972
+[v _USBStdSetCfgHandler USBStdSetCfgHandler `(v  1 s 1 USBStdSetCfgHandler ]
+{
+"1974
+[v USBStdSetCfgHandler@i i `uc  1 a 1 20 ]
+"2028
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\memset.c
+[v i2_memset memset `(*.39v  1 e 2 0 ]
+{
+"6
+[v i2memset@s s `*.39uc  1 a 2 10 ]
+"7
+[v i2memset@k k `ui  1 a 2 8 ]
+"4
+[v i2memset@dest dest `*.39v  1 p 2 0 ]
+[v i2memset@c c `i  1 p 2 2 ]
+[v i2memset@n n `ui  1 p 2 4 ]
+"90
+} 0
+"2133 C:\Users\migue\MPLABXProjects\MickeyAirlines.X\mcc_generated_files/usb/usb_device.c
+[v _USBStdGetStatusHandler USBStdGetStatusHandler `(v  1 s 1 USBStdGetStatusHandler ]
+{
+[s S780 . 1 `uc 1 BC8 1 0 :1:0 
+`uc 1 BC9 1 0 :1:1 
+`uc 1 BSTALL 1 0 :1:2 
+`uc 1 DTSEN 1 0 :1:3 
+`uc 1 INCDIS 1 0 :1:4 
+`uc 1 KEN 1 0 :1:5 
+`uc 1 DTS 1 0 :1:6 
+`uc 1 UOWN 1 0 :1:7 
+]
+"2165
+[s S789 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID0 1 0 :1:2 
+`uc 1 PID1 1 0 :1:3 
+`uc 1 PID2 1 0 :1:4 
+`uc 1 PID3 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+]
+[s S796 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[u S800 _BD_STAT 1 `uc 1 Val 1 0 `S780 1 . 1 0 `S789 1 . 1 0 `S796 1 . 1 0 ]
+[s S805 . 4 `S800 1 STAT 1 0 `uc 1 CNT 1 1 `uc 1 ADRL 1 2 `uc 1 ADRH 1 3 ]
+[s S810 . 4 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`us 1 ADR 2 2 ]
+[u S814 __BDT 4 `S805 1 . 4 0 `S810 1 . 4 0 `ul 1 Val 4 0 `[4]uc 1 v 4 0 ]
+[v USBStdGetStatusHandler@p p `*.39S814  1 a 2 2 ]
+"2188
+} 0
+"2047
+[v _USBStdGetDscHandler USBStdGetDscHandler `(v  1 s 1 USBStdGetDscHandler ]
+{
+"2116
+} 0
+"2758
+[v _USBStdFeatureReqHandler USBStdFeatureReqHandler `(v  1 s 1 USBStdFeatureReqHandler ]
+{
+[s S780 . 1 `uc 1 BC8 1 0 :1:0 
+`uc 1 BC9 1 0 :1:1 
+`uc 1 BSTALL 1 0 :1:2 
+`uc 1 DTSEN 1 0 :1:3 
+`uc 1 INCDIS 1 0 :1:4 
+`uc 1 KEN 1 0 :1:5 
+`uc 1 DTS 1 0 :1:6 
+`uc 1 UOWN 1 0 :1:7 
+]
+"2760
+[s S789 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID0 1 0 :1:2 
+`uc 1 PID1 1 0 :1:3 
+`uc 1 PID2 1 0 :1:4 
+`uc 1 PID3 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+]
+[s S796 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[u S800 _BD_STAT 1 `uc 1 Val 1 0 `S780 1 . 1 0 `S789 1 . 1 0 `S796 1 . 1 0 ]
+[s S805 . 4 `S800 1 STAT 1 0 `uc 1 CNT 1 1 `uc 1 ADRL 1 2 `uc 1 ADRH 1 3 ]
+[s S810 . 4 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`us 1 ADR 2 2 ]
+[u S814 __BDT 4 `S805 1 . 4 0 `S810 1 . 4 0 `ul 1 Val 4 0 `[4]uc 1 v 4 0 ]
+[v USBStdFeatureReqHandler@p p `*.39S814  1 a 2 25 ]
+"2765
+[v USBStdFeatureReqHandler@pUEP pUEP `*.39uc  1 a 2 22 ]
+[s S1130 . 1 `uc 1 ping_pong_state 1 0 :1:0 
+`uc 1 transfer_terminated 1 0 :1:1 
+]
+"2761
+[u S1133 . 1 `S1130 1 bits 1 0 `uc 1 Val 1 0 ]
+[v USBStdFeatureReqHandler@current_ep_data current_ep_data `S1133  1 a 1 24 ]
+"2984
+} 0
+"49 C:\Users\migue\MPLABXProjects\MickeyAirlines.X\mcc_generated_files/usb/usb_device_events.c
+[v _USER_USB_CALLBACK_EVENT_HANDLER USER_USB_CALLBACK_EVENT_HANDLER `(a  1 e 1 0 ]
+{
+[v USER_USB_CALLBACK_EVENT_HANDLER@event event `E46  1 p 2 12 ]
+[v USER_USB_CALLBACK_EVENT_HANDLER@pdata pdata `*.39v  1 p 2 14 ]
+[v USER_USB_CALLBACK_EVENT_HANDLER@size size `us  1 p 2 16 ]
+"98
+} 0
+"147 C:\Users\migue\MPLABXProjects\MickeyAirlines.X\mcc_generated_files/usb/usb_device_cdc.c
+[v _USBCheckCDCRequest USBCheckCDCRequest `(v  1 e 1 0 ]
+{
+"260
+} 0
+"294
+[v _CDCInitEP CDCInitEP `(v  1 e 1 0 ]
+{
+"347
+} 0
+"999 C:\Users\migue\MPLABXProjects\MickeyAirlines.X\mcc_generated_files/usb/usb_device.c
+[v i2_USBTransferOnePacket USBTransferOnePacket `(*.39v  1 e 2 0 ]
+{
+[v i2USBTransferOnePacket@ep ep `uc  1 a 1 wreg ]
+[s S780 . 1 `uc 1 BC8 1 0 :1:0 
+`uc 1 BC9 1 0 :1:1 
+`uc 1 BSTALL 1 0 :1:2 
+`uc 1 DTSEN 1 0 :1:3 
+`uc 1 INCDIS 1 0 :1:4 
+`uc 1 KEN 1 0 :1:5 
+`uc 1 DTS 1 0 :1:6 
+`uc 1 UOWN 1 0 :1:7 
+]
+"1001
+[s S789 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID0 1 0 :1:2 
+`uc 1 PID1 1 0 :1:3 
+`uc 1 PID2 1 0 :1:4 
+`uc 1 PID3 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+]
+[s S796 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[u S800 _BD_STAT 1 `uc 1 Val 1 0 `S780 1 . 1 0 `S789 1 . 1 0 `S796 1 . 1 0 ]
+[s S805 . 4 `S800 1 STAT 1 0 `uc 1 CNT 1 1 `uc 1 ADRL 1 2 `uc 1 ADRH 1 3 ]
+[s S810 . 4 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`us 1 ADR 2 2 ]
+[u S814 __BDT 4 `S805 1 . 4 0 `S810 1 . 4 0 `ul 1 Val 4 0 `[4]uc 1 v 4 0 ]
+[v i2USBTransferOnePacket@handle handle `*.39VES814  1 a 2 9 ]
+"999
+[v i2USBTransferOnePacket@ep ep `uc  1 a 1 wreg ]
+[v i2USBTransferOnePacket@dir dir `uc  1 p 1 0 ]
+[v i2USBTransferOnePacket@data data `*.39uc  1 p 2 1 ]
+[v i2USBTransferOnePacket@len len `uc  1 p 1 3 ]
+"1004
+[v i2USBTransferOnePacket@ep ep `uc  1 a 1 8 ]
+"1051
+} 0
+"882
+[v _USBEnableEndpoint USBEnableEndpoint `(v  1 e 1 0 ]
+{
+[v USBEnableEndpoint@ep ep `uc  1 a 1 wreg ]
+"884
+[v USBEnableEndpoint@p p `*.39uc  1 a 2 9 ]
+"882
+[v USBEnableEndpoint@ep ep `uc  1 a 1 wreg ]
+[v USBEnableEndpoint@options options `uc  1 p 1 8 ]
+"888
+[v USBEnableEndpoint@ep ep `uc  1 a 1 11 ]
+"906
+} 0
+"1547
+[v _USBConfigureEndpoint USBConfigureEndpoint `(v  1 s 1 USBConfigureEndpoint ]
+{
+[v USBConfigureEndpoint@EPNum EPNum `uc  1 a 1 wreg ]
+[s S780 . 1 `uc 1 BC8 1 0 :1:0 
+`uc 1 BC9 1 0 :1:1 
+`uc 1 BSTALL 1 0 :1:2 
+`uc 1 DTSEN 1 0 :1:3 
+`uc 1 INCDIS 1 0 :1:4 
+`uc 1 KEN 1 0 :1:5 
+`uc 1 DTS 1 0 :1:6 
+`uc 1 UOWN 1 0 :1:7 
+]
+"1549
+[s S789 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID0 1 0 :1:2 
+`uc 1 PID1 1 0 :1:3 
+`uc 1 PID2 1 0 :1:4 
+`uc 1 PID3 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+]
+[s S796 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[u S800 _BD_STAT 1 `uc 1 Val 1 0 `S780 1 . 1 0 `S789 1 . 1 0 `S796 1 . 1 0 ]
+[s S805 . 4 `S800 1 STAT 1 0 `uc 1 CNT 1 1 `uc 1 ADRL 1 2 `uc 1 ADRH 1 3 ]
+[s S810 . 4 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`us 1 ADR 2 2 ]
+[u S814 __BDT 4 `S805 1 . 4 0 `S810 1 . 4 0 `ul 1 Val 4 0 `[4]uc 1 v 4 0 ]
+[v USBConfigureEndpoint@handle handle `*.39VES814  1 a 2 6 ]
+"1547
+[v USBConfigureEndpoint@EPNum EPNum `uc  1 a 1 wreg ]
+[v USBConfigureEndpoint@direction direction `uc  1 p 1 0 ]
+"1553
+[v USBConfigureEndpoint@EPNum EPNum `uc  1 a 1 5 ]
+"1589
+} 0
+"2542
+[v _USBCtrlTrfOutHandler USBCtrlTrfOutHandler `(v  1 s 1 USBCtrlTrfOutHandler ]
+{
+"2571
+} 0
+"1856
+[v _USBCtrlTrfRxService USBCtrlTrfRxService `(v  1 s 1 USBCtrlTrfRxService ]
+{
+"1858
+[v USBCtrlTrfRxService@byteToRead byteToRead `uc  1 a 1 1 ]
+"1859
+[v USBCtrlTrfRxService@i i `uc  1 a 1 0 ]
+"1951
+} 0
+"1420
+[v _USBCtrlEPAllowStatusStage USBCtrlEPAllowStatusStage `(v  1 e 1 0 ]
+{
+"1463
+} 0
+"2596
+[v _USBCtrlTrfInHandler USBCtrlTrfInHandler `(v  1 s 1 USBCtrlTrfInHandler ]
+{
+"2598
+[v USBCtrlTrfInHandler@lastDTS lastDTS `uc  1 a 1 1 ]
+"2671
+} 0
+"1775
+[v _USBCtrlTrfTxService USBCtrlTrfTxService `(v  1 s 1 USBCtrlTrfTxService ]
+{
+"1777
+[v USBCtrlTrfTxService@byteToSend byteToSend `uc  1 a 1 0 ]
+"1829
+} 0
+"318 C:\Users\migue\MPLABXProjects\MickeyAirlines.X\mcc_generated_files/i2c1_master.c
+[v _I2C1_MasterIsr I2C1_MasterIsr `(v  1 s 1 I2C1_MasterIsr ]
+{
+"321
+} 0
+"323
+[v _I2C1_MasterFsm I2C1_MasterFsm `T(v  1 s 1 I2C1_MasterFsm ]
+{
+"332
+} 0
+"642
+[v i2_I2C1_MasterClearIrq I2C1_MasterClearIrq `T(v  1 s 1 i2_I2C1_MasterClearIrq ]
+{
+"645
+} 0
+"501
+[v _I2C1_DO_ADDRESS_NACK I2C1_DO_ADDRESS_NACK `(E5241  1 s 1 I2C1_DO_ADDRESS_NACK ]
+{
+"513
+} 0
+"495
+[v _I2C1_DO_RESET I2C1_DO_RESET `(E5241  1 s 1 I2C1_DO_RESET ]
+{
+"500
+} 0
+"489
+[v _I2C1_DO_RX_NACK_RESTART I2C1_DO_RX_NACK_RESTART `(E5241  1 s 1 I2C1_DO_RX_NACK_RESTART ]
+{
+"493
+} 0
+"483
+[v _I2C1_DO_RX_NACK_STOP I2C1_DO_RX_NACK_STOP `(E5241  1 s 1 I2C1_DO_RX_NACK_STOP ]
+{
+"487
+} 0
+"476
+[v _I2C1_DO_RX_ACK I2C1_DO_RX_ACK `(E5241  1 s 1 I2C1_DO_RX_ACK ]
+{
+"480
+} 0
+"470
+[v _I2C1_DO_SEND_STOP I2C1_DO_SEND_STOP `(E5241  1 s 1 I2C1_DO_SEND_STOP ]
+{
+"474
+} 0
+"464
+[v _I2C1_DO_SEND_RESTART I2C1_DO_SEND_RESTART `(E5241  1 s 1 I2C1_DO_SEND_RESTART ]
+{
+"468
+} 0
+"457
+[v _I2C1_DO_SEND_RESTART_WRITE I2C1_DO_SEND_RESTART_WRITE `(E5241  1 s 1 I2C1_DO_SEND_RESTART_WRITE ]
+{
+"461
+} 0
+"451
+[v _I2C1_DO_SEND_RESTART_READ I2C1_DO_SEND_RESTART_READ `(E5241  1 s 1 I2C1_DO_SEND_RESTART_READ ]
+{
+"455
+} 0
+"404
+[v _I2C1_DO_RCEN I2C1_DO_RCEN `(E5241  1 s 1 I2C1_DO_RCEN ]
+{
+"409
+} 0
+"380
+[v _I2C1_DO_RX I2C1_DO_RX `(E5241  1 s 1 I2C1_DO_RX ]
+{
+"402
+} 0
+"356
+[v _I2C1_DO_TX I2C1_DO_TX `(E5241  1 s 1 I2C1_DO_TX ]
+{
+"378
+} 0
+"349
+[v _I2C1_DO_SEND_ADR_WRITE I2C1_DO_SEND_ADR_WRITE `(E5241  1 s 1 I2C1_DO_SEND_ADR_WRITE ]
+{
+"354
+} 0
+"342
+[v _I2C1_DO_SEND_ADR_READ I2C1_DO_SEND_ADR_READ `(E5241  1 s 1 I2C1_DO_SEND_ADR_READ ]
+{
+"347
+} 0
+"335
+[v _I2C1_DO_IDLE I2C1_DO_IDLE `(E5241  1 s 1 I2C1_DO_IDLE ]
+{
+"340
+} 0
+"411
+[v _I2C1_DO_TX_EMPTY I2C1_DO_TX_EMPTY `(E5241  1 s 1 I2C1_DO_TX_EMPTY ]
+{
+"426
+} 0
+"647
+[v _I2C1_MasterSetIrq I2C1_MasterSetIrq `T(v  1 s 1 I2C1_MasterSetIrq ]
+{
+"650
+} 0
+"599
+[v _I2C1_MasterIsNack I2C1_MasterIsNack `T(a  1 s 1 I2C1_MasterIsNack ]
+{
+"602
+} 0
+"569
+[v _I2C1_MasterSendTxData I2C1_MasterSendTxData `T(v  1 s 1 I2C1_MasterSendTxData ]
+{
+[v I2C1_MasterSendTxData@data data `uc  1 a 1 wreg ]
+[v I2C1_MasterSendTxData@data data `uc  1 a 1 wreg ]
+"571
+[v I2C1_MasterSendTxData@data data `uc  1 a 1 0 ]
+"572
+} 0
+"604
+[v _I2C1_MasterSendAck I2C1_MasterSendAck `T(v  1 s 1 I2C1_MasterSendAck ]
+{
+"608
+} 0
+"564
+[v _I2C1_MasterGetRxData I2C1_MasterGetRxData `T(uc  1 s 1 I2C1_MasterGetRxData ]
+{
+"567
+} 0
+"610
+[v _I2C1_MasterSendNack I2C1_MasterSendNack `T(v  1 s 1 I2C1_MasterSendNack ]
+{
+"614
+} 0
+"584
+[v _I2C1_MasterStartRx I2C1_MasterStartRx `T(v  1 s 1 I2C1_MasterStartRx ]
+{
+"587
+} 0
+"526
+[v _I2C1_CallbackReturnReset I2C1_CallbackReturnReset `(E360  1 e 1 0 ]
+{
+[v I2C1_CallbackReturnReset@funPtr funPtr `*.39v  1 p 2 9 ]
+"529
+} 0
+"521
+[v _I2C1_CallbackReturnStop I2C1_CallbackReturnStop `(E360  1 e 1 0 ]
+{
+"524
+} 0
+"169 C:\Users\migue\MPLABXProjects\MickeyAirlines.X\mcc_generated_files/examples/i2c1_master_example.c
+[v _rdBlkRegCompleteHandler@i2c1_master_example$F182 rdBlkRegCompleteHandler `(E360  1 s 1 rdBlkRegCompleteHandler ]
+{
+[v rdBlkRegCompleteHandler@i2c1_master_example$F182@ptr ptr `*.39v  1 p 2 9 ]
+"174
+} 0
+"155
+[v _wr1RegCompleteHandler@i2c1_master_example$F165 wr1RegCompleteHandler `(E360  1 s 1 wr1RegCompleteHandler ]
+{
+[v wr1RegCompleteHandler@i2c1_master_example$F165@ptr ptr `*.39v  1 p 2 9 ]
+"160
+} 0
+"148
+[v _rd2RegCompleteHandler@i2c1_master_example$F159 rd2RegCompleteHandler `(E360  1 s 1 rd2RegCompleteHandler ]
+{
+[v rd2RegCompleteHandler@i2c1_master_example$F159@ptr ptr `*.39v  1 p 2 9 ]
+"153
+} 0
+"141
+[v _rd1RegCompleteHandler@i2c1_master_example$F148 rd1RegCompleteHandler `(E360  1 s 1 rd1RegCompleteHandler ]
+{
+[v rd1RegCompleteHandler@i2c1_master_example$F148@ptr ptr `*.39v  1 p 2 9 ]
+"146
+} 0
+"185 C:\Users\migue\MPLABXProjects\MickeyAirlines.X\mcc_generated_files/drivers/i2c_simple_master.c
+[v _rdBlkRegCompleteHandler rdBlkRegCompleteHandler `(E360  1 s 1 rdBlkRegCompleteHandler ]
+{
+[v rdBlkRegCompleteHandler@p p `*.39v  1 p 2 9 ]
+"190
+} 0
+"151
+[v _wr2RegCompleteHandler wr2RegCompleteHandler `(E360  1 s 1 wr2RegCompleteHandler ]
+{
+[v wr2RegCompleteHandler@p p `*.39v  1 p 2 9 ]
+"156
+} 0
+"119
+[v _rd2RegCompleteHandler rd2RegCompleteHandler `(E360  1 s 1 rd2RegCompleteHandler ]
+{
+[v rd2RegCompleteHandler@p p `*.39v  1 p 2 9 ]
+"124
+} 0
+"81
+[v _rd1RegCompleteHandler rd1RegCompleteHandler `(E360  1 s 1 rd1RegCompleteHandler ]
+{
+[v rd1RegCompleteHandler@p p `*.39v  1 p 2 9 ]
+"86
+} 0
+"34
+[v _wr1RegCompleteHandler wr1RegCompleteHandler `(E360  1 s 1 wr1RegCompleteHandler ]
+{
+[v wr1RegCompleteHandler@p p `*.39v  1 p 2 9 ]
+"39
+} 0
+"162 C:\Users\migue\MPLABXProjects\MickeyAirlines.X\mcc_generated_files/examples/i2c1_master_example.c
+[v _wr2RegCompleteHandler@i2c1_master_example$F171 wr2RegCompleteHandler `(E360  1 s 1 wr2RegCompleteHandler ]
+{
+[v wr2RegCompleteHandler@i2c1_master_example$F171@ptr ptr `*.39v  1 p 2 9 ]
+"167
+} 0
+"274 C:\Users\migue\MPLABXProjects\MickeyAirlines.X\mcc_generated_files/i2c1_master.c
+[v i2_I2C1_SetDataCompleteCallback I2C1_SetDataCompleteCallback `(v  1 e 1 0 ]
+{
+[v i2I2C1_SetDataCompleteCallback@cb cb `*.37(E360  1 p 2 5 ]
+[v i2I2C1_SetDataCompleteCallback@ptr ptr `*.39v  1 p 2 7 ]
+"277
+} 0
+"304
+[v i2_I2C1_SetCallback I2C1_SetCallback `(v  1 s 1 i2_I2C1_SetCallback ]
+{
+[v i2I2C1_SetCallback@idx idx `E5259  1 a 1 wreg ]
+[v i2I2C1_SetCallback@idx idx `E5259  1 a 1 wreg ]
+[v i2I2C1_SetCallback@cb cb `*.37(E360  1 p 2 0 ]
+[v i2I2C1_SetCallback@ptr ptr `*.39v  1 p 2 2 ]
+"306
+[v i2I2C1_SetCallback@idx idx `E5259  1 a 1 4 ]
+"316
+} 0
+"264
+[v i2_I2C1_SetBuffer I2C1_SetBuffer `(v  1 e 1 0 ]
+{
+[v i2I2C1_SetBuffer@buffer buffer `*.39v  1 p 2 0 ]
+[v i2I2C1_SetBuffer@bufferSize bufferSize `ui  1 p 2 2 ]
+"272
+} 0
+"594
+[v _I2C1_MasterStop I2C1_MasterStop `T(v  1 s 1 I2C1_MasterStop ]
+{
+"597
+} 0
+"574
+[v _I2C1_MasterEnableRestart I2C1_MasterEnableRestart `T(v  1 s 1 I2C1_MasterEnableRestart ]
+{
+"577
+} 0

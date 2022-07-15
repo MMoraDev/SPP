@@ -1,0 +1,2680 @@
+Version 4.0 HI-TECH Software Intermediate Code
+[v F428 `(v ~T0 @X0 0 tf ]
+"146 mcc_generated_files/i2c1_master.c
+[; ;mcc_generated_files/i2c1_master.c: 146: const i2c1FsmHandler i2c1_fsmStateTable[] = {
+[c E5241 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 .. ]
+[n E5241 . I2C1_IDLE I2C1_SEND_ADR_READ I2C1_SEND_ADR_WRITE I2C1_TX I2C1_RX I2C1_RCEN I2C1_TX_EMPTY I2C1_SEND_RESTART_READ I2C1_SEND_RESTART_WRITE I2C1_SEND_RESTART I2C1_SEND_STOP I2C1_RX_ACK I2C1_RX_NACK_STOP I2C1_RX_NACK_RESTART I2C1_RESET I2C1_ADDRESS_NACK  ]
+[v F5355 `(E5241 ~T0 @X0 0 tf ]
+"127
+[; ;mcc_generated_files/i2c1_master.c: 127: static i2c1_fsm_states_t I2C1_DO_IDLE(void);
+[v _I2C1_DO_IDLE `(E5241 ~T0 @X0 0 sf ]
+"128
+[; ;mcc_generated_files/i2c1_master.c: 128: static i2c1_fsm_states_t I2C1_DO_SEND_ADR_READ(void);
+[v _I2C1_DO_SEND_ADR_READ `(E5241 ~T0 @X0 0 sf ]
+"129
+[; ;mcc_generated_files/i2c1_master.c: 129: static i2c1_fsm_states_t I2C1_DO_SEND_ADR_WRITE(void);
+[v _I2C1_DO_SEND_ADR_WRITE `(E5241 ~T0 @X0 0 sf ]
+"130
+[; ;mcc_generated_files/i2c1_master.c: 130: static i2c1_fsm_states_t I2C1_DO_TX(void);
+[v _I2C1_DO_TX `(E5241 ~T0 @X0 0 sf ]
+"131
+[; ;mcc_generated_files/i2c1_master.c: 131: static i2c1_fsm_states_t I2C1_DO_RX(void);
+[v _I2C1_DO_RX `(E5241 ~T0 @X0 0 sf ]
+"132
+[; ;mcc_generated_files/i2c1_master.c: 132: static i2c1_fsm_states_t I2C1_DO_RCEN(void);
+[v _I2C1_DO_RCEN `(E5241 ~T0 @X0 0 sf ]
+"133
+[; ;mcc_generated_files/i2c1_master.c: 133: static i2c1_fsm_states_t I2C1_DO_TX_EMPTY(void);
+[v _I2C1_DO_TX_EMPTY `(E5241 ~T0 @X0 0 sf ]
+"134
+[; ;mcc_generated_files/i2c1_master.c: 134: static i2c1_fsm_states_t I2C1_DO_SEND_RESTART_READ(void);
+[v _I2C1_DO_SEND_RESTART_READ `(E5241 ~T0 @X0 0 sf ]
+"135
+[; ;mcc_generated_files/i2c1_master.c: 135: static i2c1_fsm_states_t I2C1_DO_SEND_RESTART_WRITE(void);
+[v _I2C1_DO_SEND_RESTART_WRITE `(E5241 ~T0 @X0 0 sf ]
+"136
+[; ;mcc_generated_files/i2c1_master.c: 136: static i2c1_fsm_states_t I2C1_DO_SEND_RESTART(void);
+[v _I2C1_DO_SEND_RESTART `(E5241 ~T0 @X0 0 sf ]
+"137
+[; ;mcc_generated_files/i2c1_master.c: 137: static i2c1_fsm_states_t I2C1_DO_SEND_STOP(void);
+[v _I2C1_DO_SEND_STOP `(E5241 ~T0 @X0 0 sf ]
+"138
+[; ;mcc_generated_files/i2c1_master.c: 138: static i2c1_fsm_states_t I2C1_DO_RX_ACK(void);
+[v _I2C1_DO_RX_ACK `(E5241 ~T0 @X0 0 sf ]
+"139
+[; ;mcc_generated_files/i2c1_master.c: 139: static i2c1_fsm_states_t I2C1_DO_RX_NACK_STOP(void);
+[v _I2C1_DO_RX_NACK_STOP `(E5241 ~T0 @X0 0 sf ]
+"140
+[; ;mcc_generated_files/i2c1_master.c: 140: static i2c1_fsm_states_t I2C1_DO_RX_NACK_RESTART(void);
+[v _I2C1_DO_RX_NACK_RESTART `(E5241 ~T0 @X0 0 sf ]
+"141
+[; ;mcc_generated_files/i2c1_master.c: 141: static i2c1_fsm_states_t I2C1_DO_RESET(void);
+[v _I2C1_DO_RESET `(E5241 ~T0 @X0 0 sf ]
+"142
+[; ;mcc_generated_files/i2c1_master.c: 142: static i2c1_fsm_states_t I2C1_DO_ADDRESS_NACK(void);
+[v _I2C1_DO_ADDRESS_NACK `(E5241 ~T0 @X0 0 sf ]
+"165
+[; ;mcc_generated_files/i2c1_master.c: 165: i2c1_status_t I2C1_Status = {0};
+[c E360 1 2 3 4 5 .. ]
+[n E360 . I2C1_STOP I2C1_RESTART_READ I2C1_RESTART_WRITE I2C1_CONTINUE I2C1_RESET_LINK  ]
+[v F5269 `(E360 ~T0 @X0 0 tf1`*v ]
+[c E355 0 1 2 .. ]
+[n E355 . I2C1_NOERR I2C1_BUSY I2C1_FAIL  ]
+"83
+[; ;mcc_generated_files/i2c1_master.c: 83: {
+[s S638 `*F5269 -> 6 `i `*v -> 6 `i `us 1 `us 1 `uc 1 `*uc 1 `ui 1 `E5241 1 `E355 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S638 . callbackTable callbackPayload time_out time_out_value address data_ptr data_length state error addressNackCheck busy inUse bufferFree ]
+[v F5373 `(E360 ~T0 @X0 0 tf1`*v ]
+"10592 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 10592: extern volatile unsigned char SSP1STAT __attribute__((address(0xFC7)));
+[v _SSP1STAT `Vuc ~T0 @X0 0 e@4039 ]
+"10238
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 10238: extern volatile unsigned char SSP1CON1 __attribute__((address(0xFC6)));
+[v _SSP1CON1 `Vuc ~T0 @X0 0 e@4038 ]
+"9884
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 9884: extern volatile unsigned char SSP1CON2 __attribute__((address(0xFC5)));
+[v _SSP1CON2 `Vuc ~T0 @X0 0 e@4037 ]
+"11190
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 11190: extern volatile unsigned char SSP1ADD __attribute__((address(0xFC8)));
+[v _SSP1ADD `Vuc ~T0 @X0 0 e@4040 ]
+"10253
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 10253:     struct {
+[s S456 :4 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S456 . SSPM CKP SSPEN SSPOV WCOL ]
+"10260
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 10260:     struct {
+[s S457 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S457 . SSPM0 SSPM1 SSPM2 SSPM3 ]
+"10266
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 10266:     struct {
+[s S458 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S458 . SSPM01 SSPM11 SSPM21 SSPM31 CKP1 SSPEN1 SSPOV1 WCOL1 ]
+"10252
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 10252: typedef union {
+[u S455 `S456 1 `S457 1 `S458 1 ]
+[n S455 . . . . ]
+"10277
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 10277: extern volatile SSP1CON1bits_t SSP1CON1bits __attribute__((address(0xFC6)));
+[v _SSP1CON1bits `VS455 ~T0 @X0 0 e@4038 ]
+"191 mcc_generated_files/i2c1_master.c
+[; ;mcc_generated_files/i2c1_master.c: 191:         I2C1_Status.callbackTable[I2C1_DATA_COMPLETE]=I2C1_CallbackReturnStop;
+[c E5259 0 1 2 3 4 5 .. ]
+[n E5259 . I2C1_DATA_COMPLETE I2C1_WRITE_COLLISION I2C1_ADDR_NACK I2C1_DATA_NACK I2C1_TIMEOUT I2C1_NULL  ]
+"79 mcc_generated_files/i2c1_master.h
+[; ;mcc_generated_files/i2c1_master.h: 79: i2c1_operations_t I2C1_CallbackReturnStop(void *funPtr);
+[v _I2C1_CallbackReturnStop `(E360 ~T0 @X0 0 ef1`*v ]
+"80
+[; ;mcc_generated_files/i2c1_master.h: 80: i2c1_operations_t I2C1_CallbackReturnReset(void *funPtr);
+[v _I2C1_CallbackReturnReset `(E360 ~T0 @X0 0 ef1`*v ]
+[v F430 `(v ~T0 @X0 0 tf ]
+"222
+[; ;mcc_generated_files/i2c1_master.h: 222: void I2C1_SetInterruptHandler(void (* InterruptHandler)(void));
+[v _I2C1_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F430 ]
+"101 mcc_generated_files/i2c1_master.c
+[; ;mcc_generated_files/i2c1_master.c: 101: static void I2C1_MasterIsr(void);
+[v _I2C1_MasterIsr `(v ~T0 @X0 0 sf ]
+[v F5329 `(v ~T0 @X0 1 tf ]
+"123
+[; ;mcc_generated_files/i2c1_master.c: 123: static __attribute__((inline)) void I2C1_MasterClearIrq(void);
+[v _I2C1_MasterClearIrq `TF5329 ~T0 @X0 0 s ]
+[v F5296 `(a ~T0 @X0 1 tf ]
+"105
+[; ;mcc_generated_files/i2c1_master.c: 105: static __attribute__((inline)) _Bool I2C1_MasterOpen(void);
+[v _I2C1_MasterOpen `TF5296 ~T0 @X0 0 s ]
+[v F5323 `(v ~T0 @X0 1 tf ]
+"120
+[; ;mcc_generated_files/i2c1_master.c: 120: static __attribute__((inline)) void I2C1_MasterEnableIrq(void);
+[v _I2C1_MasterEnableIrq `TF5323 ~T0 @X0 0 s ]
+[v F5327 `(v ~T0 @X0 1 tf ]
+"122
+[; ;mcc_generated_files/i2c1_master.c: 122: static __attribute__((inline)) void I2C1_MasterDisableIrq(void);
+[v _I2C1_MasterDisableIrq `TF5327 ~T0 @X0 0 s ]
+[v F5298 `(v ~T0 @X0 1 tf ]
+"106
+[; ;mcc_generated_files/i2c1_master.c: 106: static __attribute__((inline)) void I2C1_MasterClose(void);
+[v _I2C1_MasterClose `TF5298 ~T0 @X0 0 s ]
+[v F5311 `(v ~T0 @X0 1 tf ]
+"112
+[; ;mcc_generated_files/i2c1_master.c: 112: static __attribute__((inline)) void I2C1_MasterStart(void);
+[v _I2C1_MasterStart `TF5311 ~T0 @X0 0 s ]
+[v F5453 `(E360 ~T0 @X0 0 tf1`*v ]
+[v F5456 `(E360 ~T0 @X0 0 tf1`*v ]
+[v F5285 `(E360 ~T0 @X0 0 tf1`*v ]
+"100
+[; ;mcc_generated_files/i2c1_master.c: 100: static void I2C1_SetCallback(i2c1_callbackIndex_t idx, i2c1_callback_t cb, void *ptr);
+[v _I2C1_SetCallback `(v ~T0 @X0 0 sf3`E5259`*F5285`*v ]
+[v F5460 `(E360 ~T0 @X0 0 tf1`*v ]
+[v F5463 `(E360 ~T0 @X0 0 tf1`*v ]
+[v F5467 `(E360 ~T0 @X0 0 tf1`*v ]
+[v F5470 `(E360 ~T0 @X0 0 tf1`*v ]
+[v F5474 `(E360 ~T0 @X0 0 tf1`*v ]
+[v F5477 `(E360 ~T0 @X0 0 tf1`*v ]
+[v F5481 `(E360 ~T0 @X0 0 tf1`*v ]
+[v F5484 `(E360 ~T0 @X0 0 tf1`*v ]
+[v F5488 `(v ~T0 @X0 0 tf ]
+[v F5490 `(v ~T0 @X0 0 tf ]
+[v F5493 `(E360 ~T0 @X0 0 tf1`*v ]
+[v F5497 `(E360 ~T0 @X0 0 tf1`*v ]
+[v F5500 `(E360 ~T0 @X0 0 tf1`*v ]
+[v F5294 `(v ~T0 @X0 1 tf ]
+"102
+[; ;mcc_generated_files/i2c1_master.c: 102: static __attribute__((inline)) void I2C1_MasterFsm(void);
+[v _I2C1_MasterFsm `TF5294 ~T0 @X0 0 s ]
+[v F5315 `(a ~T0 @X0 1 tf ]
+"114
+[; ;mcc_generated_files/i2c1_master.c: 114: static __attribute__((inline)) _Bool I2C1_MasterIsNack(void);
+[v _I2C1_MasterIsNack `TF5315 ~T0 @X0 0 s ]
+[v F5302 `(v ~T0 @X0 1 tf1`uc ]
+"108
+[; ;mcc_generated_files/i2c1_master.c: 108: static __attribute__((inline)) void I2C1_MasterSendTxData(uint8_t data);
+[v _I2C1_MasterSendTxData `TF5302 ~T0 @X0 0 s ]
+[v F5300 `(uc ~T0 @X0 1 tf ]
+"107
+[; ;mcc_generated_files/i2c1_master.c: 107: static __attribute__((inline)) uint8_t I2C1_MasterGetRxData(void);
+[v _I2C1_MasterGetRxData `TF5300 ~T0 @X0 0 s ]
+[v F5317 `(v ~T0 @X0 1 tf ]
+"115
+[; ;mcc_generated_files/i2c1_master.c: 115: static __attribute__((inline)) void I2C1_MasterSendAck(void);
+[v _I2C1_MasterSendAck `TF5317 ~T0 @X0 0 s ]
+[v F5309 `(v ~T0 @X0 1 tf ]
+"111
+[; ;mcc_generated_files/i2c1_master.c: 111: static __attribute__((inline)) void I2C1_MasterStartRx(void);
+[v _I2C1_MasterStartRx `TF5309 ~T0 @X0 0 s ]
+[v F5331 `(v ~T0 @X0 1 tf ]
+"124
+[; ;mcc_generated_files/i2c1_master.c: 124: static __attribute__((inline)) void I2C1_MasterSetIrq(void);
+[v _I2C1_MasterSetIrq `TF5331 ~T0 @X0 0 s ]
+[v F5305 `(v ~T0 @X0 1 tf ]
+"109
+[; ;mcc_generated_files/i2c1_master.c: 109: static __attribute__((inline)) void I2C1_MasterEnableRestart(void);
+[v _I2C1_MasterEnableRestart `TF5305 ~T0 @X0 0 s ]
+[v F5307 `(v ~T0 @X0 1 tf ]
+"110
+[; ;mcc_generated_files/i2c1_master.c: 110: static __attribute__((inline)) void I2C1_MasterDisableRestart(void);
+[v _I2C1_MasterDisableRestart `TF5307 ~T0 @X0 0 s ]
+[v F5313 `(v ~T0 @X0 1 tf ]
+"113
+[; ;mcc_generated_files/i2c1_master.c: 113: static __attribute__((inline)) void I2C1_MasterStop(void);
+[v _I2C1_MasterStop `TF5313 ~T0 @X0 0 s ]
+[v F5319 `(v ~T0 @X0 1 tf ]
+"116
+[; ;mcc_generated_files/i2c1_master.c: 116: static __attribute__((inline)) void I2C1_MasterSendNack(void);
+[v _I2C1_MasterSendNack `TF5319 ~T0 @X0 0 s ]
+[v F5321 `(v ~T0 @X0 1 tf ]
+"117
+[; ;mcc_generated_files/i2c1_master.c: 117: static __attribute__((inline)) void I2C1_MasterClearBusCollision(void);
+[v _I2C1_MasterClearBusCollision `TF5321 ~T0 @X0 0 s ]
+"11528 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 11528: extern volatile unsigned char SSP1BUF __attribute__((address(0xFC9)));
+[v _SSP1BUF `Vuc ~T0 @X0 0 e@4041 ]
+"9895
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 9895:     struct {
+[s S446 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S446 . SEN RSEN PEN RCEN ACKEN ACKDT ACKSTAT GCEN ]
+"9905
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 9905:     struct {
+[s S447 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S447 . SEN1 ADMSK1 ADMSK2 ADMSK3 ACKEN1 ACKDT1 ACKSTAT1 GCEN1 ]
+"9915
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 9915:     struct {
+[s S448 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S448 . . ADMSK11 ADMSK21 ADMSK31 ADMSK4 ADMSK5 ]
+"9923
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 9923:     struct {
+[s S449 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S449 . . RSEN1 PEN1 RCEN1 ADMSK41 ADMSK51 ]
+"9894
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 9894: typedef union {
+[u S445 `S446 1 `S447 1 `S448 1 `S449 1 ]
+[n S445 . . . . . ]
+"9932
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 9932: extern volatile SSP1CON2bits_t SSP1CON2bits __attribute__((address(0xFC5)));
+[v _SSP1CON2bits `VS445 ~T0 @X0 0 e@4037 ]
+"6592
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 6592:     struct {
+[s S269 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S269 . CCP2IF TMR3IF HLVDIF BCLIF EEIF C2IF C1IF OSCFIF ]
+"6602
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 6602:     struct {
+[s S270 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S270 . . LVDIF BCL1IF . CM2IF CM1IF ]
+"6610
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 6610:     struct {
+[s S271 :6 `uc 1 :1 `uc 1 ]
+[n S271 . . CMIF ]
+"6591
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 6591: typedef union {
+[u S268 `S269 1 `S270 1 `S271 1 ]
+[n S268 . . . . ]
+"6615
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 6615: extern volatile PIR2bits_t PIR2bits __attribute__((address(0xFA1)));
+[v _PIR2bits `VS268 ~T0 @X0 0 e@4001 ]
+"10603
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 10603:     struct {
+[s S468 :2 `uc 1 :1 `uc 1 ]
+[n S468 . . R_NOT_W ]
+"10607
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 10607:     struct {
+[s S469 :5 `uc 1 :1 `uc 1 ]
+[n S469 . . D_NOT_A ]
+"10611
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 10611:     struct {
+[s S470 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S470 . BF UA R_nW S P D_nA CKE SMP ]
+"10621
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 10621:     struct {
+[s S471 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S471 . BF1 UA1 I2C_READ I2C_START I2C_STOP D CKE1 SMP1 ]
+"10631
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 10631:     struct {
+[s S472 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S472 . . R START STOP DA ]
+"10638
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 10638:     struct {
+[s S473 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S473 . . READ_WRITE START1 STOP1 DA1 ]
+"10645
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 10645:     struct {
+[s S474 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S474 . . RW . DATA_ADDRESS ]
+"10651
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 10651:     struct {
+[s S475 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S475 . . RW1 . D_A ]
+"10657
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 10657:     struct {
+[s S476 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S476 . . R_W . I2C_DAT ]
+"10663
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 10663:     struct {
+[s S477 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S477 . . nW . nA ]
+"10669
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 10669:     struct {
+[s S478 :2 `uc 1 :1 `uc 1 ]
+[n S478 . . NOT_WRITE ]
+"10673
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 10673:     struct {
+[s S479 :5 `uc 1 :1 `uc 1 ]
+[n S479 . . NOT_ADDRESS ]
+"10677
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 10677:     struct {
+[s S480 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S480 . . nWRITE . nADDRESS ]
+"10683
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 10683:     struct {
+[s S481 :2 `uc 1 :1 `uc 1 ]
+[n S481 . . NOT_W ]
+"10687
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 10687:     struct {
+[s S482 :5 `uc 1 :1 `uc 1 ]
+[n S482 . . NOT_A ]
+"10602
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 10602: typedef union {
+[u S467 `S468 1 `S469 1 `S470 1 `S471 1 `S472 1 `S473 1 `S474 1 `S475 1 `S476 1 `S477 1 `S478 1 `S479 1 `S480 1 `S481 1 `S482 1 ]
+[n S467 . . . . . . . . . . . . . . . . ]
+"10692
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 10692: extern volatile SSP1STATbits_t SSP1STATbits __attribute__((address(0xFC7)));
+[v _SSP1STATbits `VS467 ~T0 @X0 0 e@4039 ]
+"6196
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 6196:     struct {
+[s S253 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S253 . TMR1IE TMR2IE CCP1IE SSPIE TXIE RCIE ADIE ACTIE ]
+"6206
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 6206:     struct {
+[s S254 :3 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S254 . . SSP1IE TX1IE RC1IE . STIE ]
+"6214
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 6214:     struct {
+[s S255 :7 `uc 1 :1 `uc 1 ]
+[n S255 . . PSPIE ]
+"6195
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 6195: typedef union {
+[u S252 `S253 1 `S254 1 `S255 1 ]
+[n S252 . . . . ]
+"6219
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 6219: extern volatile PIE1bits_t PIE1bits __attribute__((address(0xF9D)));
+[v _PIE1bits `VS252 ~T0 @X0 0 e@3997 ]
+"6295
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 6295:     struct {
+[s S257 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S257 . TMR1IF TMR2IF CCP1IF SSPIF TXIF RCIF ADIF ACTIF ]
+"6305
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 6305:     struct {
+[s S258 :3 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S258 . . SSP1IF TX1IF RC1IF . STIF ]
+"6313
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 6313:     struct {
+[s S259 :7 `uc 1 :1 `uc 1 ]
+[n S259 . . PSPIF ]
+"6294
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 6294: typedef union {
+[u S256 `S257 1 `S258 1 `S259 1 ]
+[n S256 . . . . ]
+"6318
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 6318: extern volatile PIR1bits_t PIR1bits __attribute__((address(0xF9E)));
+[v _PIR1bits `VS256 ~T0 @X0 0 e@3998 ]
+"213 mcc_generated_files/i2c1_master.h
+[; ;mcc_generated_files/i2c1_master.h: 213: void (*MSSP1_InterruptHandler)(void);
+[v _MSSP1_InterruptHandler `*F428 ~T0 @X0 1 e ]
+"54 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 54: __asm("SRCON1 equ 0F57h");
+[; <" SRCON1 equ 0F57h ;# ">
+"116
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 116: __asm("SRCON0 equ 0F58h");
+[; <" SRCON0 equ 0F58h ;# ">
+"187
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 187: __asm("CCPTMRS equ 0F59h");
+[; <" CCPTMRS equ 0F59h ;# ">
+"214
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 214: __asm("VREGCON equ 0F5Ah");
+[; <" VREGCON equ 0F5Ah ;# ">
+"234
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 234: __asm("ANSELA equ 0F5Bh");
+[; <" ANSELA equ 0F5Bh ;# ">
+"279
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 279: __asm("ANSELB equ 0F5Ch");
+[; <" ANSELB equ 0F5Ch ;# ">
+"329
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 329: __asm("ANSELC equ 0F5Dh");
+[; <" ANSELC equ 0F5Dh ;# ">
+"363
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 363: __asm("ANSELD equ 0F5Eh");
+[; <" ANSELD equ 0F5Eh ;# ">
+"425
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 425: __asm("ANSELE equ 0F5Fh");
+[; <" ANSELE equ 0F5Fh ;# ">
+"457
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 457: __asm("UCON equ 0F60h");
+[; <" UCON equ 0F60h ;# ">
+"508
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 508: __asm("USTAT equ 0F61h");
+[; <" USTAT equ 0F61h ;# ">
+"568
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 568: __asm("UCFG equ 0F62h");
+[; <" UCFG equ 0F62h ;# ">
+"647
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 647: __asm("UADDR equ 0F63h");
+[; <" UADDR equ 0F63h ;# ">
+"711
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 711: __asm("UIE equ 0F64h");
+[; <" UIE equ 0F64h ;# ">
+"767
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 767: __asm("UIR equ 0F65h");
+[; <" UIR equ 0F65h ;# ">
+"823
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 823: __asm("UEIE equ 0F66h");
+[; <" UEIE equ 0F66h ;# ">
+"874
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 874: __asm("UEIR equ 0F67h");
+[; <" UEIR equ 0F67h ;# ">
+"925
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 925: __asm("UFRM equ 0F68h");
+[; <" UFRM equ 0F68h ;# ">
+"932
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 932: __asm("UFRML equ 0F68h");
+[; <" UFRML equ 0F68h ;# ">
+"1010
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 1010: __asm("UFRMH equ 0F69h");
+[; <" UFRMH equ 0F69h ;# ">
+"1050
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 1050: __asm("UEP0 equ 0F6Ah");
+[; <" UEP0 equ 0F6Ah ;# ">
+"1158
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 1158: __asm("UEP1 equ 0F6Bh");
+[; <" UEP1 equ 0F6Bh ;# ">
+"1266
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 1266: __asm("UEP2 equ 0F6Ch");
+[; <" UEP2 equ 0F6Ch ;# ">
+"1374
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 1374: __asm("UEP3 equ 0F6Dh");
+[; <" UEP3 equ 0F6Dh ;# ">
+"1482
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 1482: __asm("UEP4 equ 0F6Eh");
+[; <" UEP4 equ 0F6Eh ;# ">
+"1590
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 1590: __asm("UEP5 equ 0F6Fh");
+[; <" UEP5 equ 0F6Fh ;# ">
+"1698
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 1698: __asm("UEP6 equ 0F70h");
+[; <" UEP6 equ 0F70h ;# ">
+"1806
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 1806: __asm("UEP7 equ 0F71h");
+[; <" UEP7 equ 0F71h ;# ">
+"1914
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 1914: __asm("UEP8 equ 0F72h");
+[; <" UEP8 equ 0F72h ;# ">
+"1990
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 1990: __asm("UEP9 equ 0F73h");
+[; <" UEP9 equ 0F73h ;# ">
+"2066
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 2066: __asm("UEP10 equ 0F74h");
+[; <" UEP10 equ 0F74h ;# ">
+"2142
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 2142: __asm("UEP11 equ 0F75h");
+[; <" UEP11 equ 0F75h ;# ">
+"2218
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 2218: __asm("UEP12 equ 0F76h");
+[; <" UEP12 equ 0F76h ;# ">
+"2294
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 2294: __asm("UEP13 equ 0F77h");
+[; <" UEP13 equ 0F77h ;# ">
+"2370
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 2370: __asm("UEP14 equ 0F78h");
+[; <" UEP14 equ 0F78h ;# ">
+"2446
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 2446: __asm("UEP15 equ 0F79h");
+[; <" UEP15 equ 0F79h ;# ">
+"2522
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 2522: __asm("SLRCON equ 0F7Ah");
+[; <" SLRCON equ 0F7Ah ;# ">
+"2566
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 2566: __asm("VREFCON2 equ 0F7Bh");
+[; <" VREFCON2 equ 0F7Bh ;# ">
+"2618
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 2618: __asm("VREFCON1 equ 0F7Ch");
+[; <" VREFCON1 equ 0F7Ch ;# ">
+"2679
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 2679: __asm("VREFCON0 equ 0F7Dh");
+[; <" VREFCON0 equ 0F7Dh ;# ">
+"2739
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 2739: __asm("PMD0 equ 0F7Eh");
+[; <" PMD0 equ 0F7Eh ;# ">
+"2821
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 2821: __asm("PMD1 equ 0F7Fh");
+[; <" PMD1 equ 0F7Fh ;# ">
+"2903
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 2903: __asm("PORTA equ 0F80h");
+[; <" PORTA equ 0F80h ;# ">
+"3055
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 3055: __asm("PORTB equ 0F81h");
+[; <" PORTB equ 0F81h ;# ">
+"3165
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 3165: __asm("PORTC equ 0F82h");
+[; <" PORTC equ 0F82h ;# ">
+"3307
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 3307: __asm("PORTD equ 0F83h");
+[; <" PORTD equ 0F83h ;# ">
+"3428
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 3428: __asm("PORTE equ 0F84h");
+[; <" PORTE equ 0F84h ;# ">
+"3547
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 3547: __asm("WPUB equ 0F85h");
+[; <" WPUB equ 0F85h ;# ">
+"3609
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 3609: __asm("IOCB equ 0F86h");
+[; <" IOCB equ 0F86h ;# ">
+"3648
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 3648: __asm("IOCC equ 0F87h");
+[; <" IOCC equ 0F87h ;# ">
+"3705
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 3705: __asm("CTMUICON equ 0F88h");
+[; <" CTMUICON equ 0F88h ;# ">
+"3781
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 3781: __asm("LATA equ 0F89h");
+[; <" LATA equ 0F89h ;# ">
+"3893
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 3893: __asm("LATB equ 0F8Ah");
+[; <" LATB equ 0F8Ah ;# ">
+"4005
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 4005: __asm("LATC equ 0F8Bh");
+[; <" LATC equ 0F8Bh ;# ">
+"4107
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 4107: __asm("LATD equ 0F8Ch");
+[; <" LATD equ 0F8Ch ;# ">
+"4219
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 4219: __asm("LATE equ 0F8Dh");
+[; <" LATE equ 0F8Dh ;# ">
+"4271
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 4271: __asm("CTMUCONL equ 0F8Eh");
+[; <" CTMUCONL equ 0F8Eh ;# ">
+"4276
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 4276: __asm("CTMUCON1 equ 0F8Eh");
+[; <" CTMUCON1 equ 0F8Eh ;# ">
+"4425
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 4425: __asm("CTMUCONH equ 0F8Fh");
+[; <" CTMUCONH equ 0F8Fh ;# ">
+"4430
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 4430: __asm("CTMUCON0 equ 0F8Fh");
+[; <" CTMUCON0 equ 0F8Fh ;# ">
+"4581
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 4581: __asm("CCPR2 equ 0F90h");
+[; <" CCPR2 equ 0F90h ;# ">
+"4588
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 4588: __asm("CCPR2L equ 0F90h");
+[; <" CCPR2L equ 0F90h ;# ">
+"4608
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 4608: __asm("CCPR2H equ 0F91h");
+[; <" CCPR2H equ 0F91h ;# ">
+"4628
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 4628: __asm("TRISA equ 0F92h");
+[; <" TRISA equ 0F92h ;# ">
+"4633
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 4633: __asm("DDRA equ 0F92h");
+[; <" DDRA equ 0F92h ;# ">
+"4850
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 4850: __asm("TRISB equ 0F93h");
+[; <" TRISB equ 0F93h ;# ">
+"4855
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 4855: __asm("DDRB equ 0F93h");
+[; <" DDRB equ 0F93h ;# ">
+"5072
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 5072: __asm("TRISC equ 0F94h");
+[; <" TRISC equ 0F94h ;# ">
+"5077
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 5077: __asm("DDRC equ 0F94h");
+[; <" DDRC equ 0F94h ;# ">
+"5250
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 5250: __asm("TRISD equ 0F95h");
+[; <" TRISD equ 0F95h ;# ">
+"5255
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 5255: __asm("DDRD equ 0F95h");
+[; <" DDRD equ 0F95h ;# ">
+"5472
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 5472: __asm("TRISE equ 0F96h");
+[; <" TRISE equ 0F96h ;# ">
+"5477
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 5477: __asm("DDRE equ 0F96h");
+[; <" DDRE equ 0F96h ;# ">
+"5588
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 5588: __asm("CCP2CON equ 0F97h");
+[; <" CCP2CON equ 0F97h ;# ">
+"5593
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 5593: __asm("ECCP2CON equ 0F97h");
+[; <" ECCP2CON equ 0F97h ;# ">
+"5744
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 5744: __asm("CM1CON0 equ 0F98h");
+[; <" CM1CON0 equ 0F98h ;# ">
+"5867
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 5867: __asm("CM2CON0 equ 0F99h");
+[; <" CM2CON0 equ 0F99h ;# ">
+"5990
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 5990: __asm("CM2CON1 equ 0F9Ah");
+[; <" CM2CON1 equ 0F9Ah ;# ">
+"6052
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 6052: __asm("OSCTUNE equ 0F9Bh");
+[; <" OSCTUNE equ 0F9Bh ;# ">
+"6122
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 6122: __asm("HLVDCON equ 0F9Ch");
+[; <" HLVDCON equ 0F9Ch ;# ">
+"6192
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 6192: __asm("PIE1 equ 0F9Dh");
+[; <" PIE1 equ 0F9Dh ;# ">
+"6291
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 6291: __asm("PIR1 equ 0F9Eh");
+[; <" PIR1 equ 0F9Eh ;# ">
+"6390
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 6390: __asm("IPR1 equ 0F9Fh");
+[; <" IPR1 equ 0F9Fh ;# ">
+"6489
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 6489: __asm("PIE2 equ 0FA0h");
+[; <" PIE2 equ 0FA0h ;# ">
+"6588
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 6588: __asm("PIR2 equ 0FA1h");
+[; <" PIR2 equ 0FA1h ;# ">
+"6687
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 6687: __asm("IPR2 equ 0FA2h");
+[; <" IPR2 equ 0FA2h ;# ">
+"6786
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 6786: __asm("PIE3 equ 0FA3h");
+[; <" PIE3 equ 0FA3h ;# ">
+"6859
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 6859: __asm("PIR3 equ 0FA4h");
+[; <" PIR3 equ 0FA4h ;# ">
+"6906
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 6906: __asm("IPR3 equ 0FA5h");
+[; <" IPR3 equ 0FA5h ;# ">
+"6953
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 6953: __asm("EECON1 equ 0FA6h");
+[; <" EECON1 equ 0FA6h ;# ">
+"7019
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 7019: __asm("EECON2 equ 0FA7h");
+[; <" EECON2 equ 0FA7h ;# ">
+"7039
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 7039: __asm("EEDATA equ 0FA8h");
+[; <" EEDATA equ 0FA8h ;# ">
+"7046
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 7046: __asm("EEADR equ 0FA9h");
+[; <" EEADR equ 0FA9h ;# ">
+"7053
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 7053: __asm("RCSTA1 equ 0FABh");
+[; <" RCSTA1 equ 0FABh ;# ">
+"7058
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 7058: __asm("RCSTA equ 0FABh");
+[; <" RCSTA equ 0FABh ;# ">
+"7259
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 7259: __asm("TXSTA1 equ 0FACh");
+[; <" TXSTA1 equ 0FACh ;# ">
+"7264
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 7264: __asm("TXSTA equ 0FACh");
+[; <" TXSTA equ 0FACh ;# ">
+"7553
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 7553: __asm("TXREG1 equ 0FADh");
+[; <" TXREG1 equ 0FADh ;# ">
+"7558
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 7558: __asm("TXREG equ 0FADh");
+[; <" TXREG equ 0FADh ;# ">
+"7591
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 7591: __asm("RCREG1 equ 0FAEh");
+[; <" RCREG1 equ 0FAEh ;# ">
+"7596
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 7596: __asm("RCREG equ 0FAEh");
+[; <" RCREG equ 0FAEh ;# ">
+"7629
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 7629: __asm("SPBRG1 equ 0FAFh");
+[; <" SPBRG1 equ 0FAFh ;# ">
+"7634
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 7634: __asm("SPBRG equ 0FAFh");
+[; <" SPBRG equ 0FAFh ;# ">
+"7767
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 7767: __asm("SPBRGH1 equ 0FB0h");
+[; <" SPBRGH1 equ 0FB0h ;# ">
+"7772
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 7772: __asm("SPBRGH equ 0FB0h");
+[; <" SPBRGH equ 0FB0h ;# ">
+"7905
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 7905: __asm("T3CON equ 0FB1h");
+[; <" T3CON equ 0FB1h ;# ">
+"8034
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 8034: __asm("TMR3 equ 0FB2h");
+[; <" TMR3 equ 0FB2h ;# ">
+"8041
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 8041: __asm("TMR3L equ 0FB2h");
+[; <" TMR3L equ 0FB2h ;# ">
+"8061
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 8061: __asm("TMR3H equ 0FB3h");
+[; <" TMR3H equ 0FB3h ;# ">
+"8081
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 8081: __asm("T3GCON equ 0FB4h");
+[; <" T3GCON equ 0FB4h ;# ">
+"8212
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 8212: __asm("ACTCON equ 0FB5h");
+[; <" ACTCON equ 0FB5h ;# ">
+"8217
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 8217: __asm("STCON equ 0FB5h");
+[; <" STCON equ 0FB5h ;# ">
+"8418
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 8418: __asm("ECCP1AS equ 0FB6h");
+[; <" ECCP1AS equ 0FB6h ;# ">
+"8552
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 8552: __asm("PWM1CON equ 0FB7h");
+[; <" PWM1CON equ 0FB7h ;# ">
+"8557
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 8557: __asm("ECCP1DEL equ 0FB7h");
+[; <" ECCP1DEL equ 0FB7h ;# ">
+"8702
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 8702: __asm("BAUDCON1 equ 0FB8h");
+[; <" BAUDCON1 equ 0FB8h ;# ">
+"8707
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 8707: __asm("BAUDCON equ 0FB8h");
+[; <" BAUDCON equ 0FB8h ;# ">
+"8711
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 8711: __asm("BAUDCTL equ 0FB8h");
+[; <" BAUDCTL equ 0FB8h ;# ">
+"9212
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 9212: __asm("PSTR1CON equ 0FB9h");
+[; <" PSTR1CON equ 0FB9h ;# ">
+"9288
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 9288: __asm("T2CON equ 0FBAh");
+[; <" T2CON equ 0FBAh ;# ">
+"9359
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 9359: __asm("PR2 equ 0FBBh");
+[; <" PR2 equ 0FBBh ;# ">
+"9379
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 9379: __asm("TMR2 equ 0FBCh");
+[; <" TMR2 equ 0FBCh ;# ">
+"9399
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 9399: __asm("CCP1CON equ 0FBDh");
+[; <" CCP1CON equ 0FBDh ;# ">
+"9404
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 9404: __asm("ECCP1CON equ 0FBDh");
+[; <" ECCP1CON equ 0FBDh ;# ">
+"9591
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 9591: __asm("CCPR1 equ 0FBEh");
+[; <" CCPR1 equ 0FBEh ;# ">
+"9598
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 9598: __asm("CCPR1L equ 0FBEh");
+[; <" CCPR1L equ 0FBEh ;# ">
+"9618
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 9618: __asm("CCPR1H equ 0FBFh");
+[; <" CCPR1H equ 0FBFh ;# ">
+"9638
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 9638: __asm("ADCON2 equ 0FC0h");
+[; <" ADCON2 equ 0FC0h ;# ">
+"9709
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 9709: __asm("ADCON1 equ 0FC1h");
+[; <" ADCON1 equ 0FC1h ;# ">
+"9777
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 9777: __asm("ADCON0 equ 0FC2h");
+[; <" ADCON0 equ 0FC2h ;# ">
+"9872
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 9872: __asm("ADRESL equ 0FC3h");
+[; <" ADRESL equ 0FC3h ;# ">
+"9879
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 9879: __asm("ADRESH equ 0FC4h");
+[; <" ADRESH equ 0FC4h ;# ">
+"9886
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 9886: __asm("SSP1CON2 equ 0FC5h");
+[; <" SSP1CON2 equ 0FC5h ;# ">
+"9891
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 9891: __asm("SSPCON2 equ 0FC5h");
+[; <" SSPCON2 equ 0FC5h ;# ">
+"10240
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 10240: __asm("SSP1CON1 equ 0FC6h");
+[; <" SSP1CON1 equ 0FC6h ;# ">
+"10245
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 10245: __asm("SSPCON equ 0FC6h");
+[; <" SSPCON equ 0FC6h ;# ">
+"10249
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 10249: __asm("SSPCON1 equ 0FC6h");
+[; <" SSPCON1 equ 0FC6h ;# ">
+"10594
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 10594: __asm("SSP1STAT equ 0FC7h");
+[; <" SSP1STAT equ 0FC7h ;# ">
+"10599
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 10599: __asm("SSPSTAT equ 0FC7h");
+[; <" SSPSTAT equ 0FC7h ;# ">
+"11192
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 11192: __asm("SSP1ADD equ 0FC8h");
+[; <" SSP1ADD equ 0FC8h ;# ">
+"11197
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 11197: __asm("SSPADD equ 0FC8h");
+[; <" SSPADD equ 0FC8h ;# ">
+"11530
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 11530: __asm("SSP1BUF equ 0FC9h");
+[; <" SSP1BUF equ 0FC9h ;# ">
+"11535
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 11535: __asm("SSPBUF equ 0FC9h");
+[; <" SSPBUF equ 0FC9h ;# ">
+"11568
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 11568: __asm("SSP1MSK equ 0FCAh");
+[; <" SSP1MSK equ 0FCAh ;# ">
+"11573
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 11573: __asm("SSPMSK equ 0FCAh");
+[; <" SSPMSK equ 0FCAh ;# ">
+"11706
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 11706: __asm("SSP1CON3 equ 0FCBh");
+[; <" SSP1CON3 equ 0FCBh ;# ">
+"11711
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 11711: __asm("SSPCON3 equ 0FCBh");
+[; <" SSPCON3 equ 0FCBh ;# ">
+"11828
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 11828: __asm("T1GCON equ 0FCCh");
+[; <" T1GCON equ 0FCCh ;# ">
+"11959
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 11959: __asm("T1CON equ 0FCDh");
+[; <" T1CON equ 0FCDh ;# ">
+"12088
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 12088: __asm("TMR1 equ 0FCEh");
+[; <" TMR1 equ 0FCEh ;# ">
+"12095
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 12095: __asm("TMR1L equ 0FCEh");
+[; <" TMR1L equ 0FCEh ;# ">
+"12115
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 12115: __asm("TMR1H equ 0FCFh");
+[; <" TMR1H equ 0FCFh ;# ">
+"12135
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 12135: __asm("RCON equ 0FD0h");
+[; <" RCON equ 0FD0h ;# ">
+"12268
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 12268: __asm("WDTCON equ 0FD1h");
+[; <" WDTCON equ 0FD1h ;# ">
+"12296
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 12296: __asm("OSCCON2 equ 0FD2h");
+[; <" OSCCON2 equ 0FD2h ;# ">
+"12358
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 12358: __asm("OSCCON equ 0FD3h");
+[; <" OSCCON equ 0FD3h ;# ">
+"12441
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 12441: __asm("T0CON equ 0FD5h");
+[; <" T0CON equ 0FD5h ;# ">
+"12511
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 12511: __asm("TMR0 equ 0FD6h");
+[; <" TMR0 equ 0FD6h ;# ">
+"12518
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 12518: __asm("TMR0L equ 0FD6h");
+[; <" TMR0L equ 0FD6h ;# ">
+"12538
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 12538: __asm("TMR0H equ 0FD7h");
+[; <" TMR0H equ 0FD7h ;# ">
+"12558
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 12558: __asm("STATUS equ 0FD8h");
+[; <" STATUS equ 0FD8h ;# ">
+"12629
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 12629: __asm("FSR2 equ 0FD9h");
+[; <" FSR2 equ 0FD9h ;# ">
+"12636
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 12636: __asm("FSR2L equ 0FD9h");
+[; <" FSR2L equ 0FD9h ;# ">
+"12656
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 12656: __asm("FSR2H equ 0FDAh");
+[; <" FSR2H equ 0FDAh ;# ">
+"12663
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 12663: __asm("PLUSW2 equ 0FDBh");
+[; <" PLUSW2 equ 0FDBh ;# ">
+"12683
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 12683: __asm("PREINC2 equ 0FDCh");
+[; <" PREINC2 equ 0FDCh ;# ">
+"12703
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 12703: __asm("POSTDEC2 equ 0FDDh");
+[; <" POSTDEC2 equ 0FDDh ;# ">
+"12723
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 12723: __asm("POSTINC2 equ 0FDEh");
+[; <" POSTINC2 equ 0FDEh ;# ">
+"12743
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 12743: __asm("INDF2 equ 0FDFh");
+[; <" INDF2 equ 0FDFh ;# ">
+"12763
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 12763: __asm("BSR equ 0FE0h");
+[; <" BSR equ 0FE0h ;# ">
+"12770
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 12770: __asm("FSR1 equ 0FE1h");
+[; <" FSR1 equ 0FE1h ;# ">
+"12777
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 12777: __asm("FSR1L equ 0FE1h");
+[; <" FSR1L equ 0FE1h ;# ">
+"12797
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 12797: __asm("FSR1H equ 0FE2h");
+[; <" FSR1H equ 0FE2h ;# ">
+"12804
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 12804: __asm("PLUSW1 equ 0FE3h");
+[; <" PLUSW1 equ 0FE3h ;# ">
+"12824
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 12824: __asm("PREINC1 equ 0FE4h");
+[; <" PREINC1 equ 0FE4h ;# ">
+"12844
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 12844: __asm("POSTDEC1 equ 0FE5h");
+[; <" POSTDEC1 equ 0FE5h ;# ">
+"12864
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 12864: __asm("POSTINC1 equ 0FE6h");
+[; <" POSTINC1 equ 0FE6h ;# ">
+"12884
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 12884: __asm("INDF1 equ 0FE7h");
+[; <" INDF1 equ 0FE7h ;# ">
+"12904
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 12904: __asm("WREG equ 0FE8h");
+[; <" WREG equ 0FE8h ;# ">
+"12924
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 12924: __asm("FSR0 equ 0FE9h");
+[; <" FSR0 equ 0FE9h ;# ">
+"12931
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 12931: __asm("FSR0L equ 0FE9h");
+[; <" FSR0L equ 0FE9h ;# ">
+"12951
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 12951: __asm("FSR0H equ 0FEAh");
+[; <" FSR0H equ 0FEAh ;# ">
+"12958
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 12958: __asm("PLUSW0 equ 0FEBh");
+[; <" PLUSW0 equ 0FEBh ;# ">
+"12978
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 12978: __asm("PREINC0 equ 0FECh");
+[; <" PREINC0 equ 0FECh ;# ">
+"12998
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 12998: __asm("POSTDEC0 equ 0FEDh");
+[; <" POSTDEC0 equ 0FEDh ;# ">
+"13018
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 13018: __asm("POSTINC0 equ 0FEEh");
+[; <" POSTINC0 equ 0FEEh ;# ">
+"13038
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 13038: __asm("INDF0 equ 0FEFh");
+[; <" INDF0 equ 0FEFh ;# ">
+"13058
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 13058: __asm("INTCON3 equ 0FF0h");
+[; <" INTCON3 equ 0FF0h ;# ">
+"13150
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 13150: __asm("INTCON2 equ 0FF1h");
+[; <" INTCON2 equ 0FF1h ;# ">
+"13227
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 13227: __asm("INTCON equ 0FF2h");
+[; <" INTCON equ 0FF2h ;# ">
+"13344
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 13344: __asm("PROD equ 0FF3h");
+[; <" PROD equ 0FF3h ;# ">
+"13351
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 13351: __asm("PRODL equ 0FF3h");
+[; <" PRODL equ 0FF3h ;# ">
+"13371
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 13371: __asm("PRODH equ 0FF4h");
+[; <" PRODH equ 0FF4h ;# ">
+"13391
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 13391: __asm("TABLAT equ 0FF5h");
+[; <" TABLAT equ 0FF5h ;# ">
+"13413
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 13413: __asm("TBLPTR equ 0FF6h");
+[; <" TBLPTR equ 0FF6h ;# ">
+"13420
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 13420: __asm("TBLPTRL equ 0FF6h");
+[; <" TBLPTRL equ 0FF6h ;# ">
+"13440
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 13440: __asm("TBLPTRH equ 0FF7h");
+[; <" TBLPTRH equ 0FF7h ;# ">
+"13460
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 13460: __asm("TBLPTRU equ 0FF8h");
+[; <" TBLPTRU equ 0FF8h ;# ">
+"13469
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 13469: __asm("PCLAT equ 0FF9h");
+[; <" PCLAT equ 0FF9h ;# ">
+"13476
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 13476: __asm("PC equ 0FF9h");
+[; <" PC equ 0FF9h ;# ">
+"13483
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 13483: __asm("PCL equ 0FF9h");
+[; <" PCL equ 0FF9h ;# ">
+"13503
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 13503: __asm("PCLATH equ 0FFAh");
+[; <" PCLATH equ 0FFAh ;# ">
+"13523
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 13523: __asm("PCLATU equ 0FFBh");
+[; <" PCLATU equ 0FFBh ;# ">
+"13530
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 13530: __asm("STKPTR equ 0FFCh");
+[; <" STKPTR equ 0FFCh ;# ">
+"13604
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 13604: __asm("TOS equ 0FFDh");
+[; <" TOS equ 0FFDh ;# ">
+"13611
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 13611: __asm("TOSL equ 0FFDh");
+[; <" TOSL equ 0FFDh ;# ">
+"13631
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 13631: __asm("TOSH equ 0FFEh");
+[; <" TOSH equ 0FFEh ;# ">
+"13651
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k50.h: 13651: __asm("TOSU equ 0FFFh");
+[; <" TOSU equ 0FFFh ;# ">
+[v F5354 `*F5355 ~T0 @X0 1 t ]
+"146 mcc_generated_files/i2c1_master.c
+[; ;mcc_generated_files/i2c1_master.c: 146: const i2c1FsmHandler i2c1_fsmStateTable[] = {
+[v _i2c1_fsmStateTable `C*F5355 ~T0 @X0 -> 16 `i e ]
+[i _i2c1_fsmStateTable
+:U ..
+&U _I2C1_DO_IDLE
+&U _I2C1_DO_SEND_ADR_READ
+&U _I2C1_DO_SEND_ADR_WRITE
+&U _I2C1_DO_TX
+&U _I2C1_DO_RX
+&U _I2C1_DO_RCEN
+&U _I2C1_DO_TX_EMPTY
+&U _I2C1_DO_SEND_RESTART_READ
+&U _I2C1_DO_SEND_RESTART_WRITE
+&U _I2C1_DO_SEND_RESTART
+&U _I2C1_DO_SEND_STOP
+&U _I2C1_DO_RX_ACK
+&U _I2C1_DO_RX_NACK_STOP
+&U _I2C1_DO_RX_NACK_RESTART
+&U _I2C1_DO_RESET
+&U _I2C1_DO_ADDRESS_NACK
+..
+]
+"165
+[; ;mcc_generated_files/i2c1_master.c: 165: i2c1_status_t I2C1_Status = {0};
+[v _I2C1_Status `S638 ~T0 @X0 1 e ]
+[i _I2C1_Status
+:U ..
+:U ..
+:U ..
+-> -> 0 `i `*F5373
+..
+..
+..
+]
+"167
+[; ;mcc_generated_files/i2c1_master.c: 167: void I2C1_Initialize()
+[v _I2C1_Initialize `(v ~T0 @X0 1 ef ]
+"168
+[; ;mcc_generated_files/i2c1_master.c: 168: {
+{
+[e :U _I2C1_Initialize ]
+[f ]
+"169
+[; ;mcc_generated_files/i2c1_master.c: 169:     SSP1STAT = 0x00;
+[e = _SSP1STAT -> -> 0 `i `uc ]
+"170
+[; ;mcc_generated_files/i2c1_master.c: 170:     SSP1CON1 = 0x08;
+[e = _SSP1CON1 -> -> 8 `i `uc ]
+"171
+[; ;mcc_generated_files/i2c1_master.c: 171:     SSP1CON2 = 0x00;
+[e = _SSP1CON2 -> -> 0 `i `uc ]
+"172
+[; ;mcc_generated_files/i2c1_master.c: 172:     SSP1ADD = 0x3B;
+[e = _SSP1ADD -> -> 59 `i `uc ]
+"173
+[; ;mcc_generated_files/i2c1_master.c: 173:     SSP1CON1bits.SSPEN = 0;
+[e = . . _SSP1CON1bits 0 2 -> -> 0 `i `uc ]
+"174
+[; ;mcc_generated_files/i2c1_master.c: 174: }
+[e :UE 639 ]
+}
+"176
+[; ;mcc_generated_files/i2c1_master.c: 176: i2c1_error_t I2C1_Open(i2c1_address_t address)
+[v _I2C1_Open `(E355 ~T0 @X0 1 ef1`uc ]
+"177
+[; ;mcc_generated_files/i2c1_master.c: 177: {
+{
+[e :U _I2C1_Open ]
+"176
+[; ;mcc_generated_files/i2c1_master.c: 176: i2c1_error_t I2C1_Open(i2c1_address_t address)
+[v _address `uc ~T0 @X0 1 r1 ]
+"177
+[; ;mcc_generated_files/i2c1_master.c: 177: {
+[f ]
+"178
+[; ;mcc_generated_files/i2c1_master.c: 178:     i2c1_error_t returnValue = I2C1_BUSY;
+[v _returnValue `E355 ~T0 @X0 1 a ]
+[e = _returnValue . `E355 1 ]
+"180
+[; ;mcc_generated_files/i2c1_master.c: 180:     if(!I2C1_Status.inUse)
+[e $ ! ! != -> . _I2C1_Status 11 `i -> 0 `i 641  ]
+"181
+[; ;mcc_generated_files/i2c1_master.c: 181:     {
+{
+"182
+[; ;mcc_generated_files/i2c1_master.c: 182:         I2C1_Status.address = address;
+[e = . _I2C1_Status 4 _address ]
+"183
+[; ;mcc_generated_files/i2c1_master.c: 183:         I2C1_Status.busy = 0;
+[e = . _I2C1_Status 10 -> -> 0 `i `uc ]
+"184
+[; ;mcc_generated_files/i2c1_master.c: 184:         I2C1_Status.inUse = 1;
+[e = . _I2C1_Status 11 -> -> 1 `i `uc ]
+"185
+[; ;mcc_generated_files/i2c1_master.c: 185:         I2C1_Status.addressNackCheck = 0;
+[e = . _I2C1_Status 9 -> -> 0 `i `uc ]
+"186
+[; ;mcc_generated_files/i2c1_master.c: 186:         I2C1_Status.state = I2C1_RESET;
+[e = . _I2C1_Status 7 . `E5241 14 ]
+"187
+[; ;mcc_generated_files/i2c1_master.c: 187:         I2C1_Status.time_out_value = 500;
+[e = . _I2C1_Status 3 -> -> 500 `i `us ]
+"188
+[; ;mcc_generated_files/i2c1_master.c: 188:         I2C1_Status.bufferFree = 1;
+[e = . _I2C1_Status 12 -> -> 1 `i `uc ]
+"191
+[; ;mcc_generated_files/i2c1_master.c: 191:         I2C1_Status.callbackTable[I2C1_DATA_COMPLETE]=I2C1_CallbackReturnStop;
+[e = *U + &U . _I2C1_Status 0 * -> . `E5259 0 `ux -> -> # *U &U . _I2C1_Status 0 `ui `ux &U _I2C1_CallbackReturnStop ]
+"192
+[; ;mcc_generated_files/i2c1_master.c: 192:         I2C1_Status.callbackPayload[I2C1_DATA_COMPLETE] = ((void*)0);
+[e = *U + &U . _I2C1_Status 1 * -> . `E5259 0 `ux -> -> # *U &U . _I2C1_Status 1 `ui `ux -> -> 0 `i `*v ]
+"193
+[; ;mcc_generated_files/i2c1_master.c: 193:         I2C1_Status.callbackTable[I2C1_WRITE_COLLISION]=I2C1_CallbackReturnStop;
+[e = *U + &U . _I2C1_Status 0 * -> . `E5259 1 `ux -> -> # *U &U . _I2C1_Status 0 `ui `ux &U _I2C1_CallbackReturnStop ]
+"194
+[; ;mcc_generated_files/i2c1_master.c: 194:         I2C1_Status.callbackPayload[I2C1_WRITE_COLLISION] = ((void*)0);
+[e = *U + &U . _I2C1_Status 1 * -> . `E5259 1 `ux -> -> # *U &U . _I2C1_Status 1 `ui `ux -> -> 0 `i `*v ]
+"195
+[; ;mcc_generated_files/i2c1_master.c: 195:         I2C1_Status.callbackTable[I2C1_ADDR_NACK]=I2C1_CallbackReturnStop;
+[e = *U + &U . _I2C1_Status 0 * -> . `E5259 2 `ux -> -> # *U &U . _I2C1_Status 0 `ui `ux &U _I2C1_CallbackReturnStop ]
+"196
+[; ;mcc_generated_files/i2c1_master.c: 196:         I2C1_Status.callbackPayload[I2C1_ADDR_NACK] = ((void*)0);
+[e = *U + &U . _I2C1_Status 1 * -> . `E5259 2 `ux -> -> # *U &U . _I2C1_Status 1 `ui `ux -> -> 0 `i `*v ]
+"197
+[; ;mcc_generated_files/i2c1_master.c: 197:         I2C1_Status.callbackTable[I2C1_DATA_NACK]=I2C1_CallbackReturnStop;
+[e = *U + &U . _I2C1_Status 0 * -> . `E5259 3 `ux -> -> # *U &U . _I2C1_Status 0 `ui `ux &U _I2C1_CallbackReturnStop ]
+"198
+[; ;mcc_generated_files/i2c1_master.c: 198:         I2C1_Status.callbackPayload[I2C1_DATA_NACK] = ((void*)0);
+[e = *U + &U . _I2C1_Status 1 * -> . `E5259 3 `ux -> -> # *U &U . _I2C1_Status 1 `ui `ux -> -> 0 `i `*v ]
+"199
+[; ;mcc_generated_files/i2c1_master.c: 199:         I2C1_Status.callbackTable[I2C1_TIMEOUT]=I2C1_CallbackReturnReset;
+[e = *U + &U . _I2C1_Status 0 * -> . `E5259 4 `ux -> -> # *U &U . _I2C1_Status 0 `ui `ux &U _I2C1_CallbackReturnReset ]
+"200
+[; ;mcc_generated_files/i2c1_master.c: 200:         I2C1_Status.callbackPayload[I2C1_TIMEOUT] = ((void*)0);
+[e = *U + &U . _I2C1_Status 1 * -> . `E5259 4 `ux -> -> # *U &U . _I2C1_Status 1 `ui `ux -> -> 0 `i `*v ]
+"202
+[; ;mcc_generated_files/i2c1_master.c: 202:         I2C1_SetInterruptHandler(I2C1_MasterIsr);
+[e ( _I2C1_SetInterruptHandler (1 &U _I2C1_MasterIsr ]
+"203
+[; ;mcc_generated_files/i2c1_master.c: 203:         I2C1_MasterClearIrq();
+[e ( _I2C1_MasterClearIrq ..  ]
+"204
+[; ;mcc_generated_files/i2c1_master.c: 204:         I2C1_MasterOpen();
+[e ( _I2C1_MasterOpen ..  ]
+"205
+[; ;mcc_generated_files/i2c1_master.c: 205:         I2C1_MasterEnableIrq();
+[e ( _I2C1_MasterEnableIrq ..  ]
+"206
+[; ;mcc_generated_files/i2c1_master.c: 206:         returnValue = I2C1_NOERR;
+[e = _returnValue . `E355 0 ]
+"207
+[; ;mcc_generated_files/i2c1_master.c: 207:     }
+}
+[e :U 641 ]
+"208
+[; ;mcc_generated_files/i2c1_master.c: 208:     return returnValue;
+[e ) _returnValue ]
+[e $UE 640  ]
+"209
+[; ;mcc_generated_files/i2c1_master.c: 209: }
+[e :UE 640 ]
+}
+"211
+[; ;mcc_generated_files/i2c1_master.c: 211: i2c1_error_t I2C1_Close(void)
+[v _I2C1_Close `(E355 ~T0 @X0 1 ef ]
+"212
+[; ;mcc_generated_files/i2c1_master.c: 212: {
+{
+[e :U _I2C1_Close ]
+[f ]
+"213
+[; ;mcc_generated_files/i2c1_master.c: 213:     i2c1_error_t returnValue = I2C1_BUSY;
+[v _returnValue `E355 ~T0 @X0 1 a ]
+[e = _returnValue . `E355 1 ]
+"214
+[; ;mcc_generated_files/i2c1_master.c: 214:     if(!I2C1_Status.busy)
+[e $ ! ! != -> . _I2C1_Status 10 `i -> 0 `i 643  ]
+"215
+[; ;mcc_generated_files/i2c1_master.c: 215:     {
+{
+"216
+[; ;mcc_generated_files/i2c1_master.c: 216:         I2C1_Status.inUse = 0;
+[e = . _I2C1_Status 11 -> -> 0 `i `uc ]
+"217
+[; ;mcc_generated_files/i2c1_master.c: 217:         I2C1_Status.address = 0xff;
+[e = . _I2C1_Status 4 -> -> 255 `i `uc ]
+"218
+[; ;mcc_generated_files/i2c1_master.c: 218:         I2C1_MasterClearIrq();
+[e ( _I2C1_MasterClearIrq ..  ]
+"219
+[; ;mcc_generated_files/i2c1_master.c: 219:         I2C1_MasterDisableIrq();
+[e ( _I2C1_MasterDisableIrq ..  ]
+"220
+[; ;mcc_generated_files/i2c1_master.c: 220:         I2C1_MasterClose();
+[e ( _I2C1_MasterClose ..  ]
+"221
+[; ;mcc_generated_files/i2c1_master.c: 221:         returnValue = I2C1_Status.error;
+[e = _returnValue . _I2C1_Status 8 ]
+"222
+[; ;mcc_generated_files/i2c1_master.c: 222:     }
+}
+[e :U 643 ]
+"223
+[; ;mcc_generated_files/i2c1_master.c: 223:     return returnValue;
+[e ) _returnValue ]
+[e $UE 642  ]
+"224
+[; ;mcc_generated_files/i2c1_master.c: 224: }
+[e :UE 642 ]
+}
+"226
+[; ;mcc_generated_files/i2c1_master.c: 226: i2c1_error_t I2C1_MasterOperation(_Bool read)
+[v _I2C1_MasterOperation `(E355 ~T0 @X0 1 ef1`a ]
+"227
+[; ;mcc_generated_files/i2c1_master.c: 227: {
+{
+[e :U _I2C1_MasterOperation ]
+"226
+[; ;mcc_generated_files/i2c1_master.c: 226: i2c1_error_t I2C1_MasterOperation(_Bool read)
+[v _read `a ~T0 @X0 1 r1 ]
+"227
+[; ;mcc_generated_files/i2c1_master.c: 227: {
+[f ]
+"228
+[; ;mcc_generated_files/i2c1_master.c: 228:     i2c1_error_t returnValue = I2C1_BUSY;
+[v _returnValue `E355 ~T0 @X0 1 a ]
+[e = _returnValue . `E355 1 ]
+"229
+[; ;mcc_generated_files/i2c1_master.c: 229:     if(!I2C1_Status.busy)
+[e $ ! ! != -> . _I2C1_Status 10 `i -> 0 `i 645  ]
+"230
+[; ;mcc_generated_files/i2c1_master.c: 230:     {
+{
+"231
+[; ;mcc_generated_files/i2c1_master.c: 231:         I2C1_Status.busy = 1;
+[e = . _I2C1_Status 10 -> -> 1 `i `uc ]
+"232
+[; ;mcc_generated_files/i2c1_master.c: 232:         returnValue = I2C1_NOERR;
+[e = _returnValue . `E355 0 ]
+"234
+[; ;mcc_generated_files/i2c1_master.c: 234:         if(read)
+[e $ ! != -> _read `i -> 0 `i 646  ]
+"235
+[; ;mcc_generated_files/i2c1_master.c: 235:         {
+{
+"236
+[; ;mcc_generated_files/i2c1_master.c: 236:             I2C1_Status.state = I2C1_SEND_ADR_READ;
+[e = . _I2C1_Status 7 . `E5241 1 ]
+"237
+[; ;mcc_generated_files/i2c1_master.c: 237:         }
+}
+[e $U 647  ]
+"238
+[; ;mcc_generated_files/i2c1_master.c: 238:         else
+[e :U 646 ]
+"239
+[; ;mcc_generated_files/i2c1_master.c: 239:         {
+{
+"240
+[; ;mcc_generated_files/i2c1_master.c: 240:             I2C1_Status.state = I2C1_SEND_ADR_WRITE;
+[e = . _I2C1_Status 7 . `E5241 2 ]
+"241
+[; ;mcc_generated_files/i2c1_master.c: 241:         }
+}
+[e :U 647 ]
+"242
+[; ;mcc_generated_files/i2c1_master.c: 242:         I2C1_MasterStart();
+[e ( _I2C1_MasterStart ..  ]
+"243
+[; ;mcc_generated_files/i2c1_master.c: 243:     }
+}
+[e :U 645 ]
+"244
+[; ;mcc_generated_files/i2c1_master.c: 244:     return returnValue;
+[e ) _returnValue ]
+[e $UE 644  ]
+"245
+[; ;mcc_generated_files/i2c1_master.c: 245: }
+[e :UE 644 ]
+}
+"247
+[; ;mcc_generated_files/i2c1_master.c: 247: i2c1_error_t I2C1_MasterRead(void)
+[v _I2C1_MasterRead `(E355 ~T0 @X0 1 ef ]
+"248
+[; ;mcc_generated_files/i2c1_master.c: 248: {
+{
+[e :U _I2C1_MasterRead ]
+[f ]
+"249
+[; ;mcc_generated_files/i2c1_master.c: 249:     return I2C1_MasterOperation(1);
+[e ) ( _I2C1_MasterOperation (1 -> -> 1 `i `a ]
+[e $UE 648  ]
+"250
+[; ;mcc_generated_files/i2c1_master.c: 250: }
+[e :UE 648 ]
+}
+"252
+[; ;mcc_generated_files/i2c1_master.c: 252: i2c1_error_t I2C1_MasterWrite(void)
+[v _I2C1_MasterWrite `(E355 ~T0 @X0 1 ef ]
+"253
+[; ;mcc_generated_files/i2c1_master.c: 253: {
+{
+[e :U _I2C1_MasterWrite ]
+[f ]
+"254
+[; ;mcc_generated_files/i2c1_master.c: 254:     return I2C1_MasterOperation(0);
+[e ) ( _I2C1_MasterOperation (1 -> -> 0 `i `a ]
+[e $UE 649  ]
+"255
+[; ;mcc_generated_files/i2c1_master.c: 255: }
+[e :UE 649 ]
+}
+"257
+[; ;mcc_generated_files/i2c1_master.c: 257: void I2C1_SetTimeOut(uint8_t timeOutValue)
+[v _I2C1_SetTimeOut `(v ~T0 @X0 1 ef1`uc ]
+"258
+[; ;mcc_generated_files/i2c1_master.c: 258: {
+{
+[e :U _I2C1_SetTimeOut ]
+"257
+[; ;mcc_generated_files/i2c1_master.c: 257: void I2C1_SetTimeOut(uint8_t timeOutValue)
+[v _timeOutValue `uc ~T0 @X0 1 r1 ]
+"258
+[; ;mcc_generated_files/i2c1_master.c: 258: {
+[f ]
+"259
+[; ;mcc_generated_files/i2c1_master.c: 259:     I2C1_MasterDisableIrq();
+[e ( _I2C1_MasterDisableIrq ..  ]
+"260
+[; ;mcc_generated_files/i2c1_master.c: 260:     I2C1_Status.time_out_value = timeOutValue;
+[e = . _I2C1_Status 3 -> _timeOutValue `us ]
+"261
+[; ;mcc_generated_files/i2c1_master.c: 261:     I2C1_MasterEnableIrq();
+[e ( _I2C1_MasterEnableIrq ..  ]
+"262
+[; ;mcc_generated_files/i2c1_master.c: 262: }
+[e :UE 650 ]
+}
+"264
+[; ;mcc_generated_files/i2c1_master.c: 264: void I2C1_SetBuffer(void *buffer, size_t bufferSize)
+[v _I2C1_SetBuffer `(v ~T0 @X0 1 ef2`*v`ui ]
+"265
+[; ;mcc_generated_files/i2c1_master.c: 265: {
+{
+[e :U _I2C1_SetBuffer ]
+"264
+[; ;mcc_generated_files/i2c1_master.c: 264: void I2C1_SetBuffer(void *buffer, size_t bufferSize)
+[v _buffer `*v ~T0 @X0 1 r1 ]
+[v _bufferSize `ui ~T0 @X0 1 r2 ]
+"265
+[; ;mcc_generated_files/i2c1_master.c: 265: {
+[f ]
+"266
+[; ;mcc_generated_files/i2c1_master.c: 266:     if(I2C1_Status.bufferFree)
+[e $ ! != -> . _I2C1_Status 12 `i -> 0 `i 652  ]
+"267
+[; ;mcc_generated_files/i2c1_master.c: 267:     {
+{
+"268
+[; ;mcc_generated_files/i2c1_master.c: 268:         I2C1_Status.data_ptr = buffer;
+[e = . _I2C1_Status 5 -> _buffer `*uc ]
+"269
+[; ;mcc_generated_files/i2c1_master.c: 269:         I2C1_Status.data_length = bufferSize;
+[e = . _I2C1_Status 6 _bufferSize ]
+"270
+[; ;mcc_generated_files/i2c1_master.c: 270:         I2C1_Status.bufferFree = 0;
+[e = . _I2C1_Status 12 -> -> 0 `i `uc ]
+"271
+[; ;mcc_generated_files/i2c1_master.c: 271:     }
+}
+[e :U 652 ]
+"272
+[; ;mcc_generated_files/i2c1_master.c: 272: }
+[e :UE 651 ]
+}
+"274
+[; ;mcc_generated_files/i2c1_master.c: 274: void I2C1_SetDataCompleteCallback(i2c1_callback_t cb, void *ptr)
+[v _I2C1_SetDataCompleteCallback `(v ~T0 @X0 1 ef2`*F5453`*v ]
+"275
+[; ;mcc_generated_files/i2c1_master.c: 275: {
+{
+[e :U _I2C1_SetDataCompleteCallback ]
+"274
+[; ;mcc_generated_files/i2c1_master.c: 274: void I2C1_SetDataCompleteCallback(i2c1_callback_t cb, void *ptr)
+[v _cb `*F5456 ~T0 @X0 1 r1 ]
+[v _ptr `*v ~T0 @X0 1 r2 ]
+"275
+[; ;mcc_generated_files/i2c1_master.c: 275: {
+[f ]
+"276
+[; ;mcc_generated_files/i2c1_master.c: 276:     I2C1_SetCallback(I2C1_DATA_COMPLETE, cb, ptr);
+[e ( _I2C1_SetCallback (3 , , . `E5259 0 _cb _ptr ]
+"277
+[; ;mcc_generated_files/i2c1_master.c: 277: }
+[e :UE 653 ]
+}
+"279
+[; ;mcc_generated_files/i2c1_master.c: 279: void I2C1_SetWriteCollisionCallback(i2c1_callback_t cb, void *ptr)
+[v _I2C1_SetWriteCollisionCallback `(v ~T0 @X0 1 ef2`*F5460`*v ]
+"280
+[; ;mcc_generated_files/i2c1_master.c: 280: {
+{
+[e :U _I2C1_SetWriteCollisionCallback ]
+"279
+[; ;mcc_generated_files/i2c1_master.c: 279: void I2C1_SetWriteCollisionCallback(i2c1_callback_t cb, void *ptr)
+[v _cb `*F5463 ~T0 @X0 1 r1 ]
+[v _ptr `*v ~T0 @X0 1 r2 ]
+"280
+[; ;mcc_generated_files/i2c1_master.c: 280: {
+[f ]
+"281
+[; ;mcc_generated_files/i2c1_master.c: 281:     I2C1_SetCallback(I2C1_WRITE_COLLISION, cb, ptr);
+[e ( _I2C1_SetCallback (3 , , . `E5259 1 _cb _ptr ]
+"282
+[; ;mcc_generated_files/i2c1_master.c: 282: }
+[e :UE 654 ]
+}
+"284
+[; ;mcc_generated_files/i2c1_master.c: 284: void I2C1_SetAddressNackCallback(i2c1_callback_t cb, void *ptr)
+[v _I2C1_SetAddressNackCallback `(v ~T0 @X0 1 ef2`*F5467`*v ]
+"285
+[; ;mcc_generated_files/i2c1_master.c: 285: {
+{
+[e :U _I2C1_SetAddressNackCallback ]
+"284
+[; ;mcc_generated_files/i2c1_master.c: 284: void I2C1_SetAddressNackCallback(i2c1_callback_t cb, void *ptr)
+[v _cb `*F5470 ~T0 @X0 1 r1 ]
+[v _ptr `*v ~T0 @X0 1 r2 ]
+"285
+[; ;mcc_generated_files/i2c1_master.c: 285: {
+[f ]
+"286
+[; ;mcc_generated_files/i2c1_master.c: 286:     I2C1_SetCallback(I2C1_ADDR_NACK, cb, ptr);
+[e ( _I2C1_SetCallback (3 , , . `E5259 2 _cb _ptr ]
+"287
+[; ;mcc_generated_files/i2c1_master.c: 287: }
+[e :UE 655 ]
+}
+"289
+[; ;mcc_generated_files/i2c1_master.c: 289: void I2C1_SetDataNackCallback(i2c1_callback_t cb, void *ptr)
+[v _I2C1_SetDataNackCallback `(v ~T0 @X0 1 ef2`*F5474`*v ]
+"290
+[; ;mcc_generated_files/i2c1_master.c: 290: {
+{
+[e :U _I2C1_SetDataNackCallback ]
+"289
+[; ;mcc_generated_files/i2c1_master.c: 289: void I2C1_SetDataNackCallback(i2c1_callback_t cb, void *ptr)
+[v _cb `*F5477 ~T0 @X0 1 r1 ]
+[v _ptr `*v ~T0 @X0 1 r2 ]
+"290
+[; ;mcc_generated_files/i2c1_master.c: 290: {
+[f ]
+"291
+[; ;mcc_generated_files/i2c1_master.c: 291:     I2C1_SetCallback(I2C1_DATA_NACK, cb, ptr);
+[e ( _I2C1_SetCallback (3 , , . `E5259 3 _cb _ptr ]
+"292
+[; ;mcc_generated_files/i2c1_master.c: 292: }
+[e :UE 656 ]
+}
+"294
+[; ;mcc_generated_files/i2c1_master.c: 294: void I2C1_SetTimeoutCallback(i2c1_callback_t cb, void *ptr)
+[v _I2C1_SetTimeoutCallback `(v ~T0 @X0 1 ef2`*F5481`*v ]
+"295
+[; ;mcc_generated_files/i2c1_master.c: 295: {
+{
+[e :U _I2C1_SetTimeoutCallback ]
+"294
+[; ;mcc_generated_files/i2c1_master.c: 294: void I2C1_SetTimeoutCallback(i2c1_callback_t cb, void *ptr)
+[v _cb `*F5484 ~T0 @X0 1 r1 ]
+[v _ptr `*v ~T0 @X0 1 r2 ]
+"295
+[; ;mcc_generated_files/i2c1_master.c: 295: {
+[f ]
+"296
+[; ;mcc_generated_files/i2c1_master.c: 296:     I2C1_SetCallback(I2C1_TIMEOUT, cb, ptr);
+[e ( _I2C1_SetCallback (3 , , . `E5259 4 _cb _ptr ]
+"297
+[; ;mcc_generated_files/i2c1_master.c: 297: }
+[e :UE 657 ]
+}
+"299
+[; ;mcc_generated_files/i2c1_master.c: 299: void I2C1_SetInterruptHandler(void (* InterruptHandler)(void))
+[v _I2C1_SetInterruptHandler `(v ~T0 @X0 1 ef1`*F5488 ]
+"300
+[; ;mcc_generated_files/i2c1_master.c: 300: {
+{
+[e :U _I2C1_SetInterruptHandler ]
+"299
+[; ;mcc_generated_files/i2c1_master.c: 299: void I2C1_SetInterruptHandler(void (* InterruptHandler)(void))
+[v _InterruptHandler `*F5490 ~T0 @X0 1 r1 ]
+"300
+[; ;mcc_generated_files/i2c1_master.c: 300: {
+[f ]
+"301
+[; ;mcc_generated_files/i2c1_master.c: 301:     MSSP1_InterruptHandler = InterruptHandler;
+[e = _MSSP1_InterruptHandler _InterruptHandler ]
+"302
+[; ;mcc_generated_files/i2c1_master.c: 302: }
+[e :UE 658 ]
+}
+"304
+[; ;mcc_generated_files/i2c1_master.c: 304: static void I2C1_SetCallback(i2c1_callbackIndex_t idx, i2c1_callback_t cb, void *ptr)
+[v _I2C1_SetCallback `(v ~T0 @X0 1 sf3`E5259`*F5493`*v ]
+"305
+[; ;mcc_generated_files/i2c1_master.c: 305: {
+{
+[e :U _I2C1_SetCallback ]
+"304
+[; ;mcc_generated_files/i2c1_master.c: 304: static void I2C1_SetCallback(i2c1_callbackIndex_t idx, i2c1_callback_t cb, void *ptr)
+[v _idx `E5259 ~T0 @X0 1 r1 ]
+[v _cb `*F5497 ~T0 @X0 1 r2 ]
+[v _ptr `*v ~T0 @X0 1 r3 ]
+"305
+[; ;mcc_generated_files/i2c1_master.c: 305: {
+[f ]
+"306
+[; ;mcc_generated_files/i2c1_master.c: 306:     if(cb)
+[e $ ! != _cb -> -> 0 `i `*F5500 660  ]
+"307
+[; ;mcc_generated_files/i2c1_master.c: 307:     {
+{
+"308
+[; ;mcc_generated_files/i2c1_master.c: 308:         I2C1_Status.callbackTable[idx] = cb;
+[e = *U + &U . _I2C1_Status 0 * -> _idx `ux -> -> # *U &U . _I2C1_Status 0 `ui `ux _cb ]
+"309
+[; ;mcc_generated_files/i2c1_master.c: 309:         I2C1_Status.callbackPayload[idx] = ptr;
+[e = *U + &U . _I2C1_Status 1 * -> _idx `ux -> -> # *U &U . _I2C1_Status 1 `ui `ux _ptr ]
+"310
+[; ;mcc_generated_files/i2c1_master.c: 310:     }
+}
+[e $U 661  ]
+"311
+[; ;mcc_generated_files/i2c1_master.c: 311:     else
+[e :U 660 ]
+"312
+[; ;mcc_generated_files/i2c1_master.c: 312:     {
+{
+"313
+[; ;mcc_generated_files/i2c1_master.c: 313:         I2C1_Status.callbackTable[idx] = I2C1_CallbackReturnStop;
+[e = *U + &U . _I2C1_Status 0 * -> _idx `ux -> -> # *U &U . _I2C1_Status 0 `ui `ux &U _I2C1_CallbackReturnStop ]
+"314
+[; ;mcc_generated_files/i2c1_master.c: 314:         I2C1_Status.callbackPayload[idx] = ((void*)0);
+[e = *U + &U . _I2C1_Status 1 * -> _idx `ux -> -> # *U &U . _I2C1_Status 1 `ui `ux -> -> 0 `i `*v ]
+"315
+[; ;mcc_generated_files/i2c1_master.c: 315:     }
+}
+[e :U 661 ]
+"316
+[; ;mcc_generated_files/i2c1_master.c: 316: }
+[e :UE 659 ]
+}
+"318
+[; ;mcc_generated_files/i2c1_master.c: 318: static void I2C1_MasterIsr()
+[v _I2C1_MasterIsr `(v ~T0 @X0 1 sf ]
+"319
+[; ;mcc_generated_files/i2c1_master.c: 319: {
+{
+[e :U _I2C1_MasterIsr ]
+[f ]
+"320
+[; ;mcc_generated_files/i2c1_master.c: 320:     I2C1_MasterFsm();
+[e ( _I2C1_MasterFsm ..  ]
+"321
+[; ;mcc_generated_files/i2c1_master.c: 321: }
+[e :UE 662 ]
+}
+[v F5526 `(v ~T0 @X0 1 tf ]
+"323
+[; ;mcc_generated_files/i2c1_master.c: 323: static __attribute__((inline)) void I2C1_MasterFsm(void)
+[v _I2C1_MasterFsm `TF5526 ~T0 @X0 1 s ]
+"324
+[; ;mcc_generated_files/i2c1_master.c: 324: {
+{
+[e :U _I2C1_MasterFsm ]
+[f ]
+"325
+[; ;mcc_generated_files/i2c1_master.c: 325:     I2C1_MasterClearIrq();
+[e ( _I2C1_MasterClearIrq ..  ]
+"327
+[; ;mcc_generated_files/i2c1_master.c: 327:     if(I2C1_Status.addressNackCheck && I2C1_MasterIsNack())
+[e $ ! && != -> . _I2C1_Status 9 `i -> 0 `i != -> ( _I2C1_MasterIsNack ..  `i -> 0 `i 664  ]
+"328
+[; ;mcc_generated_files/i2c1_master.c: 328:     {
+{
+"329
+[; ;mcc_generated_files/i2c1_master.c: 329:         I2C1_Status.state = I2C1_ADDRESS_NACK;
+[e = . _I2C1_Status 7 . `E5241 15 ]
+"330
+[; ;mcc_generated_files/i2c1_master.c: 330:     }
+}
+[e :U 664 ]
+"331
+[; ;mcc_generated_files/i2c1_master.c: 331:     I2C1_Status.state = i2c1_fsmStateTable[I2C1_Status.state]();
+[e = . _I2C1_Status 7 ( *U *U + &U _i2c1_fsmStateTable * -> . _I2C1_Status 7 `ux -> -> # *U &U _i2c1_fsmStateTable `ui `ux ..  ]
+"332
+[; ;mcc_generated_files/i2c1_master.c: 332: }
+[e :UE 663 ]
+}
+"335
+[; ;mcc_generated_files/i2c1_master.c: 335: static i2c1_fsm_states_t I2C1_DO_IDLE(void)
+[v _I2C1_DO_IDLE `(E5241 ~T0 @X0 1 sf ]
+"336
+[; ;mcc_generated_files/i2c1_master.c: 336: {
+{
+[e :U _I2C1_DO_IDLE ]
+[f ]
+"337
+[; ;mcc_generated_files/i2c1_master.c: 337:     I2C1_Status.busy = 0;
+[e = . _I2C1_Status 10 -> -> 0 `i `uc ]
+"338
+[; ;mcc_generated_files/i2c1_master.c: 338:     I2C1_Status.error = I2C1_NOERR;
+[e = . _I2C1_Status 8 . `E355 0 ]
+"339
+[; ;mcc_generated_files/i2c1_master.c: 339:     return I2C1_RESET;
+[e ) . `E5241 14 ]
+[e $UE 665  ]
+"340
+[; ;mcc_generated_files/i2c1_master.c: 340: }
+[e :UE 665 ]
+}
+"342
+[; ;mcc_generated_files/i2c1_master.c: 342: static i2c1_fsm_states_t I2C1_DO_SEND_ADR_READ(void)
+[v _I2C1_DO_SEND_ADR_READ `(E5241 ~T0 @X0 1 sf ]
+"343
+[; ;mcc_generated_files/i2c1_master.c: 343: {
+{
+[e :U _I2C1_DO_SEND_ADR_READ ]
+[f ]
+"344
+[; ;mcc_generated_files/i2c1_master.c: 344:     I2C1_Status.addressNackCheck = 1;
+[e = . _I2C1_Status 9 -> -> 1 `i `uc ]
+"345
+[; ;mcc_generated_files/i2c1_master.c: 345:     I2C1_MasterSendTxData((uint8_t) (I2C1_Status.address << 1 | 1));
+[e ( _I2C1_MasterSendTxData (1 -> | << -> . _I2C1_Status 4 `i -> 1 `i -> 1 `i `uc ]
+"346
+[; ;mcc_generated_files/i2c1_master.c: 346:     return I2C1_RCEN;
+[e ) . `E5241 5 ]
+[e $UE 666  ]
+"347
+[; ;mcc_generated_files/i2c1_master.c: 347: }
+[e :UE 666 ]
+}
+"349
+[; ;mcc_generated_files/i2c1_master.c: 349: static i2c1_fsm_states_t I2C1_DO_SEND_ADR_WRITE(void)
+[v _I2C1_DO_SEND_ADR_WRITE `(E5241 ~T0 @X0 1 sf ]
+"350
+[; ;mcc_generated_files/i2c1_master.c: 350: {
+{
+[e :U _I2C1_DO_SEND_ADR_WRITE ]
+[f ]
+"351
+[; ;mcc_generated_files/i2c1_master.c: 351:     I2C1_Status.addressNackCheck = 1;
+[e = . _I2C1_Status 9 -> -> 1 `i `uc ]
+"352
+[; ;mcc_generated_files/i2c1_master.c: 352:     I2C1_MasterSendTxData((uint8_t) (I2C1_Status.address << 1));
+[e ( _I2C1_MasterSendTxData (1 -> << -> . _I2C1_Status 4 `i -> 1 `i `uc ]
+"353
+[; ;mcc_generated_files/i2c1_master.c: 353:     return I2C1_TX;
+[e ) . `E5241 3 ]
+[e $UE 667  ]
+"354
+[; ;mcc_generated_files/i2c1_master.c: 354: }
+[e :UE 667 ]
+}
+"356
+[; ;mcc_generated_files/i2c1_master.c: 356: static i2c1_fsm_states_t I2C1_DO_TX(void)
+[v _I2C1_DO_TX `(E5241 ~T0 @X0 1 sf ]
+"357
+[; ;mcc_generated_files/i2c1_master.c: 357: {
+{
+[e :U _I2C1_DO_TX ]
+[f ]
+"358
+[; ;mcc_generated_files/i2c1_master.c: 358:     if(I2C1_MasterIsNack())
+[e $ ! != -> ( _I2C1_MasterIsNack ..  `i -> 0 `i 669  ]
+"359
+[; ;mcc_generated_files/i2c1_master.c: 359:     {
+{
+"360
+[; ;mcc_generated_files/i2c1_master.c: 360:         switch(I2C1_Status.callbackTable[I2C1_DATA_NACK](I2C1_Status.callbackPayload[I2C1_DATA_NACK]))
+[e $U 671  ]
+"361
+[; ;mcc_generated_files/i2c1_master.c: 361:         {
+{
+"362
+[; ;mcc_generated_files/i2c1_master.c: 362:             case I2C1_RESTART_READ:
+[e :U 672 ]
+"363
+[; ;mcc_generated_files/i2c1_master.c: 363:                 return I2C1_DO_SEND_RESTART_READ();
+[e ) ( _I2C1_DO_SEND_RESTART_READ ..  ]
+[e $UE 668  ]
+"364
+[; ;mcc_generated_files/i2c1_master.c: 364:             case I2C1_RESTART_WRITE:
+[e :U 673 ]
+"365
+[; ;mcc_generated_files/i2c1_master.c: 365:                   return I2C1_DO_SEND_RESTART_WRITE();
+[e ) ( _I2C1_DO_SEND_RESTART_WRITE ..  ]
+[e $UE 668  ]
+"366
+[; ;mcc_generated_files/i2c1_master.c: 366:             default:
+[e :U 674 ]
+"367
+[; ;mcc_generated_files/i2c1_master.c: 367:             case I2C1_CONTINUE:
+[e :U 675 ]
+"368
+[; ;mcc_generated_files/i2c1_master.c: 368:             case I2C1_STOP:
+[e :U 676 ]
+"369
+[; ;mcc_generated_files/i2c1_master.c: 369:                 return I2C1_DO_SEND_STOP();
+[e ) ( _I2C1_DO_SEND_STOP ..  ]
+[e $UE 668  ]
+"370
+[; ;mcc_generated_files/i2c1_master.c: 370:         }
+}
+[e $U 670  ]
+[e :U 671 ]
+[e [\ -> ( *U *U + &U . _I2C1_Status 0 * -> . `E5259 3 `ux -> -> # *U &U . _I2C1_Status 0 `ui `ux (1 *U + &U . _I2C1_Status 1 * -> . `E5259 3 `ux -> -> # *U &U . _I2C1_Status 1 `ui `ux `ui , $ -> . `E360 1 `ui 672
+ , $ -> . `E360 2 `ui 673
+ , $ -> . `E360 3 `ui 675
+ , $ -> . `E360 0 `ui 676
+ 674 ]
+[e :U 670 ]
+"371
+[; ;mcc_generated_files/i2c1_master.c: 371:     }
+}
+[e $U 677  ]
+"372
+[; ;mcc_generated_files/i2c1_master.c: 372:     else
+[e :U 669 ]
+"373
+[; ;mcc_generated_files/i2c1_master.c: 373:     {
+{
+"374
+[; ;mcc_generated_files/i2c1_master.c: 374:         I2C1_Status.addressNackCheck = 0;
+[e = . _I2C1_Status 9 -> -> 0 `i `uc ]
+"375
+[; ;mcc_generated_files/i2c1_master.c: 375:         I2C1_MasterSendTxData(*I2C1_Status.data_ptr++);
+[e ( _I2C1_MasterSendTxData (1 *U ++ . _I2C1_Status 5 * -> -> 1 `i `x -> -> # *U . _I2C1_Status 5 `i `x ]
+"376
+[; ;mcc_generated_files/i2c1_master.c: 376:         return (--I2C1_Status.data_length)?I2C1_TX:I2C1_TX_EMPTY;
+[e ) -> ? != =- . _I2C1_Status 6 -> -> 1 `i `ui -> -> 0 `i `ui : . `E5241 3 . `E5241 6 `E5241 ]
+[e $UE 668  ]
+"377
+[; ;mcc_generated_files/i2c1_master.c: 377:     }
+}
+[e :U 677 ]
+"378
+[; ;mcc_generated_files/i2c1_master.c: 378: }
+[e :UE 668 ]
+}
+"380
+[; ;mcc_generated_files/i2c1_master.c: 380: static i2c1_fsm_states_t I2C1_DO_RX(void)
+[v _I2C1_DO_RX `(E5241 ~T0 @X0 1 sf ]
+"381
+[; ;mcc_generated_files/i2c1_master.c: 381: {
+{
+[e :U _I2C1_DO_RX ]
+[f ]
+"382
+[; ;mcc_generated_files/i2c1_master.c: 382:     *I2C1_Status.data_ptr++ = I2C1_MasterGetRxData();
+[e = *U ++ . _I2C1_Status 5 * -> -> 1 `i `x -> -> # *U . _I2C1_Status 5 `i `x ( _I2C1_MasterGetRxData ..  ]
+"383
+[; ;mcc_generated_files/i2c1_master.c: 383:     if(--I2C1_Status.data_length)
+[e $ ! != =- . _I2C1_Status 6 -> -> 1 `i `ui -> -> 0 `i `ui 679  ]
+"384
+[; ;mcc_generated_files/i2c1_master.c: 384:     {
+{
+"385
+[; ;mcc_generated_files/i2c1_master.c: 385:         I2C1_MasterSendAck();
+[e ( _I2C1_MasterSendAck ..  ]
+"386
+[; ;mcc_generated_files/i2c1_master.c: 386:         return I2C1_RCEN;
+[e ) . `E5241 5 ]
+[e $UE 678  ]
+"387
+[; ;mcc_generated_files/i2c1_master.c: 387:     }
+}
+[e $U 680  ]
+"388
+[; ;mcc_generated_files/i2c1_master.c: 388:     else
+[e :U 679 ]
+"389
+[; ;mcc_generated_files/i2c1_master.c: 389:     {
+{
+"390
+[; ;mcc_generated_files/i2c1_master.c: 390:         I2C1_Status.bufferFree = 1;
+[e = . _I2C1_Status 12 -> -> 1 `i `uc ]
+"391
+[; ;mcc_generated_files/i2c1_master.c: 391:         switch(I2C1_Status.callbackTable[I2C1_DATA_COMPLETE](I2C1_Status.callbackPayload[I2C1_DATA_COMPLETE]))
+[e $U 682  ]
+"392
+[; ;mcc_generated_files/i2c1_master.c: 392:         {
+{
+"393
+[; ;mcc_generated_files/i2c1_master.c: 393:             case I2C1_RESTART_WRITE:
+[e :U 683 ]
+"394
+[; ;mcc_generated_files/i2c1_master.c: 394:             case I2C1_RESTART_READ:
+[e :U 684 ]
+"395
+[; ;mcc_generated_files/i2c1_master.c: 395:                 return I2C1_DO_RX_NACK_RESTART();
+[e ) ( _I2C1_DO_RX_NACK_RESTART ..  ]
+[e $UE 678  ]
+"396
+[; ;mcc_generated_files/i2c1_master.c: 396:             default:
+[e :U 685 ]
+"397
+[; ;mcc_generated_files/i2c1_master.c: 397:             case I2C1_CONTINUE:
+[e :U 686 ]
+"398
+[; ;mcc_generated_files/i2c1_master.c: 398:             case I2C1_STOP:
+[e :U 687 ]
+"399
+[; ;mcc_generated_files/i2c1_master.c: 399:                 return I2C1_DO_RX_NACK_STOP();
+[e ) ( _I2C1_DO_RX_NACK_STOP ..  ]
+[e $UE 678  ]
+"400
+[; ;mcc_generated_files/i2c1_master.c: 400:         }
+}
+[e $U 681  ]
+[e :U 682 ]
+[e [\ -> ( *U *U + &U . _I2C1_Status 0 * -> . `E5259 0 `ux -> -> # *U &U . _I2C1_Status 0 `ui `ux (1 *U + &U . _I2C1_Status 1 * -> . `E5259 0 `ux -> -> # *U &U . _I2C1_Status 1 `ui `ux `ui , $ -> . `E360 2 `ui 683
+ , $ -> . `E360 1 `ui 684
+ , $ -> . `E360 3 `ui 686
+ , $ -> . `E360 0 `ui 687
+ 685 ]
+[e :U 681 ]
+"401
+[; ;mcc_generated_files/i2c1_master.c: 401:     }
+}
+[e :U 680 ]
+"402
+[; ;mcc_generated_files/i2c1_master.c: 402: }
+[e :UE 678 ]
+}
+"404
+[; ;mcc_generated_files/i2c1_master.c: 404: static i2c1_fsm_states_t I2C1_DO_RCEN(void)
+[v _I2C1_DO_RCEN `(E5241 ~T0 @X0 1 sf ]
+"405
+[; ;mcc_generated_files/i2c1_master.c: 405: {
+{
+[e :U _I2C1_DO_RCEN ]
+[f ]
+"406
+[; ;mcc_generated_files/i2c1_master.c: 406:     I2C1_Status.addressNackCheck = 0;
+[e = . _I2C1_Status 9 -> -> 0 `i `uc ]
+"407
+[; ;mcc_generated_files/i2c1_master.c: 407:     I2C1_MasterStartRx();
+[e ( _I2C1_MasterStartRx ..  ]
+"408
+[; ;mcc_generated_files/i2c1_master.c: 408:     return I2C1_RX;
+[e ) . `E5241 4 ]
+[e $UE 688  ]
+"409
+[; ;mcc_generated_files/i2c1_master.c: 409: }
+[e :UE 688 ]
+}
+"411
+[; ;mcc_generated_files/i2c1_master.c: 411: static i2c1_fsm_states_t I2C1_DO_TX_EMPTY(void)
+[v _I2C1_DO_TX_EMPTY `(E5241 ~T0 @X0 1 sf ]
+"412
+[; ;mcc_generated_files/i2c1_master.c: 412: {
+{
+[e :U _I2C1_DO_TX_EMPTY ]
+[f ]
+"413
+[; ;mcc_generated_files/i2c1_master.c: 413:     I2C1_Status.bufferFree = 1;
+[e = . _I2C1_Status 12 -> -> 1 `i `uc ]
+"414
+[; ;mcc_generated_files/i2c1_master.c: 414:     switch(I2C1_Status.callbackTable[I2C1_DATA_COMPLETE](I2C1_Status.callbackPayload[I2C1_DATA_COMPLETE]))
+[e $U 691  ]
+"415
+[; ;mcc_generated_files/i2c1_master.c: 415:     {
+{
+"416
+[; ;mcc_generated_files/i2c1_master.c: 416:         case I2C1_RESTART_READ:
+[e :U 692 ]
+"417
+[; ;mcc_generated_files/i2c1_master.c: 417:         case I2C1_RESTART_WRITE:
+[e :U 693 ]
+"418
+[; ;mcc_generated_files/i2c1_master.c: 418:             return I2C1_DO_SEND_RESTART();
+[e ) ( _I2C1_DO_SEND_RESTART ..  ]
+[e $UE 689  ]
+"419
+[; ;mcc_generated_files/i2c1_master.c: 419:         case I2C1_CONTINUE:
+[e :U 694 ]
+"420
+[; ;mcc_generated_files/i2c1_master.c: 420:             I2C1_MasterSetIrq();
+[e ( _I2C1_MasterSetIrq ..  ]
+"421
+[; ;mcc_generated_files/i2c1_master.c: 421:             return I2C1_TX;
+[e ) . `E5241 3 ]
+[e $UE 689  ]
+"422
+[; ;mcc_generated_files/i2c1_master.c: 422:         default:
+[e :U 695 ]
+"423
+[; ;mcc_generated_files/i2c1_master.c: 423:         case I2C1_STOP:
+[e :U 696 ]
+"424
+[; ;mcc_generated_files/i2c1_master.c: 424:             return I2C1_DO_SEND_STOP();
+[e ) ( _I2C1_DO_SEND_STOP ..  ]
+[e $UE 689  ]
+"425
+[; ;mcc_generated_files/i2c1_master.c: 425:     }
+}
+[e $U 690  ]
+[e :U 691 ]
+[e [\ -> ( *U *U + &U . _I2C1_Status 0 * -> . `E5259 0 `ux -> -> # *U &U . _I2C1_Status 0 `ui `ux (1 *U + &U . _I2C1_Status 1 * -> . `E5259 0 `ux -> -> # *U &U . _I2C1_Status 1 `ui `ux `ui , $ -> . `E360 1 `ui 692
+ , $ -> . `E360 2 `ui 693
+ , $ -> . `E360 3 `ui 694
+ , $ -> . `E360 0 `ui 696
+ 695 ]
+[e :U 690 ]
+"426
+[; ;mcc_generated_files/i2c1_master.c: 426: }
+[e :UE 689 ]
+}
+"428
+[; ;mcc_generated_files/i2c1_master.c: 428: static i2c1_fsm_states_t I2C1_DO_RX_EMPTY(void)
+[v _I2C1_DO_RX_EMPTY `(E5241 ~T0 @X0 1 sf ]
+"429
+[; ;mcc_generated_files/i2c1_master.c: 429: {
+{
+[e :U _I2C1_DO_RX_EMPTY ]
+[f ]
+"430
+[; ;mcc_generated_files/i2c1_master.c: 430:     I2C1_Status.bufferFree = 1;
+[e = . _I2C1_Status 12 -> -> 1 `i `uc ]
+"431
+[; ;mcc_generated_files/i2c1_master.c: 431:     switch(I2C1_Status.callbackTable[I2C1_DATA_COMPLETE](I2C1_Status.callbackPayload[I2C1_DATA_COMPLETE]))
+[e $U 699  ]
+"432
+[; ;mcc_generated_files/i2c1_master.c: 432:     {
+{
+"433
+[; ;mcc_generated_files/i2c1_master.c: 433:         case I2C1_RESTART_WRITE:
+[e :U 700 ]
+"434
+[; ;mcc_generated_files/i2c1_master.c: 434:             I2C1_MasterEnableRestart();
+[e ( _I2C1_MasterEnableRestart ..  ]
+"435
+[; ;mcc_generated_files/i2c1_master.c: 435:             return I2C1_SEND_RESTART_WRITE;
+[e ) . `E5241 8 ]
+[e $UE 697  ]
+"436
+[; ;mcc_generated_files/i2c1_master.c: 436:         case I2C1_RESTART_READ:
+[e :U 701 ]
+"437
+[; ;mcc_generated_files/i2c1_master.c: 437:             I2C1_MasterEnableRestart();
+[e ( _I2C1_MasterEnableRestart ..  ]
+"438
+[; ;mcc_generated_files/i2c1_master.c: 438:             return I2C1_SEND_RESTART_READ;
+[e ) . `E5241 7 ]
+[e $UE 697  ]
+"439
+[; ;mcc_generated_files/i2c1_master.c: 439:         case I2C1_CONTINUE:
+[e :U 702 ]
+"440
+[; ;mcc_generated_files/i2c1_master.c: 440:             return I2C1_RX;
+[e ) . `E5241 4 ]
+[e $UE 697  ]
+"441
+[; ;mcc_generated_files/i2c1_master.c: 441:         default:
+[e :U 703 ]
+"442
+[; ;mcc_generated_files/i2c1_master.c: 442:         case I2C1_STOP:
+[e :U 704 ]
+"443
+[; ;mcc_generated_files/i2c1_master.c: 443:             if(I2C1_Status.state != I2C1_SEND_RESTART_READ)
+[e $ ! != -> . _I2C1_Status 7 `ui -> . `E5241 7 `ui 705  ]
+"444
+[; ;mcc_generated_files/i2c1_master.c: 444:             {
+{
+"445
+[; ;mcc_generated_files/i2c1_master.c: 445:                 I2C1_MasterDisableRestart();
+[e ( _I2C1_MasterDisableRestart ..  ]
+"446
+[; ;mcc_generated_files/i2c1_master.c: 446:             }
+}
+[e :U 705 ]
+"447
+[; ;mcc_generated_files/i2c1_master.c: 447:             return I2C1_RESET;
+[e ) . `E5241 14 ]
+[e $UE 697  ]
+"448
+[; ;mcc_generated_files/i2c1_master.c: 448:     }
+}
+[e $U 698  ]
+[e :U 699 ]
+[e [\ -> ( *U *U + &U . _I2C1_Status 0 * -> . `E5259 0 `ux -> -> # *U &U . _I2C1_Status 0 `ui `ux (1 *U + &U . _I2C1_Status 1 * -> . `E5259 0 `ux -> -> # *U &U . _I2C1_Status 1 `ui `ux `ui , $ -> . `E360 2 `ui 700
+ , $ -> . `E360 1 `ui 701
+ , $ -> . `E360 3 `ui 702
+ , $ -> . `E360 0 `ui 704
+ 703 ]
+[e :U 698 ]
+"449
+[; ;mcc_generated_files/i2c1_master.c: 449: }
+[e :UE 697 ]
+}
+"451
+[; ;mcc_generated_files/i2c1_master.c: 451: static i2c1_fsm_states_t I2C1_DO_SEND_RESTART_READ(void)
+[v _I2C1_DO_SEND_RESTART_READ `(E5241 ~T0 @X0 1 sf ]
+"452
+[; ;mcc_generated_files/i2c1_master.c: 452: {
+{
+[e :U _I2C1_DO_SEND_RESTART_READ ]
+[f ]
+"453
+[; ;mcc_generated_files/i2c1_master.c: 453:     I2C1_MasterEnableRestart();
+[e ( _I2C1_MasterEnableRestart ..  ]
+"454
+[; ;mcc_generated_files/i2c1_master.c: 454:     return I2C1_SEND_ADR_READ;
+[e ) . `E5241 1 ]
+[e $UE 706  ]
+"455
+[; ;mcc_generated_files/i2c1_master.c: 455: }
+[e :UE 706 ]
+}
+"457
+[; ;mcc_generated_files/i2c1_master.c: 457: static i2c1_fsm_states_t I2C1_DO_SEND_RESTART_WRITE(void)
+[v _I2C1_DO_SEND_RESTART_WRITE `(E5241 ~T0 @X0 1 sf ]
+"458
+[; ;mcc_generated_files/i2c1_master.c: 458: {
+{
+[e :U _I2C1_DO_SEND_RESTART_WRITE ]
+[f ]
+"459
+[; ;mcc_generated_files/i2c1_master.c: 459:     I2C1_MasterEnableRestart();
+[e ( _I2C1_MasterEnableRestart ..  ]
+"460
+[; ;mcc_generated_files/i2c1_master.c: 460:     return I2C1_SEND_ADR_WRITE;
+[e ) . `E5241 2 ]
+[e $UE 707  ]
+"461
+[; ;mcc_generated_files/i2c1_master.c: 461: }
+[e :UE 707 ]
+}
+"464
+[; ;mcc_generated_files/i2c1_master.c: 464: static i2c1_fsm_states_t I2C1_DO_SEND_RESTART(void)
+[v _I2C1_DO_SEND_RESTART `(E5241 ~T0 @X0 1 sf ]
+"465
+[; ;mcc_generated_files/i2c1_master.c: 465: {
+{
+[e :U _I2C1_DO_SEND_RESTART ]
+[f ]
+"466
+[; ;mcc_generated_files/i2c1_master.c: 466:     I2C1_MasterEnableRestart();
+[e ( _I2C1_MasterEnableRestart ..  ]
+"467
+[; ;mcc_generated_files/i2c1_master.c: 467:     return I2C1_SEND_ADR_READ;
+[e ) . `E5241 1 ]
+[e $UE 708  ]
+"468
+[; ;mcc_generated_files/i2c1_master.c: 468: }
+[e :UE 708 ]
+}
+"470
+[; ;mcc_generated_files/i2c1_master.c: 470: static i2c1_fsm_states_t I2C1_DO_SEND_STOP(void)
+[v _I2C1_DO_SEND_STOP `(E5241 ~T0 @X0 1 sf ]
+"471
+[; ;mcc_generated_files/i2c1_master.c: 471: {
+{
+[e :U _I2C1_DO_SEND_STOP ]
+[f ]
+"472
+[; ;mcc_generated_files/i2c1_master.c: 472:     I2C1_MasterStop();
+[e ( _I2C1_MasterStop ..  ]
+"473
+[; ;mcc_generated_files/i2c1_master.c: 473:     return I2C1_IDLE;
+[e ) . `E5241 0 ]
+[e $UE 709  ]
+"474
+[; ;mcc_generated_files/i2c1_master.c: 474: }
+[e :UE 709 ]
+}
+"476
+[; ;mcc_generated_files/i2c1_master.c: 476: static i2c1_fsm_states_t I2C1_DO_RX_ACK(void)
+[v _I2C1_DO_RX_ACK `(E5241 ~T0 @X0 1 sf ]
+"477
+[; ;mcc_generated_files/i2c1_master.c: 477: {
+{
+[e :U _I2C1_DO_RX_ACK ]
+[f ]
+"478
+[; ;mcc_generated_files/i2c1_master.c: 478:     I2C1_MasterSendAck();
+[e ( _I2C1_MasterSendAck ..  ]
+"479
+[; ;mcc_generated_files/i2c1_master.c: 479:     return I2C1_RCEN;
+[e ) . `E5241 5 ]
+[e $UE 710  ]
+"480
+[; ;mcc_generated_files/i2c1_master.c: 480: }
+[e :UE 710 ]
+}
+"483
+[; ;mcc_generated_files/i2c1_master.c: 483: static i2c1_fsm_states_t I2C1_DO_RX_NACK_STOP(void)
+[v _I2C1_DO_RX_NACK_STOP `(E5241 ~T0 @X0 1 sf ]
+"484
+[; ;mcc_generated_files/i2c1_master.c: 484: {
+{
+[e :U _I2C1_DO_RX_NACK_STOP ]
+[f ]
+"485
+[; ;mcc_generated_files/i2c1_master.c: 485:     I2C1_MasterSendNack();
+[e ( _I2C1_MasterSendNack ..  ]
+"486
+[; ;mcc_generated_files/i2c1_master.c: 486:     return I2C1_SEND_STOP;
+[e ) . `E5241 10 ]
+[e $UE 711  ]
+"487
+[; ;mcc_generated_files/i2c1_master.c: 487: }
+[e :UE 711 ]
+}
+"489
+[; ;mcc_generated_files/i2c1_master.c: 489: static i2c1_fsm_states_t I2C1_DO_RX_NACK_RESTART(void)
+[v _I2C1_DO_RX_NACK_RESTART `(E5241 ~T0 @X0 1 sf ]
+"490
+[; ;mcc_generated_files/i2c1_master.c: 490: {
+{
+[e :U _I2C1_DO_RX_NACK_RESTART ]
+[f ]
+"491
+[; ;mcc_generated_files/i2c1_master.c: 491:     I2C1_MasterSendNack();
+[e ( _I2C1_MasterSendNack ..  ]
+"492
+[; ;mcc_generated_files/i2c1_master.c: 492:     return I2C1_SEND_RESTART;
+[e ) . `E5241 9 ]
+[e $UE 712  ]
+"493
+[; ;mcc_generated_files/i2c1_master.c: 493: }
+[e :UE 712 ]
+}
+"495
+[; ;mcc_generated_files/i2c1_master.c: 495: static i2c1_fsm_states_t I2C1_DO_RESET(void)
+[v _I2C1_DO_RESET `(E5241 ~T0 @X0 1 sf ]
+"496
+[; ;mcc_generated_files/i2c1_master.c: 496: {
+{
+[e :U _I2C1_DO_RESET ]
+[f ]
+"497
+[; ;mcc_generated_files/i2c1_master.c: 497:     I2C1_Status.busy = 0;
+[e = . _I2C1_Status 10 -> -> 0 `i `uc ]
+"498
+[; ;mcc_generated_files/i2c1_master.c: 498:     I2C1_Status.error = I2C1_NOERR;
+[e = . _I2C1_Status 8 . `E355 0 ]
+"499
+[; ;mcc_generated_files/i2c1_master.c: 499:     return I2C1_RESET;
+[e ) . `E5241 14 ]
+[e $UE 713  ]
+"500
+[; ;mcc_generated_files/i2c1_master.c: 500: }
+[e :UE 713 ]
+}
+"501
+[; ;mcc_generated_files/i2c1_master.c: 501: static i2c1_fsm_states_t I2C1_DO_ADDRESS_NACK(void)
+[v _I2C1_DO_ADDRESS_NACK `(E5241 ~T0 @X0 1 sf ]
+"502
+[; ;mcc_generated_files/i2c1_master.c: 502: {
+{
+[e :U _I2C1_DO_ADDRESS_NACK ]
+[f ]
+"503
+[; ;mcc_generated_files/i2c1_master.c: 503:     I2C1_Status.addressNackCheck = 0;
+[e = . _I2C1_Status 9 -> -> 0 `i `uc ]
+"504
+[; ;mcc_generated_files/i2c1_master.c: 504:     I2C1_Status.error = I2C1_FAIL;
+[e = . _I2C1_Status 8 . `E355 2 ]
+"505
+[; ;mcc_generated_files/i2c1_master.c: 505:     switch(I2C1_Status.callbackTable[I2C1_ADDR_NACK](I2C1_Status.callbackPayload[I2C1_ADDR_NACK]))
+[e $U 716  ]
+"506
+[; ;mcc_generated_files/i2c1_master.c: 506:     {
+{
+"507
+[; ;mcc_generated_files/i2c1_master.c: 507:         case I2C1_RESTART_READ:
+[e :U 717 ]
+"508
+[; ;mcc_generated_files/i2c1_master.c: 508:         case I2C1_RESTART_WRITE:
+[e :U 718 ]
+"509
+[; ;mcc_generated_files/i2c1_master.c: 509:             return I2C1_DO_SEND_RESTART();
+[e ) ( _I2C1_DO_SEND_RESTART ..  ]
+[e $UE 714  ]
+"510
+[; ;mcc_generated_files/i2c1_master.c: 510:         default:
+[e :U 719 ]
+"511
+[; ;mcc_generated_files/i2c1_master.c: 511:             return I2C1_DO_SEND_STOP();
+[e ) ( _I2C1_DO_SEND_STOP ..  ]
+[e $UE 714  ]
+"512
+[; ;mcc_generated_files/i2c1_master.c: 512:     }
+}
+[e $U 715  ]
+[e :U 716 ]
+[e [\ -> ( *U *U + &U . _I2C1_Status 0 * -> . `E5259 2 `ux -> -> # *U &U . _I2C1_Status 0 `ui `ux (1 *U + &U . _I2C1_Status 1 * -> . `E5259 2 `ux -> -> # *U &U . _I2C1_Status 1 `ui `ux `ui , $ -> . `E360 1 `ui 717
+ , $ -> . `E360 2 `ui 718
+ 719 ]
+[e :U 715 ]
+"513
+[; ;mcc_generated_files/i2c1_master.c: 513: }
+[e :UE 714 ]
+}
+"515
+[; ;mcc_generated_files/i2c1_master.c: 515: void I2C1_BusCollisionIsr(void)
+[v _I2C1_BusCollisionIsr `(v ~T0 @X0 1 ef ]
+"516
+[; ;mcc_generated_files/i2c1_master.c: 516: {
+{
+[e :U _I2C1_BusCollisionIsr ]
+[f ]
+"517
+[; ;mcc_generated_files/i2c1_master.c: 517:     I2C1_MasterClearBusCollision();
+[e ( _I2C1_MasterClearBusCollision ..  ]
+"518
+[; ;mcc_generated_files/i2c1_master.c: 518:     I2C1_Status.state = I2C1_RESET;
+[e = . _I2C1_Status 7 . `E5241 14 ]
+"519
+[; ;mcc_generated_files/i2c1_master.c: 519: }
+[e :UE 720 ]
+}
+"521
+[; ;mcc_generated_files/i2c1_master.c: 521: i2c1_operations_t I2C1_CallbackReturnStop(void *funPtr)
+[v _I2C1_CallbackReturnStop `(E360 ~T0 @X0 1 ef1`*v ]
+"522
+[; ;mcc_generated_files/i2c1_master.c: 522: {
+{
+[e :U _I2C1_CallbackReturnStop ]
+"521
+[; ;mcc_generated_files/i2c1_master.c: 521: i2c1_operations_t I2C1_CallbackReturnStop(void *funPtr)
+[v _funPtr `*v ~T0 @X0 1 r1 ]
+"522
+[; ;mcc_generated_files/i2c1_master.c: 522: {
+[f ]
+"523
+[; ;mcc_generated_files/i2c1_master.c: 523:     return I2C1_STOP;
+[e ) . `E360 0 ]
+[e $UE 721  ]
+"524
+[; ;mcc_generated_files/i2c1_master.c: 524: }
+[e :UE 721 ]
+}
+"526
+[; ;mcc_generated_files/i2c1_master.c: 526: i2c1_operations_t I2C1_CallbackReturnReset(void *funPtr)
+[v _I2C1_CallbackReturnReset `(E360 ~T0 @X0 1 ef1`*v ]
+"527
+[; ;mcc_generated_files/i2c1_master.c: 527: {
+{
+[e :U _I2C1_CallbackReturnReset ]
+"526
+[; ;mcc_generated_files/i2c1_master.c: 526: i2c1_operations_t I2C1_CallbackReturnReset(void *funPtr)
+[v _funPtr `*v ~T0 @X0 1 r1 ]
+"527
+[; ;mcc_generated_files/i2c1_master.c: 527: {
+[f ]
+"528
+[; ;mcc_generated_files/i2c1_master.c: 528:     return I2C1_RESET_LINK;
+[e ) . `E360 4 ]
+[e $UE 722  ]
+"529
+[; ;mcc_generated_files/i2c1_master.c: 529: }
+[e :UE 722 ]
+}
+"531
+[; ;mcc_generated_files/i2c1_master.c: 531: i2c1_operations_t I2C1_CallbackRestartWrite(void *funPtr)
+[v _I2C1_CallbackRestartWrite `(E360 ~T0 @X0 1 ef1`*v ]
+"532
+[; ;mcc_generated_files/i2c1_master.c: 532: {
+{
+[e :U _I2C1_CallbackRestartWrite ]
+"531
+[; ;mcc_generated_files/i2c1_master.c: 531: i2c1_operations_t I2C1_CallbackRestartWrite(void *funPtr)
+[v _funPtr `*v ~T0 @X0 1 r1 ]
+"532
+[; ;mcc_generated_files/i2c1_master.c: 532: {
+[f ]
+"533
+[; ;mcc_generated_files/i2c1_master.c: 533:     return I2C1_RESTART_WRITE;
+[e ) . `E360 2 ]
+[e $UE 723  ]
+"534
+[; ;mcc_generated_files/i2c1_master.c: 534: }
+[e :UE 723 ]
+}
+"536
+[; ;mcc_generated_files/i2c1_master.c: 536: i2c1_operations_t I2C1_CallbackRestartRead(void *funPtr)
+[v _I2C1_CallbackRestartRead `(E360 ~T0 @X0 1 ef1`*v ]
+"537
+[; ;mcc_generated_files/i2c1_master.c: 537: {
+{
+[e :U _I2C1_CallbackRestartRead ]
+"536
+[; ;mcc_generated_files/i2c1_master.c: 536: i2c1_operations_t I2C1_CallbackRestartRead(void *funPtr)
+[v _funPtr `*v ~T0 @X0 1 r1 ]
+"537
+[; ;mcc_generated_files/i2c1_master.c: 537: {
+[f ]
+"538
+[; ;mcc_generated_files/i2c1_master.c: 538:     return I2C1_RESTART_READ;
+[e ) . `E360 1 ]
+[e $UE 724  ]
+"539
+[; ;mcc_generated_files/i2c1_master.c: 539: }
+[e :UE 724 ]
+}
+[v F5600 `(a ~T0 @X0 1 tf ]
+"544
+[; ;mcc_generated_files/i2c1_master.c: 544: static __attribute__((inline)) _Bool I2C1_MasterOpen(void)
+[v _I2C1_MasterOpen `TF5600 ~T0 @X0 1 s ]
+"545
+[; ;mcc_generated_files/i2c1_master.c: 545: {
+{
+[e :U _I2C1_MasterOpen ]
+[f ]
+"546
+[; ;mcc_generated_files/i2c1_master.c: 546:     if(!SSP1CON1bits.SSPEN)
+[e $ ! ! != -> . . _SSP1CON1bits 0 2 `i -> 0 `i 726  ]
+"547
+[; ;mcc_generated_files/i2c1_master.c: 547:     {
+{
+"548
+[; ;mcc_generated_files/i2c1_master.c: 548:         SSP1STAT = 0x00;
+[e = _SSP1STAT -> -> 0 `i `uc ]
+"549
+[; ;mcc_generated_files/i2c1_master.c: 549:         SSP1CON1 = 0x08;
+[e = _SSP1CON1 -> -> 8 `i `uc ]
+"550
+[; ;mcc_generated_files/i2c1_master.c: 550:         SSP1CON2 = 0x00;
+[e = _SSP1CON2 -> -> 0 `i `uc ]
+"551
+[; ;mcc_generated_files/i2c1_master.c: 551:         SSP1ADD = 0x3B;
+[e = _SSP1ADD -> -> 59 `i `uc ]
+"552
+[; ;mcc_generated_files/i2c1_master.c: 552:         SSP1CON1bits.SSPEN = 1;
+[e = . . _SSP1CON1bits 0 2 -> -> 1 `i `uc ]
+"553
+[; ;mcc_generated_files/i2c1_master.c: 553:         return 1;
+[e ) -> -> 1 `i `a ]
+[e $UE 725  ]
+"554
+[; ;mcc_generated_files/i2c1_master.c: 554:     }
+}
+[e :U 726 ]
+"555
+[; ;mcc_generated_files/i2c1_master.c: 555:     return 0;
+[e ) -> -> 0 `i `a ]
+[e $UE 725  ]
+"556
+[; ;mcc_generated_files/i2c1_master.c: 556: }
+[e :UE 725 ]
+}
+[v F5602 `(v ~T0 @X0 1 tf ]
+"558
+[; ;mcc_generated_files/i2c1_master.c: 558: static __attribute__((inline)) void I2C1_MasterClose(void)
+[v _I2C1_MasterClose `TF5602 ~T0 @X0 1 s ]
+"559
+[; ;mcc_generated_files/i2c1_master.c: 559: {
+{
+[e :U _I2C1_MasterClose ]
+[f ]
+"561
+[; ;mcc_generated_files/i2c1_master.c: 561:     SSP1CON1bits.SSPEN = 0;
+[e = . . _SSP1CON1bits 0 2 -> -> 0 `i `uc ]
+"562
+[; ;mcc_generated_files/i2c1_master.c: 562: }
+[e :UE 727 ]
+}
+[v F5604 `(uc ~T0 @X0 1 tf ]
+"564
+[; ;mcc_generated_files/i2c1_master.c: 564: static __attribute__((inline)) uint8_t I2C1_MasterGetRxData(void)
+[v _I2C1_MasterGetRxData `TF5604 ~T0 @X0 1 s ]
+"565
+[; ;mcc_generated_files/i2c1_master.c: 565: {
+{
+[e :U _I2C1_MasterGetRxData ]
+[f ]
+"566
+[; ;mcc_generated_files/i2c1_master.c: 566:     return SSP1BUF;
+[e ) _SSP1BUF ]
+[e $UE 728  ]
+"567
+[; ;mcc_generated_files/i2c1_master.c: 567: }
+[e :UE 728 ]
+}
+[v F5606 `(v ~T0 @X0 1 tf1`uc ]
+"569
+[; ;mcc_generated_files/i2c1_master.c: 569: static __attribute__((inline)) void I2C1_MasterSendTxData(uint8_t data)
+[v _I2C1_MasterSendTxData `TF5606 ~T0 @X0 1 s ]
+"570
+[; ;mcc_generated_files/i2c1_master.c: 570: {
+{
+[e :U _I2C1_MasterSendTxData ]
+"569
+[; ;mcc_generated_files/i2c1_master.c: 569: static __attribute__((inline)) void I2C1_MasterSendTxData(uint8_t data)
+[v _data `uc ~T0 @X0 1 r1 ]
+"570
+[; ;mcc_generated_files/i2c1_master.c: 570: {
+[f ]
+"571
+[; ;mcc_generated_files/i2c1_master.c: 571:     SSP1BUF = data;
+[e = _SSP1BUF _data ]
+"572
+[; ;mcc_generated_files/i2c1_master.c: 572: }
+[e :UE 729 ]
+}
+[v F5609 `(v ~T0 @X0 1 tf ]
+"574
+[; ;mcc_generated_files/i2c1_master.c: 574: static __attribute__((inline)) void I2C1_MasterEnableRestart(void)
+[v _I2C1_MasterEnableRestart `TF5609 ~T0 @X0 1 s ]
+"575
+[; ;mcc_generated_files/i2c1_master.c: 575: {
+{
+[e :U _I2C1_MasterEnableRestart ]
+[f ]
+"576
+[; ;mcc_generated_files/i2c1_master.c: 576:     SSP1CON2bits.RSEN = 1;
+[e = . . _SSP1CON2bits 0 1 -> -> 1 `i `uc ]
+"577
+[; ;mcc_generated_files/i2c1_master.c: 577: }
+[e :UE 730 ]
+}
+[v F5611 `(v ~T0 @X0 1 tf ]
+"579
+[; ;mcc_generated_files/i2c1_master.c: 579: static __attribute__((inline)) void I2C1_MasterDisableRestart(void)
+[v _I2C1_MasterDisableRestart `TF5611 ~T0 @X0 1 s ]
+"580
+[; ;mcc_generated_files/i2c1_master.c: 580: {
+{
+[e :U _I2C1_MasterDisableRestart ]
+[f ]
+"581
+[; ;mcc_generated_files/i2c1_master.c: 581:     SSP1CON2bits.RSEN = 0;
+[e = . . _SSP1CON2bits 0 1 -> -> 0 `i `uc ]
+"582
+[; ;mcc_generated_files/i2c1_master.c: 582: }
+[e :UE 731 ]
+}
+[v F5613 `(v ~T0 @X0 1 tf ]
+"584
+[; ;mcc_generated_files/i2c1_master.c: 584: static __attribute__((inline)) void I2C1_MasterStartRx(void)
+[v _I2C1_MasterStartRx `TF5613 ~T0 @X0 1 s ]
+"585
+[; ;mcc_generated_files/i2c1_master.c: 585: {
+{
+[e :U _I2C1_MasterStartRx ]
+[f ]
+"586
+[; ;mcc_generated_files/i2c1_master.c: 586:     SSP1CON2bits.RCEN = 1;
+[e = . . _SSP1CON2bits 0 3 -> -> 1 `i `uc ]
+"587
+[; ;mcc_generated_files/i2c1_master.c: 587: }
+[e :UE 732 ]
+}
+[v F5615 `(v ~T0 @X0 1 tf ]
+"589
+[; ;mcc_generated_files/i2c1_master.c: 589: static __attribute__((inline)) void I2C1_MasterStart(void)
+[v _I2C1_MasterStart `TF5615 ~T0 @X0 1 s ]
+"590
+[; ;mcc_generated_files/i2c1_master.c: 590: {
+{
+[e :U _I2C1_MasterStart ]
+[f ]
+"591
+[; ;mcc_generated_files/i2c1_master.c: 591:     SSP1CON2bits.SEN = 1;
+[e = . . _SSP1CON2bits 0 0 -> -> 1 `i `uc ]
+"592
+[; ;mcc_generated_files/i2c1_master.c: 592: }
+[e :UE 733 ]
+}
+[v F5617 `(v ~T0 @X0 1 tf ]
+"594
+[; ;mcc_generated_files/i2c1_master.c: 594: static __attribute__((inline)) void I2C1_MasterStop(void)
+[v _I2C1_MasterStop `TF5617 ~T0 @X0 1 s ]
+"595
+[; ;mcc_generated_files/i2c1_master.c: 595: {
+{
+[e :U _I2C1_MasterStop ]
+[f ]
+"596
+[; ;mcc_generated_files/i2c1_master.c: 596:     SSP1CON2bits.PEN = 1;
+[e = . . _SSP1CON2bits 0 2 -> -> 1 `i `uc ]
+"597
+[; ;mcc_generated_files/i2c1_master.c: 597: }
+[e :UE 734 ]
+}
+[v F5619 `(a ~T0 @X0 1 tf ]
+"599
+[; ;mcc_generated_files/i2c1_master.c: 599: static __attribute__((inline)) _Bool I2C1_MasterIsNack(void)
+[v _I2C1_MasterIsNack `TF5619 ~T0 @X0 1 s ]
+"600
+[; ;mcc_generated_files/i2c1_master.c: 600: {
+{
+[e :U _I2C1_MasterIsNack ]
+[f ]
+"601
+[; ;mcc_generated_files/i2c1_master.c: 601:     return SSP1CON2bits.ACKSTAT;
+[e ) -> . . _SSP1CON2bits 0 6 `a ]
+[e $UE 735  ]
+"602
+[; ;mcc_generated_files/i2c1_master.c: 602: }
+[e :UE 735 ]
+}
+[v F5621 `(v ~T0 @X0 1 tf ]
+"604
+[; ;mcc_generated_files/i2c1_master.c: 604: static __attribute__((inline)) void I2C1_MasterSendAck(void)
+[v _I2C1_MasterSendAck `TF5621 ~T0 @X0 1 s ]
+"605
+[; ;mcc_generated_files/i2c1_master.c: 605: {
+{
+[e :U _I2C1_MasterSendAck ]
+[f ]
+"606
+[; ;mcc_generated_files/i2c1_master.c: 606:     SSP1CON2bits.ACKDT = 0;
+[e = . . _SSP1CON2bits 0 5 -> -> 0 `i `uc ]
+"607
+[; ;mcc_generated_files/i2c1_master.c: 607:     SSP1CON2bits.ACKEN = 1;
+[e = . . _SSP1CON2bits 0 4 -> -> 1 `i `uc ]
+"608
+[; ;mcc_generated_files/i2c1_master.c: 608: }
+[e :UE 736 ]
+}
+[v F5623 `(v ~T0 @X0 1 tf ]
+"610
+[; ;mcc_generated_files/i2c1_master.c: 610: static __attribute__((inline)) void I2C1_MasterSendNack(void)
+[v _I2C1_MasterSendNack `TF5623 ~T0 @X0 1 s ]
+"611
+[; ;mcc_generated_files/i2c1_master.c: 611: {
+{
+[e :U _I2C1_MasterSendNack ]
+[f ]
+"612
+[; ;mcc_generated_files/i2c1_master.c: 612:     SSP1CON2bits.ACKDT = 1;
+[e = . . _SSP1CON2bits 0 5 -> -> 1 `i `uc ]
+"613
+[; ;mcc_generated_files/i2c1_master.c: 613:     SSP1CON2bits.ACKEN = 1;
+[e = . . _SSP1CON2bits 0 4 -> -> 1 `i `uc ]
+"614
+[; ;mcc_generated_files/i2c1_master.c: 614: }
+[e :UE 737 ]
+}
+[v F5625 `(v ~T0 @X0 1 tf ]
+"616
+[; ;mcc_generated_files/i2c1_master.c: 616: static __attribute__((inline)) void I2C1_MasterClearBusCollision(void)
+[v _I2C1_MasterClearBusCollision `TF5625 ~T0 @X0 1 s ]
+"617
+[; ;mcc_generated_files/i2c1_master.c: 617: {
+{
+[e :U _I2C1_MasterClearBusCollision ]
+[f ]
+"618
+[; ;mcc_generated_files/i2c1_master.c: 618:     PIR2bits.BCL1IF = 0;
+[e = . . _PIR2bits 1 2 -> -> 0 `i `uc ]
+"619
+[; ;mcc_generated_files/i2c1_master.c: 619: }
+[e :UE 738 ]
+}
+[v F5627 `(a ~T0 @X0 1 tf ]
+"622
+[; ;mcc_generated_files/i2c1_master.c: 622: static __attribute__((inline)) _Bool I2C1_MasterIsRxBufFull(void)
+[v _I2C1_MasterIsRxBufFull `TF5627 ~T0 @X0 1 s ]
+"623
+[; ;mcc_generated_files/i2c1_master.c: 623: {
+{
+[e :U _I2C1_MasterIsRxBufFull ]
+[f ]
+"624
+[; ;mcc_generated_files/i2c1_master.c: 624:     return SSP1STATbits.BF;
+[e ) -> . . _SSP1STATbits 2 0 `a ]
+[e $UE 739  ]
+"625
+[; ;mcc_generated_files/i2c1_master.c: 625: }
+[e :UE 739 ]
+}
+[v F5629 `(v ~T0 @X0 1 tf ]
+"627
+[; ;mcc_generated_files/i2c1_master.c: 627: static __attribute__((inline)) void I2C1_MasterEnableIrq(void)
+[v _I2C1_MasterEnableIrq `TF5629 ~T0 @X0 1 s ]
+"628
+[; ;mcc_generated_files/i2c1_master.c: 628: {
+{
+[e :U _I2C1_MasterEnableIrq ]
+[f ]
+"629
+[; ;mcc_generated_files/i2c1_master.c: 629:     PIE1bits.SSP1IE = 1;
+[e = . . _PIE1bits 1 1 -> -> 1 `i `uc ]
+"630
+[; ;mcc_generated_files/i2c1_master.c: 630: }
+[e :UE 740 ]
+}
+[v F5631 `(a ~T0 @X0 1 tf ]
+"632
+[; ;mcc_generated_files/i2c1_master.c: 632: static __attribute__((inline)) _Bool I2C1_MasterIsIrqEnabled(void)
+[v _I2C1_MasterIsIrqEnabled `TF5631 ~T0 @X0 1 s ]
+"633
+[; ;mcc_generated_files/i2c1_master.c: 633: {
+{
+[e :U _I2C1_MasterIsIrqEnabled ]
+[f ]
+"634
+[; ;mcc_generated_files/i2c1_master.c: 634:     return PIE1bits.SSP1IE;
+[e ) -> . . _PIE1bits 1 1 `a ]
+[e $UE 741  ]
+"635
+[; ;mcc_generated_files/i2c1_master.c: 635: }
+[e :UE 741 ]
+}
+[v F5633 `(v ~T0 @X0 1 tf ]
+"637
+[; ;mcc_generated_files/i2c1_master.c: 637: static __attribute__((inline)) void I2C1_MasterDisableIrq(void)
+[v _I2C1_MasterDisableIrq `TF5633 ~T0 @X0 1 s ]
+"638
+[; ;mcc_generated_files/i2c1_master.c: 638: {
+{
+[e :U _I2C1_MasterDisableIrq ]
+[f ]
+"639
+[; ;mcc_generated_files/i2c1_master.c: 639:     PIE1bits.SSP1IE = 0;
+[e = . . _PIE1bits 1 1 -> -> 0 `i `uc ]
+"640
+[; ;mcc_generated_files/i2c1_master.c: 640: }
+[e :UE 742 ]
+}
+[v F5635 `(v ~T0 @X0 1 tf ]
+"642
+[; ;mcc_generated_files/i2c1_master.c: 642: static __attribute__((inline)) void I2C1_MasterClearIrq(void)
+[v _I2C1_MasterClearIrq `TF5635 ~T0 @X0 1 s ]
+"643
+[; ;mcc_generated_files/i2c1_master.c: 643: {
+{
+[e :U _I2C1_MasterClearIrq ]
+[f ]
+"644
+[; ;mcc_generated_files/i2c1_master.c: 644:     PIR1bits.SSP1IF = 0;
+[e = . . _PIR1bits 1 1 -> -> 0 `i `uc ]
+"645
+[; ;mcc_generated_files/i2c1_master.c: 645: }
+[e :UE 743 ]
+}
+[v F5637 `(v ~T0 @X0 1 tf ]
+"647
+[; ;mcc_generated_files/i2c1_master.c: 647: static __attribute__((inline)) void I2C1_MasterSetIrq(void)
+[v _I2C1_MasterSetIrq `TF5637 ~T0 @X0 1 s ]
+"648
+[; ;mcc_generated_files/i2c1_master.c: 648: {
+{
+[e :U _I2C1_MasterSetIrq ]
+[f ]
+"649
+[; ;mcc_generated_files/i2c1_master.c: 649:     PIR1bits.SSP1IF = 1;
+[e = . . _PIR1bits 1 1 -> -> 1 `i `uc ]
+"650
+[; ;mcc_generated_files/i2c1_master.c: 650: }
+[e :UE 744 ]
+}
+[v F5639 `(v ~T0 @X0 1 tf ]
+"652
+[; ;mcc_generated_files/i2c1_master.c: 652: static __attribute__((inline)) void I2C1_MasterWaitForEvent(void)
+[v _I2C1_MasterWaitForEvent `TF5639 ~T0 @X0 1 s ]
+"653
+[; ;mcc_generated_files/i2c1_master.c: 653: {
+{
+[e :U _I2C1_MasterWaitForEvent ]
+[f ]
+"654
+[; ;mcc_generated_files/i2c1_master.c: 654:     while(1)
+[e :U 747 ]
+"655
+[; ;mcc_generated_files/i2c1_master.c: 655:     {
+{
+"656
+[; ;mcc_generated_files/i2c1_master.c: 656:         if(PIR1bits.SSP1IF)
+[e $ ! != -> . . _PIR1bits 1 1 `i -> 0 `i 749  ]
+"657
+[; ;mcc_generated_files/i2c1_master.c: 657:         {
+{
+"658
+[; ;mcc_generated_files/i2c1_master.c: 658:             break;
+[e $U 748  ]
+"659
+[; ;mcc_generated_files/i2c1_master.c: 659:         }
+}
+[e :U 749 ]
+"660
+[; ;mcc_generated_files/i2c1_master.c: 660:     }
+}
+[e :U 746 ]
+[e $U 747  ]
+[e :U 748 ]
+"661
+[; ;mcc_generated_files/i2c1_master.c: 661: }
+[e :UE 745 ]
+}
