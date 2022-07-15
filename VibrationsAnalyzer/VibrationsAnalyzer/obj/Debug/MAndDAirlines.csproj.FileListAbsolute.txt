@@ -1,0 +1,16 @@
+C:\Users\migue\source\repos\MAndDAirlines\MAndDAirlines\obj\Debug\MAndDAirlines.csproj.AssemblyReference.cache
+C:\Users\migue\source\repos\MAndDAirlines\MAndDAirlines\obj\Debug\MAndDAirlines.csproj.SuggestedBindingRedirects.cache
+C:\Users\migue\source\repos\MAndDAirlines\MAndDAirlines\obj\Debug\MainWindow.g.cs
+C:\Users\migue\source\repos\MAndDAirlines\MAndDAirlines\obj\Debug\App.g.cs
+C:\Users\migue\source\repos\MAndDAirlines\MAndDAirlines\obj\Debug\MAndDAirlines_MarkupCompile.cache
+C:\Users\migue\source\repos\MAndDAirlines\MAndDAirlines\obj\Debug\MAndDAirlines_MarkupCompile.lref
+C:\Users\migue\source\repos\MAndDAirlines\MAndDAirlines\bin\Debug\MAndDAirlines.exe.config
+C:\Users\migue\source\repos\MAndDAirlines\MAndDAirlines\bin\Debug\MAndDAirlines.exe
+C:\Users\migue\source\repos\MAndDAirlines\MAndDAirlines\bin\Debug\MAndDAirlines.pdb
+C:\Users\migue\source\repos\MAndDAirlines\MAndDAirlines\obj\Debug\MainWindow.baml
+C:\Users\migue\source\repos\MAndDAirlines\MAndDAirlines\obj\Debug\MAndDAirlines.g.resources
+C:\Users\migue\source\repos\MAndDAirlines\MAndDAirlines\obj\Debug\MAndDAirlines.Properties.Resources.resources
+C:\Users\migue\source\repos\MAndDAirlines\MAndDAirlines\obj\Debug\MAndDAirlines.csproj.GenerateResource.cache
+C:\Users\migue\source\repos\MAndDAirlines\MAndDAirlines\obj\Debug\MAndDAirlines.csproj.CoreCompileInputs.cache
+C:\Users\migue\source\repos\MAndDAirlines\MAndDAirlines\obj\Debug\MAndDAirlines.exe
+C:\Users\migue\source\repos\MAndDAirlines\MAndDAirlines\obj\Debug\MAndDAirlines.pdb
